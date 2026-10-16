@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://u51t7bof3nf2"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6rob7"]
+size = Vector3(200, 0.5, 200)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6rob7"]
+size = Vector3(200, 1, 200)
+
+[node name="testfloor" type="Node3D" unique_id=1900875952]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=544368378]
+mesh = SubResource("BoxMesh_6rob7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=877452212]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=1081586950]
+shape = SubResource("BoxShape3D_6rob7")
+debug_color = Color(0.9912748, 0, 0.2736528, 0.41960785)

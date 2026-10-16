@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="What rises at night"
+run/main_scene="uid://b61r08chkv4n6"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
 
 [display]
 
@@ -22,6 +22,12 @@ window/stretch/aspect="expand"
 [dotnet]
 
 project/assembly_name="What rises at night"
+
+[layer_names]
+
+3d_physics/layer_1="map"
+3d_physics/layer_2="player"
+3d_physics/layer_3="enemies"
 
 [physics]
 
