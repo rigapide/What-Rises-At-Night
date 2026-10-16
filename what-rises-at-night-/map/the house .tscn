@@ -22,7 +22,7 @@ size = Vector3(1, 1, 5)
 
 [sub_resource type="BoxMesh" id="BoxMesh_r74tx"]
 resource_local_to_scene = true
-size = Vector3(60, 1, 42)
+size = Vector3(51, 1, 42)
 
 [sub_resource type="BoxMesh" id="BoxMesh_cv6lw"]
 resource_local_to_scene = true
@@ -62,7 +62,7 @@ size = Vector3(2, 15, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_bbdup"]
 resource_local_to_scene = true
-size = Vector3(10, 20, 1)
+size = Vector3(10, 21, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_hdfok"]
 resource_local_to_scene = true
@@ -127,6 +127,18 @@ size = Vector3(14, 1, 2)
 [sub_resource type="BoxMesh" id="BoxMesh_2ryge"]
 resource_local_to_scene = true
 size = Vector3(14, 1, 14)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nljph"]
+resource_local_to_scene = true
+size = Vector3(14, 1, 31)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dqnll"]
+resource_local_to_scene = true
+size = Vector3(24, 1, 14)
+
+[sub_resource type="BoxMesh" id="BoxMesh_k0eby"]
+resource_local_to_scene = true
+size = Vector3(17, 1, 14)
 
 [sub_resource type="BoxMesh" id="BoxMesh_si2de"]
 resource_local_to_scene = true
@@ -212,16 +224,8 @@ mesh = SubResource("BoxMesh_su3vj")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -4, 38)
 mesh = SubResource("BoxMesh_su3vj")
 
-[node name="floor" type="MeshInstance3D" parent="The garrage" unique_id=1797739647]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, -5, 20)
-mesh = SubResource("BoxMesh_r74tx")
-
-[node name="floor2" type="MeshInstance3D" parent="The garrage" unique_id=1601926917]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, -5, 20)
-mesh = SubResource("BoxMesh_r74tx")
-
 [node name="floor3" type="MeshInstance3D" parent="The garrage" unique_id=1972730697]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, -5, 20.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5, -5, 20.5)
 mesh = SubResource("BoxMesh_r74tx")
 
 [node name="front wall12" type="MeshInstance3D" parent="The garrage" unique_id=744135113]
@@ -267,7 +271,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 8, 26)
 mesh = SubResource("BoxMesh_34i44")
 
 [node name="wall2" type="MeshInstance3D" parent="the living roon" unique_id=622017180]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 5.5, 41)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 5, 41)
 mesh = SubResource("BoxMesh_bbdup")
 
 [node name="rail" type="MeshInstance3D" parent="the living roon" unique_id=1828942307]
@@ -465,6 +469,18 @@ mesh = SubResource("BoxMesh_tu6lm")
 [node name="floor 3" type="MeshInstance3D" parent="The stairwell" unique_id=1981569743]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -34, 17.5)
 mesh = SubResource("BoxMesh_2ryge")
+
+[node name="floor 5" type="MeshInstance3D" parent="The stairwell" unique_id=1934149126]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -6, 26)
+mesh = SubResource("BoxMesh_nljph")
+
+[node name="floor 6" type="MeshInstance3D" parent="The stairwell" unique_id=1897353078]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -6, 17.5)
+mesh = SubResource("BoxMesh_dqnll")
+
+[node name="floor 4" type="MeshInstance3D" parent="The stairwell" unique_id=1458855312]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, -38, 17.5)
+mesh = SubResource("BoxMesh_k0eby")
 
 [node name="stair19" type="MeshInstance3D" parent="The stairwell" unique_id=71870795]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -35, 17.5)
