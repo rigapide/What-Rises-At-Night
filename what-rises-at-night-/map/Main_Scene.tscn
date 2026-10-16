@@ -26,7 +26,7 @@ reflected_light_source = 2
 fog_mode = 1
 fog_density = 1.0
 volumetric_fog_enabled = true
-volumetric_fog_density = 0.4136
+volumetric_fog_density = 0.1864
 volumetric_fog_albedo = Color(0.36753583, 0.34815994, 0.48171043, 1)
 volumetric_fog_emission = Color(0.19061658, 0.24087217, 0.24478444, 1)
 volumetric_fog_emission_energy = 0.2
@@ -54,9 +54,10 @@ light_energy = 0.3
 light_specular = 16.0
 
 [node name="testfloor" parent="." unique_id=1900875952 instance=ExtResource("1_dji2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 48.12933)
 
 [node name="player" parent="." unique_id=1332932682 instance=ExtResource("2_eu055")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 3.1023273, 0)
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 0, 6.9791203, -2.1708355)
 
 [node name="MeshInstance3D" parent="." unique_id=1752869269 instance=ExtResource("3_628wc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.728145, 6.512904)

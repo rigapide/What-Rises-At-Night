@@ -1,9 +1,5 @@
 [gd_scene format=3 uid="uid://4p8mvf45c1fq"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_qsduo"]
-resource_local_to_scene = true
-size = Vector3(25, 1, 34)
-
 [sub_resource type="BoxMesh" id="BoxMesh_rxcbq"]
 resource_local_to_scene = true
 size = Vector3(6, 20, 1)
@@ -18,7 +14,7 @@ size = Vector3(6, 20, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_2e8sc"]
 resource_local_to_scene = true
-size = Vector3(1, 20, 31)
+size = Vector3(1, 20, 62)
 
 [sub_resource type="BoxMesh" id="BoxMesh_su3vj"]
 resource_local_to_scene = true
@@ -26,11 +22,11 @@ size = Vector3(1, 1, 5)
 
 [sub_resource type="BoxMesh" id="BoxMesh_r74tx"]
 resource_local_to_scene = true
-size = Vector3(51, 1, 42)
+size = Vector3(51, 1, 72)
 
 [sub_resource type="BoxMesh" id="BoxMesh_cv6lw"]
 resource_local_to_scene = true
-size = Vector3(1, 20, 40)
+size = Vector3(1, 20, 71)
 
 [sub_resource type="BoxMesh" id="BoxMesh_k0g6f"]
 resource_local_to_scene = true
@@ -42,7 +38,22 @@ size = Vector3(41, 1, 79)
 
 [sub_resource type="BoxMesh" id="BoxMesh_6h2x7"]
 resource_local_to_scene = true
-size = Vector3(1, 41, 25)
+size = Vector3(1, 28, 25)
+
+[sub_resource type="BoxMesh" id="BoxMesh_04isc"]
+resource_local_to_scene = true
+size = Vector3(1, 13, 14)
+
+[sub_resource type="BoxMesh" id="BoxMesh_c3a5c"]
+resource_local_to_scene = true
+size = Vector3(1, 2, 9)
+
+[sub_resource type="BoxMesh" id="BoxMesh_e2jxk"]
+resource_local_to_scene = true
+size = Vector3(1, 2, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4keks"]
+resource_local_to_scene = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_s21u1"]
 resource_local_to_scene = true
@@ -68,9 +79,33 @@ size = Vector3(2, 15, 1)
 resource_local_to_scene = true
 size = Vector3(10, 21, 1)
 
+[sub_resource type="BoxMesh" id="BoxMesh_c4t0s"]
+resource_local_to_scene = true
+size = Vector3(1, 11, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mr5bh"]
+resource_local_to_scene = true
+size = Vector3(1, 10, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f7uxg"]
+resource_local_to_scene = true
+size = Vector3(1, 9, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_eybsj"]
+resource_local_to_scene = true
+size = Vector3(1, 8, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dox4x"]
+resource_local_to_scene = true
+size = Vector3(1, 5, 14)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pf502"]
+resource_local_to_scene = true
+size = Vector3(1, 2, 4)
+
 [sub_resource type="BoxMesh" id="BoxMesh_hdfok"]
 resource_local_to_scene = true
-size = Vector3(1, 22, 38)
+size = Vector3(1, 9, 38)
 
 [sub_resource type="BoxMesh" id="BoxMesh_6h2lj"]
 resource_local_to_scene = true
@@ -118,7 +153,23 @@ size = Vector3(56, 20, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_4din4"]
 resource_local_to_scene = true
-size = Vector3(50, 1, 15)
+size = Vector3(80, 1, 15)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4nwnf"]
+resource_local_to_scene = true
+size = Vector3(20, 1, 15)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6g3c3"]
+resource_local_to_scene = true
+size = Vector3(23, 1, 15)
+
+[sub_resource type="BoxMesh" id="BoxMesh_l6558"]
+resource_local_to_scene = true
+size = Vector3(14, 1, 16)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1jbw7"]
+resource_local_to_scene = true
+size = Vector3(13, 1, 28)
 
 [sub_resource type="BoxMesh" id="BoxMesh_wlybh"]
 resource_local_to_scene = true
@@ -138,11 +189,11 @@ size = Vector3(14, 1, 31)
 
 [sub_resource type="BoxMesh" id="BoxMesh_dqnll"]
 resource_local_to_scene = true
-size = Vector3(24, 1, 14)
+size = Vector3(27, 1, 14)
 
 [sub_resource type="BoxMesh" id="BoxMesh_k0eby"]
 resource_local_to_scene = true
-size = Vector3(17, 1, 14)
+size = Vector3(22, 1, 14)
 
 [sub_resource type="BoxMesh" id="BoxMesh_si2de"]
 resource_local_to_scene = true
@@ -154,7 +205,31 @@ size = Vector3(1, 21, 63)
 
 [sub_resource type="BoxMesh" id="BoxMesh_y8ly2"]
 resource_local_to_scene = true
-size = Vector3(20, 16, 1)
+size = Vector3(10, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_g52qd"]
+resource_local_to_scene = true
+size = Vector3(9, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ju1e1"]
+resource_local_to_scene = true
+size = Vector3(1, 16, 15)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yscuj"]
+resource_local_to_scene = true
+size = Vector3(23, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kl6ln"]
+resource_local_to_scene = true
+size = Vector3(1, 16, 16)
+
+[sub_resource type="BoxMesh" id="BoxMesh_oppfv"]
+resource_local_to_scene = true
+size = Vector3(10, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_62hgw"]
+resource_local_to_scene = true
+size = Vector3(12, 16, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_tivmy"]
 resource_local_to_scene = true
@@ -162,7 +237,7 @@ size = Vector3(37, 32, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_tf85s"]
 resource_local_to_scene = true
-size = Vector3(23, 32, 1)
+size = Vector3(28, 32, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_wo0pt"]
 resource_local_to_scene = true
@@ -182,15 +257,63 @@ size = Vector3(5, 16, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_abilu"]
 resource_local_to_scene = true
-size = Vector3(1, 16, 4)
+size = Vector3(1, 16, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ed8wa"]
+resource_local_to_scene = true
+size = Vector3(13, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kkp4i"]
+resource_local_to_scene = true
+size = Vector3(13, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yr7tm"]
+resource_local_to_scene = true
+size = Vector3(1, 16, 16)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qldmg"]
+resource_local_to_scene = true
+size = Vector3(18, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_63mid"]
+resource_local_to_scene = true
+size = Vector3(1, 16, 15)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lyvgk"]
+resource_local_to_scene = true
+size = Vector3(20, 16, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ol6eo"]
 resource_local_to_scene = true
-size = Vector3(1, 16, 4)
+size = Vector3(1, 16, 16)
+
+[sub_resource type="BoxMesh" id="BoxMesh_t5oe2"]
+resource_local_to_scene = true
+size = Vector3(1, 16, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_w1o3p"]
+resource_local_to_scene = true
+size = Vector3(1, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mo6h7"]
+resource_local_to_scene = true
+size = Vector3(1, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_28x06"]
+resource_local_to_scene = true
+size = Vector3(11, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_u2jf0"]
+resource_local_to_scene = true
+size = Vector3(1, 2, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sfwxt"]
+resource_local_to_scene = true
+size = Vector3(1, 16, 27)
 
 [sub_resource type="BoxMesh" id="BoxMesh_lolmt"]
 resource_local_to_scene = true
-size = Vector3(60, 1, 99)
+size = Vector3(55, 1, 99)
 
 [sub_resource type="BoxMesh" id="BoxMesh_7np53"]
 resource_local_to_scene = true
@@ -200,13 +323,25 @@ size = Vector3(22, 1, 12)
 resource_local_to_scene = true
 size = Vector3(25, 1, 57)
 
+[sub_resource type="BoxMesh" id="BoxMesh_nhbpl"]
+resource_local_to_scene = true
+size = Vector3(27, 1, 57)
+
 [sub_resource type="BoxMesh" id="BoxMesh_nallt"]
 resource_local_to_scene = true
-size = Vector3(114, 1, 26)
+size = Vector3(119, 1, 26)
+
+[sub_resource type="BoxMesh" id="BoxMesh_y6wc5"]
+resource_local_to_scene = true
+size = Vector3(33, 1, 27)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7ysws"]
+resource_local_to_scene = true
+size = Vector3(33, 1, 33)
 
 [sub_resource type="BoxMesh" id="BoxMesh_68u42"]
 resource_local_to_scene = true
-size = Vector3(58, 1, 26)
+size = Vector3(58, 1, 27)
 
 [sub_resource type="BoxMesh" id="BoxMesh_bn4i0"]
 resource_local_to_scene = true
@@ -216,6 +351,10 @@ size = Vector3(60, 33, 1)
 resource_local_to_scene = true
 size = Vector3(1, 33, 101)
 
+[sub_resource type="BoxMesh" id="BoxMesh_p5258"]
+resource_local_to_scene = true
+size = Vector3(1, 8, 15)
+
 [sub_resource type="BoxMesh" id="BoxMesh_vkj6m"]
 resource_local_to_scene = true
 size = Vector3(39, 33, 1)
@@ -224,11 +363,23 @@ size = Vector3(39, 33, 1)
 resource_local_to_scene = true
 size = Vector3(12, 33, 1)
 
+[sub_resource type="BoxMesh" id="BoxMesh_n134x"]
+resource_local_to_scene = true
+size = Vector3(1, 33, 11)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7u743"]
+resource_local_to_scene = true
+size = Vector3(1, 33, 12)
+
 [sub_resource type="BoxMesh" id="BoxMesh_g7vqj"]
 resource_local_to_scene = true
 size = Vector3(1, 33, 56)
 
 [sub_resource type="BoxMesh" id="BoxMesh_jahyp"]
+resource_local_to_scene = true
+size = Vector3(26, 33, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xea2a"]
 resource_local_to_scene = true
 size = Vector3(26, 33, 1)
 
@@ -246,7 +397,7 @@ size = Vector3(13, 33, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_hsbm5"]
 resource_local_to_scene = true
-size = Vector3(4, 33, 1)
+size = Vector3(10, 33, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_0bvl2"]
 resource_local_to_scene = true
@@ -254,7 +405,47 @@ size = Vector3(1, 33, 57)
 
 [sub_resource type="BoxMesh" id="BoxMesh_g7xfw"]
 resource_local_to_scene = true
-size = Vector3(4, 33, 1)
+size = Vector3(6, 33, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_s7vhh"]
+resource_local_to_scene = true
+size = Vector3(34, 19, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tjvv0"]
+resource_local_to_scene = true
+size = Vector3(1, 12, 4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1pwlm"]
+resource_local_to_scene = true
+size = Vector3(25, 1, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gsswq"]
+resource_local_to_scene = true
+size = Vector3(174, 1, 26)
+
+[sub_resource type="BoxMesh" id="BoxMesh_e6c7n"]
+resource_local_to_scene = true
+size = Vector3(32, 1, 11)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2k2s3"]
+resource_local_to_scene = true
+size = Vector3(25, 1, 57)
+
+[sub_resource type="BoxMesh" id="BoxMesh_a3hwn"]
+resource_local_to_scene = true
+size = Vector3(26, 1, 57)
+
+[sub_resource type="BoxMesh" id="BoxMesh_k7r0m"]
+resource_local_to_scene = true
+size = Vector3(56, 1, 73)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rn2p8"]
+resource_local_to_scene = true
+size = Vector3(25, 1, 44)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bnrbu"]
+resource_local_to_scene = true
+size = Vector3(58, 1, 26)
 
 [sub_resource type="BoxMesh" id="BoxMesh_p1stq"]
 resource_local_to_scene = true
@@ -268,28 +459,368 @@ size = Vector3(21, 33, 1)
 resource_local_to_scene = true
 size = Vector3(18, 33, 1)
 
+[sub_resource type="BoxMesh" id="BoxMesh_4ncs5"]
+resource_local_to_scene = true
+size = Vector3(19, 7, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6j82y"]
+resource_local_to_scene = true
+size = Vector3(20, 8, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_k2vye"]
+resource_local_to_scene = true
+size = Vector3(21, 8, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_18kkr"]
+resource_local_to_scene = true
+size = Vector3(21, 7, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ebney"]
+resource_local_to_scene = true
+size = Vector3(1, 7, 16)
+
 [sub_resource type="BoxMesh" id="BoxMesh_7n22j"]
 resource_local_to_scene = true
 size = Vector3(1, 33, 54)
 
 [sub_resource type="BoxMesh" id="BoxMesh_nuv01"]
 resource_local_to_scene = true
-size = Vector3(43, 33, 1)
+size = Vector3(20, 33, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bdv5n"]
+resource_local_to_scene = true
+size = Vector3(8, 33, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qsk8w"]
+resource_local_to_scene = true
+size = Vector3(16, 6, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_6pwvl"]
 resource_local_to_scene = true
 size = Vector3(18, 33, 1)
 
-[node name="THE HOUSE" type="Node3D" unique_id=671822904]
+[sub_resource type="BoxMesh" id="BoxMesh_qj77v"]
+resource_local_to_scene = true
+size = Vector3(86, 1, 129)
 
-[node name="floor5" type="MeshInstance3D" parent="." unique_id=194498921]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, -38, 213.5)
-mesh = SubResource("BoxMesh_qsduo")
+[sub_resource type="BoxMesh" id="BoxMesh_um42u"]
+resource_local_to_scene = true
+size = Vector3(86, 1, 129)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mrva4"]
+resource_local_to_scene = true
+size = Vector3(16, 1, 32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3u0xw"]
+resource_local_to_scene = true
+size = Vector3(17, 1, 32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ha01x"]
+resource_local_to_scene = true
+size = Vector3(1, 33, 16)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kyid2"]
+resource_local_to_scene = true
+size = Vector3(28, 33, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8t0js"]
+resource_local_to_scene = true
+size = Vector3(1, 33, 83)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gr7sm"]
+resource_local_to_scene = true
+size = Vector3(86, 33, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lewsw"]
+resource_local_to_scene = true
+size = Vector3(16, 33, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5xrdm"]
+resource_local_to_scene = true
+size = Vector3(16, 33, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8onr1"]
+resource_local_to_scene = true
+size = Vector3(1, 33, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_c3piv"]
+resource_local_to_scene = true
+size = Vector3(1, 33, 34)
+
+[sub_resource type="BoxMesh" id="BoxMesh_p8obs"]
+resource_local_to_scene = true
+size = Vector3(1, 33, 102)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5j5i4"]
+resource_local_to_scene = true
+size = Vector3(1, 8, 18)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4663c"]
+resource_local_to_scene = true
+size = Vector3(1, 9, 31)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6dw5y"]
+resource_local_to_scene = true
+size = Vector3(1, 9, 31)
+
+[sub_resource type="BoxMesh" id="BoxMesh_a2pcf"]
+resource_local_to_scene = true
+size = Vector3(78, 1, 120)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mmf4h"]
+resource_local_to_scene = true
+size = Vector3(77, 1, 119)
+
+[sub_resource type="BoxMesh" id="BoxMesh_27lw5"]
+resource_local_to_scene = true
+size = Vector3(27, 1, 52)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kgyc7"]
+resource_local_to_scene = true
+size = Vector3(28, 1, 53)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2vfrv"]
+resource_local_to_scene = true
+size = Vector3(1, 32, 53)
+
+[sub_resource type="BoxMesh" id="BoxMesh_16p43"]
+resource_local_to_scene = true
+size = Vector3(1, 32, 45)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ls310"]
+resource_local_to_scene = true
+size = Vector3(79, 32, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nt7pj"]
+resource_local_to_scene = true
+size = Vector3(1, 32, 119)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dryum"]
+resource_local_to_scene = true
+size = Vector3(1, 9, 33)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wo5mq"]
+resource_local_to_scene = true
+size = Vector3(1, 5, 33)
+
+[sub_resource type="BoxMesh" id="BoxMesh_u42el"]
+resource_local_to_scene = true
+size = Vector3(1, 32, 41)
+
+[sub_resource type="BoxMesh" id="BoxMesh_12asa"]
+resource_local_to_scene = true
+size = Vector3(27, 7, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bwfop"]
+resource_local_to_scene = true
+size = Vector3(5, 25, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_iqats"]
+resource_local_to_scene = true
+size = Vector3(5, 25, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qsduo"]
+resource_local_to_scene = true
+size = Vector3(26, 1, 34)
+
+[sub_resource type="BoxMesh" id="BoxMesh_87w4k"]
+resource_local_to_scene = true
+size = Vector3(26, 1, 34)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ddq5d"]
+resource_local_to_scene = true
+size = Vector3(71, 1, 109)
+
+[sub_resource type="BoxMesh" id="BoxMesh_11bna"]
+resource_local_to_scene = true
+size = Vector3(71, 1, 109)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5js8x"]
+resource_local_to_scene = true
+size = Vector3(1, 32, 15)
+
+[sub_resource type="BoxMesh" id="BoxMesh_iu1fc"]
+resource_local_to_scene = true
+size = Vector3(1, 32, 52)
+
+[sub_resource type="BoxMesh" id="BoxMesh_da3m0"]
+resource_local_to_scene = true
+size = Vector3(98, 32, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_x14vm"]
+resource_local_to_scene = true
+size = Vector3(1, 32, 35)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cljx3"]
+resource_local_to_scene = true
+size = Vector3(26, 32, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jvjbt"]
+resource_local_to_scene = true
+size = Vector3(1, 32, 28)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ntxrc"]
+resource_local_to_scene = true
+size = Vector3(1, 32, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_p0awn"]
+resource_local_to_scene = true
+size = Vector3(1, 32, 6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_exuu1"]
+resource_local_to_scene = true
+size = Vector3(1, 7, 22)
+
+[sub_resource type="BoxMesh" id="BoxMesh_d13h7"]
+resource_local_to_scene = true
+size = Vector3(1, 8, 43)
+
+[sub_resource type="BoxMesh" id="BoxMesh_228c8"]
+resource_local_to_scene = true
+size = Vector3(1, 7, 43)
+
+[sub_resource type="BoxMesh" id="BoxMesh_uxpqv"]
+resource_local_to_scene = true
+size = Vector3(38, 32, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_m17yi"]
+resource_local_to_scene = true
+size = Vector3(10, 32, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5wgma"]
+resource_local_to_scene = true
+size = Vector3(25, 1, 46)
+
+[sub_resource type="BoxMesh" id="BoxMesh_84srt"]
+resource_local_to_scene = true
+size = Vector3(1, 32, 45)
+
+[sub_resource type="BoxMesh" id="BoxMesh_omdy0"]
+resource_local_to_scene = true
+size = Vector3(25, 32, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_uonpi"]
+resource_local_to_scene = true
+size = Vector3(1, 16, 32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mjuvd"]
+resource_local_to_scene = true
+size = Vector3(43, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gekln"]
+resource_local_to_scene = true
+size = Vector3(27, 1, 16)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2wspu"]
+resource_local_to_scene = true
+size = Vector3(19, 1, 16)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dgick"]
+resource_local_to_scene = true
+size = Vector3(18, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sw642"]
+resource_local_to_scene = true
+size = Vector3(1, 16, 13)
+
+[sub_resource type="BoxMesh" id="BoxMesh_htgio"]
+resource_local_to_scene = true
+size = Vector3(16, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pqodi"]
+resource_local_to_scene = true
+size = Vector3(2, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gd1mo"]
+resource_local_to_scene = true
+size = Vector3(2, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tlapk"]
+resource_local_to_scene = true
+size = Vector3(12, 3, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pebdp"]
+resource_local_to_scene = true
+size = Vector3(68, 1, 63)
+
+[sub_resource type="BoxMesh" id="BoxMesh_02uhj"]
+resource_local_to_scene = true
+size = Vector3(43, 1, 30)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xildt"]
+resource_local_to_scene = true
+size = Vector3(1, 16, 75)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vurie"]
+resource_local_to_scene = true
+size = Vector3(68, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1dmv1"]
+resource_local_to_scene = true
+size = Vector3(1, 16, 18)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ihyrc"]
+resource_local_to_scene = true
+size = Vector3(1, 2, 9)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gscs6"]
+resource_local_to_scene = true
+size = Vector3(1, 16, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kuimn"]
+resource_local_to_scene = true
+size = Vector3(46, 1, 37)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1kja2"]
+resource_local_to_scene = true
+size = Vector3(46, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_aklxf"]
+resource_local_to_scene = true
+size = Vector3(1, 16, 39)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4cuq1"]
+resource_local_to_scene = true
+size = Vector3(31, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rc25g"]
+resource_local_to_scene = true
+size = Vector3(46, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_t1bi1"]
+resource_local_to_scene = true
+size = Vector3(1, 16, 30)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1o7x4"]
+resource_local_to_scene = true
+size = Vector3(2, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6s6tm"]
+resource_local_to_scene = true
+size = Vector3(2, 16, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ymrh1"]
+resource_local_to_scene = true
+size = Vector3(12, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gcqmg"]
+resource_local_to_scene = true
+size = Vector3(34, 1, 43)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lq45t"]
+resource_local_to_scene = true
+size = Vector3(15, 1, 26)
+
+[sub_resource type="BoxMesh" id="BoxMesh_j0chu"]
+resource_local_to_scene = true
+size = Vector3(201, 1, 217)
+
+[node name="THE HOUSE" type="Node3D" unique_id=671822904]
 
 [node name="The garrage" type="Node3D" parent="." unique_id=1819014838]
 
 [node name="front wall" type="MeshInstance3D" parent="The garrage" unique_id=1066374633]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, -31)
 mesh = SubResource("BoxMesh_rxcbq")
 
 [node name="front wall5" type="MeshInstance3D" parent="The garrage" unique_id=907404647]
@@ -297,11 +828,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 5.5, 41)
 mesh = SubResource("BoxMesh_nya1o")
 
 [node name="front wall4" type="MeshInstance3D" parent="The garrage" unique_id=1835625853]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 5.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 5.5, -31)
 mesh = SubResource("BoxMesh_m8ju4")
 
 [node name="front wall2" type="MeshInstance3D" parent="The garrage" unique_id=1855368334]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 5.5, 16)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 5.5, 0.5)
 mesh = SubResource("BoxMesh_2e8sc")
 
 [node name="front wall6" type="MeshInstance3D" parent="The garrage" unique_id=966573628]
@@ -329,7 +860,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -4, 38)
 mesh = SubResource("BoxMesh_su3vj")
 
 [node name="floor3" type="MeshInstance3D" parent="The garrage" unique_id=1972730697]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5, -5, 20.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5, -5, 5.5)
 mesh = SubResource("BoxMesh_r74tx")
 
 [node name="front wall12" type="MeshInstance3D" parent="The garrage" unique_id=744135113]
@@ -337,7 +868,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -4, 38)
 mesh = SubResource("BoxMesh_su3vj")
 
 [node name="front wall3" type="MeshInstance3D" parent="The garrage" unique_id=368235953]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5, 5.5, 20.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5, 5.5, 5)
 mesh = SubResource("BoxMesh_cv6lw")
 
 [node name="the living roon" type="Node3D" parent="." unique_id=742412009]
@@ -351,8 +882,24 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.5, 0, 80)
 mesh = SubResource("BoxMesh_ebth5")
 
 [node name="wall1" type="MeshInstance3D" parent="the living roon" unique_id=745945994]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -5, 54)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 1.5, 54)
 mesh = SubResource("BoxMesh_6h2x7")
+
+[node name="wall14" type="MeshInstance3D" parent="the living roon" unique_id=26331591]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -19, 48.5)
+mesh = SubResource("BoxMesh_04isc")
+
+[node name="wall15" type="MeshInstance3D" parent="the living roon" unique_id=1186714560]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -13.5, 60)
+mesh = SubResource("BoxMesh_c3a5c")
+
+[node name="wall16" type="MeshInstance3D" parent="the living roon" unique_id=1143053387]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -15.5, 58)
+mesh = SubResource("BoxMesh_e2jxk")
+
+[node name="wall17" type="MeshInstance3D" parent="the living roon" unique_id=1836574943]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -17, 56)
+mesh = SubResource("BoxMesh_4keks")
 
 [node name="wall3" type="MeshInstance3D" parent="the living roon" unique_id=416380233]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.5, 5.5, 26)
@@ -378,8 +925,32 @@ mesh = SubResource("BoxMesh_34i44")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 5, 41)
 mesh = SubResource("BoxMesh_bbdup")
 
+[node name="wall8" type="MeshInstance3D" parent="the living roon" unique_id=1831645798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -6, 67.5)
+mesh = SubResource("BoxMesh_c4t0s")
+
+[node name="wall9" type="MeshInstance3D" parent="the living roon" unique_id=96605398]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -5.5, 69.5)
+mesh = SubResource("BoxMesh_mr5bh")
+
+[node name="wall10" type="MeshInstance3D" parent="the living roon" unique_id=1021552248]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -5, 71.5)
+mesh = SubResource("BoxMesh_f7uxg")
+
+[node name="wall11" type="MeshInstance3D" parent="the living roon" unique_id=1668969887]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -4.5, 73.5)
+mesh = SubResource("BoxMesh_eybsj")
+
+[node name="wall12" type="MeshInstance3D" parent="the living roon" unique_id=545513231]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -3, 81.5)
+mesh = SubResource("BoxMesh_dox4x")
+
+[node name="wall13" type="MeshInstance3D" parent="the living roon" unique_id=965505507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -6.5, 76.5)
+mesh = SubResource("BoxMesh_pf502")
+
 [node name="rail" type="MeshInstance3D" parent="the living roon" unique_id=1828942307]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -2.5, 85.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 4, 85.5)
 mesh = SubResource("BoxMesh_hdfok")
 
 [node name="The Kitchen" type="Node3D" parent="." unique_id=1423698993]
@@ -431,8 +1002,24 @@ mesh = SubResource("BoxMesh_ki4et")
 [node name="The stairwell" type="Node3D" parent="." unique_id=595686356]
 
 [node name="floor1" type="MeshInstance3D" parent="The stairwell" unique_id=978686564]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 112)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 112)
 mesh = SubResource("BoxMesh_4din4")
+
+[node name="floor5" type="MeshInstance3D" parent="The stairwell" unique_id=1647236437]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, 127)
+mesh = SubResource("BoxMesh_4nwnf")
+
+[node name="floor4" type="MeshInstance3D" parent="The stairwell" unique_id=1904805449]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5, 0, 97)
+mesh = SubResource("BoxMesh_6g3c3")
+
+[node name="floor3" type="MeshInstance3D" parent="The stairwell" unique_id=1794679389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 0, 112.5)
+mesh = SubResource("BoxMesh_l6558")
+
+[node name="floor6" type="MeshInstance3D" parent="The stairwell" unique_id=1720892109]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.5, 0, 133.5)
+mesh = SubResource("BoxMesh_1jbw7")
 
 [node name="floor2" type="MeshInstance3D" parent="The stairwell" unique_id=487063098]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 97.5)
@@ -579,11 +1166,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -6, 26)
 mesh = SubResource("BoxMesh_nljph")
 
 [node name="floor 6" type="MeshInstance3D" parent="The stairwell" unique_id=1897353078]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -6, 17.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5, -6, 17.5)
 mesh = SubResource("BoxMesh_dqnll")
 
 [node name="floor 4" type="MeshInstance3D" parent="The stairwell" unique_id=1458855312]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, -38, 17.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -38, 17.5)
 mesh = SubResource("BoxMesh_k0eby")
 
 [node name="stair19" type="MeshInstance3D" parent="The stairwell" unique_id=71870795]
@@ -603,15 +1190,39 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 5, 73)
 mesh = SubResource("BoxMesh_r8sb8")
 
 [node name="wall2" type="MeshInstance3D" parent="The stairwell" unique_id=234925908]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 7.5, 104)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 7.5, 104)
 mesh = SubResource("BoxMesh_y8ly2")
+
+[node name="wall15" type="MeshInstance3D" parent="The stairwell" unique_id=2027270549]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5, 7.5, 104)
+mesh = SubResource("BoxMesh_g52qd")
+
+[node name="wall17" type="MeshInstance3D" parent="The stairwell" unique_id=1383520164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5, 7.5, 96)
+mesh = SubResource("BoxMesh_ju1e1")
+
+[node name="wall18" type="MeshInstance3D" parent="The stairwell" unique_id=506527253]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5, 7.5, 89)
+mesh = SubResource("BoxMesh_yscuj")
+
+[node name="wall23" type="MeshInstance3D" parent="The stairwell" unique_id=1526312388]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.5, 7.5, 80.5)
+mesh = SubResource("BoxMesh_kl6ln")
+
+[node name="wall19" type="MeshInstance3D" parent="The stairwell" unique_id=1136960871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 14.5, 104)
+mesh = SubResource("BoxMesh_oppfv")
+
+[node name="wall16" type="MeshInstance3D" parent="The stairwell" unique_id=2003063318]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 7.5, 104)
+mesh = SubResource("BoxMesh_62hgw")
 
 [node name="wall6" type="MeshInstance3D" parent="The stairwell" unique_id=1183309239]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, -21.5, 10)
 mesh = SubResource("BoxMesh_tivmy")
 
 [node name="wall8" type="MeshInstance3D" parent="The stairwell" unique_id=1277052535]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5, -21.5, 25)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, -21.5, 25)
 mesh = SubResource("BoxMesh_tf85s")
 
 [node name="wall9" type="MeshInstance3D" parent="The stairwell" unique_id=1132055554]
@@ -627,21 +1238,69 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -19.5, 25.5)
 mesh = SubResource("BoxMesh_lstqy")
 
 [node name="wall3" type="MeshInstance3D" parent="The stairwell" unique_id=820329765]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.5, 7.5, 104)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.5, 7.5, 104)
 mesh = SubResource("BoxMesh_1k3ce")
 
 [node name="wall4" type="MeshInstance3D" parent="The stairwell" unique_id=818780679]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.5, 7.5, 106.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.5, 7.5, 104.5)
 mesh = SubResource("BoxMesh_abilu")
 
+[node name="wall11" type="MeshInstance3D" parent="The stairwell" unique_id=970833050]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.5, 7.5, 104)
+mesh = SubResource("BoxMesh_ed8wa")
+
+[node name="wall14" type="MeshInstance3D" parent="The stairwell" unique_id=1930052277]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.5, 7.5, 121)
+mesh = SubResource("BoxMesh_kkp4i")
+
+[node name="wall12" type="MeshInstance3D" parent="The stairwell" unique_id=498427765]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.5, 7.5, 112.5)
+mesh = SubResource("BoxMesh_yr7tm")
+
+[node name="wall13" type="MeshInstance3D" parent="The stairwell" unique_id=890629915]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 7.5, 120)
+mesh = SubResource("BoxMesh_qldmg")
+
+[node name="wall20" type="MeshInstance3D" parent="The stairwell" unique_id=732633234]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.5, 7.5, 128)
+mesh = SubResource("BoxMesh_63mid")
+
+[node name="wall21" type="MeshInstance3D" parent="The stairwell" unique_id=1404139676]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 7.5, 135)
+mesh = SubResource("BoxMesh_lyvgk")
+
 [node name="wall5" type="MeshInstance3D" parent="The stairwell" unique_id=1293419642]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.5, 7.5, 121.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.5, 7.5, 127.5)
 mesh = SubResource("BoxMesh_ol6eo")
+
+[node name="wall24" type="MeshInstance3D" parent="The stairwell" unique_id=1648080907]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.5, 7.5, 146.5)
+mesh = SubResource("BoxMesh_t5oe2")
+
+[node name="wall25" type="MeshInstance3D" parent="The stairwell" unique_id=426955940]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.5, 7.5, 147)
+mesh = SubResource("BoxMesh_w1o3p")
+
+[node name="wall26" type="MeshInstance3D" parent="The stairwell" unique_id=398792812]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.5, 7.5, 147)
+mesh = SubResource("BoxMesh_mo6h7")
+
+[node name="wall27" type="MeshInstance3D" parent="The stairwell" unique_id=2073662452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.5, 14.5, 147)
+mesh = SubResource("BoxMesh_28x06")
+
+[node name="wall28" type="MeshInstance3D" parent="The stairwell" unique_id=750412954]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.5, 14.5, 140.5)
+mesh = SubResource("BoxMesh_u2jf0")
+
+[node name="wall22" type="MeshInstance3D" parent="The stairwell" unique_id=166786196]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.5, 7.5, 134)
+mesh = SubResource("BoxMesh_sfwxt")
 
 [node name="The game room" type="Node3D" parent="." unique_id=884936530]
 
 [node name="floor1" type="MeshInstance3D" parent="The game room" unique_id=391828138]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, -38, 60)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.5, -38, 60)
 mesh = SubResource("BoxMesh_lolmt")
 
 [node name="floor3" type="MeshInstance3D" parent="The game room" unique_id=665593950]
@@ -652,12 +1311,24 @@ mesh = SubResource("BoxMesh_7np53")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, -38, 138)
 mesh = SubResource("BoxMesh_biurs")
 
+[node name="floor6" type="MeshInstance3D" parent="The game room" unique_id=1239171673]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.5, -38, 138)
+mesh = SubResource("BoxMesh_nhbpl")
+
 [node name="floor4" type="MeshInstance3D" parent="The game room" unique_id=1665701152]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, -38, 96.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.5, -38, 96.5)
 mesh = SubResource("BoxMesh_nallt")
 
+[node name="floor7" type="MeshInstance3D" parent="The game room" unique_id=1645037438]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5, -38, 70)
+mesh = SubResource("BoxMesh_y6wc5")
+
+[node name="ceiling1" type="MeshInstance3D" parent="The game room" unique_id=895286886]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, -12.5, -14, 66.80385)
+mesh = SubResource("BoxMesh_7ysws")
+
 [node name="floor5" type="MeshInstance3D" parent="The game room" unique_id=938014587]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59, -38, 70.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59, -38, 70)
 mesh = SubResource("BoxMesh_68u42")
 
 [node name="wall1" type="MeshInstance3D" parent="The game room" unique_id=7727215]
@@ -668,6 +1339,10 @@ mesh = SubResource("BoxMesh_bn4i0")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.5, -22, 60.001)
 mesh = SubResource("BoxMesh_5ubdo")
 
+[node name="wall27" type="MeshInstance3D" parent="The game room" unique_id=625390961]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.5, -10.5, 18.001)
+mesh = SubResource("BoxMesh_p5258")
+
 [node name="wall3" type="MeshInstance3D" parent="The game room" unique_id=710892475]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.5, -22, 110.001)
 mesh = SubResource("BoxMesh_vkj6m")
@@ -676,6 +1351,14 @@ mesh = SubResource("BoxMesh_vkj6m")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -22, 110.001)
 mesh = SubResource("BoxMesh_su2fw")
 
+[node name="wall24" type="MeshInstance3D" parent="The game room" unique_id=3072101]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.5, -22, 116.001)
+mesh = SubResource("BoxMesh_n134x")
+
+[node name="wall25" type="MeshInstance3D" parent="The game room" unique_id=1139002838]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5, -22, 115.501)
+mesh = SubResource("BoxMesh_7u743")
+
 [node name="wall8" type="MeshInstance3D" parent="The game room" unique_id=1012845156]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5, -22, 138.501)
 mesh = SubResource("BoxMesh_g7vqj")
@@ -683,6 +1366,10 @@ mesh = SubResource("BoxMesh_g7vqj")
 [node name="wall9" type="MeshInstance3D" parent="The game room" unique_id=1040080954]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -22, 167.001)
 mesh = SubResource("BoxMesh_jahyp")
+
+[node name="wall28" type="MeshInstance3D" parent="The game room" unique_id=549824822]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, -22, 167.001)
+mesh = SubResource("BoxMesh_xea2a")
 
 [node name="wall10" type="MeshInstance3D" parent="The game room" unique_id=858550850]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -22, 161.501)
@@ -697,16 +1384,56 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -22, 83.001)
 mesh = SubResource("BoxMesh_qwxjo")
 
 [node name="wall12" type="MeshInstance3D" parent="The game room" unique_id=2117064539]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, -22, 83.001)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, -22, 83.001)
 mesh = SubResource("BoxMesh_hsbm5")
 
 [node name="wall7" type="MeshInstance3D" parent="The game room" unique_id=1211604505]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.5, -22, 54.001)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.5, -22, 54.001)
 mesh = SubResource("BoxMesh_0bvl2")
 
 [node name="wall6" type="MeshInstance3D" parent="The game room" unique_id=543911097]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, -22, 83.001)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, -22, 83.001)
 mesh = SubResource("BoxMesh_g7xfw")
+
+[node name="wall29" type="MeshInstance3D" parent="The game room" unique_id=1434915773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, -29, 56.001)
+mesh = SubResource("BoxMesh_s7vhh")
+
+[node name="wall31" type="MeshInstance3D" parent="The game room" unique_id=2131324844]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, -13.5, 80.501)
+mesh = SubResource("BoxMesh_tjvv0")
+
+[node name="ceiling2" type="MeshInstance3D" parent="The game room" unique_id=1604823854]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5, -8, 80.001)
+mesh = SubResource("BoxMesh_1pwlm")
+
+[node name="ceiling3" type="MeshInstance3D" parent="The game room" unique_id=2039406576]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -6, 96.501)
+mesh = SubResource("BoxMesh_gsswq")
+
+[node name="ceiling7" type="MeshInstance3D" parent="The game room" unique_id=1563348493]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31, -6, 115.001)
+mesh = SubResource("BoxMesh_e6c7n")
+
+[node name="ceiling8" type="MeshInstance3D" parent="The game room" unique_id=830625703]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, -6, 138.001)
+mesh = SubResource("BoxMesh_2k2s3")
+
+[node name="ceiling9" type="MeshInstance3D" parent="The game room" unique_id=1205274732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, -6, 138.001)
+mesh = SubResource("BoxMesh_a3hwn")
+
+[node name="ceiling5" type="MeshInstance3D" parent="The game room" unique_id=77658783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, -6, 47.001)
+mesh = SubResource("BoxMesh_k7r0m")
+
+[node name="ceiling6" type="MeshInstance3D" parent="The game room" unique_id=2024381353]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, -6, 60.501)
+mesh = SubResource("BoxMesh_rn2p8")
+
+[node name="ceiling4" type="MeshInstance3D" parent="The game room" unique_id=963365932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59, -6, 70.501)
+mesh = SubResource("BoxMesh_bnrbu")
 
 [node name="wall13" type="MeshInstance3D" parent="The game room" unique_id=1874495225]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.5, -22, 69.501)
@@ -720,14 +1447,378 @@ mesh = SubResource("BoxMesh_0hjnt")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79, -22, 57.001)
 mesh = SubResource("BoxMesh_11dhg")
 
+[node name="wall17" type="MeshInstance3D" parent="The game room" unique_id=2112316862]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.5, -9, 57.001)
+mesh = SubResource("BoxMesh_4ncs5")
+
+[node name="wall20" type="MeshInstance3D" parent="The game room" unique_id=1630296131]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.5, -9, 110.001)
+mesh = SubResource("BoxMesh_6j82y")
+
+[node name="wall21" type="MeshInstance3D" parent="The game room" unique_id=151477421]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -9.5, 83.001)
+mesh = SubResource("BoxMesh_6j82y")
+
+[node name="wall22" type="MeshInstance3D" parent="The game room" unique_id=1316853724]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, -9.5, 83.001)
+mesh = SubResource("BoxMesh_k2vye")
+
+[node name="wall23" type="MeshInstance3D" parent="The game room" unique_id=864118602]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.5, -9, 121.001)
+mesh = SubResource("BoxMesh_18kkr")
+
+[node name="wall26" type="MeshInstance3D" parent="The game room" unique_id=70713807]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -9, 147.501)
+mesh = SubResource("BoxMesh_ebney")
+
 [node name="wall16" type="MeshInstance3D" parent="The game room" unique_id=930561874]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88.5, -22, 83.501)
 mesh = SubResource("BoxMesh_7n22j")
 
 [node name="wall18" type="MeshInstance3D" parent="The game room" unique_id=1007666224]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.5, -22, 110.001)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, -22, 110.001)
 mesh = SubResource("BoxMesh_nuv01")
+
+[node name="wall32" type="MeshInstance3D" parent="The game room" unique_id=1205023521]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -22, 110.001)
+mesh = SubResource("BoxMesh_bdv5n")
+
+[node name="wall33" type="MeshInstance3D" parent="The game room" unique_id=795118836]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, -9.5, 110.001)
+mesh = SubResource("BoxMesh_qsk8w")
 
 [node name="wall19" type="MeshInstance3D" parent="The game room" unique_id=2065127317]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79, -22, 110.001)
 mesh = SubResource("BoxMesh_6pwvl")
+
+[node name="the bakers room" type="Node3D" parent="." unique_id=1608226734]
+
+[node name="floor1" type="MeshInstance3D" parent="the bakers room" unique_id=1445762751]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73, -38, -8)
+mesh = SubResource("BoxMesh_qj77v")
+
+[node name="ceiling1" type="MeshInstance3D" parent="the bakers room" unique_id=1374980737]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73, -6, -8)
+mesh = SubResource("BoxMesh_um42u")
+
+[node name="ceiling2" type="MeshInstance3D" parent="the bakers room" unique_id=1204147583]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, -6, -56.5)
+mesh = SubResource("BoxMesh_mrva4")
+
+[node name="floor3" type="MeshInstance3D" parent="the bakers room" unique_id=322844868]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5, -38, -56.5)
+mesh = SubResource("BoxMesh_3u0xw")
+
+[node name="wall1" type="MeshInstance3D" parent="the bakers room" unique_id=1406214714]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -116.5, -22, 48.5)
+mesh = SubResource("BoxMesh_ha01x")
+
+[node name="wall12" type="MeshInstance3D" parent="the bakers room" unique_id=2067974362]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -103, -22, 57)
+mesh = SubResource("BoxMesh_kyid2")
+
+[node name="wall2" type="MeshInstance3D" parent="the bakers room" unique_id=1572267413]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -116.5, -22, -32)
+mesh = SubResource("BoxMesh_8t0js")
+
+[node name="wall5" type="MeshInstance3D" parent="the bakers room" unique_id=1264302799]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73, -22, -73)
+mesh = SubResource("BoxMesh_gr7sm")
+
+[node name="wall9" type="MeshInstance3D" parent="the bakers room" unique_id=351481104]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, -22, -73)
+mesh = SubResource("BoxMesh_lewsw")
+
+[node name="wall11" type="MeshInstance3D" parent="the bakers room" unique_id=367160529]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, -22, -40)
+mesh = SubResource("BoxMesh_5xrdm")
+
+[node name="wall6" type="MeshInstance3D" parent="the bakers room" unique_id=27214349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.5, -22, -68.5)
+mesh = SubResource("BoxMesh_8onr1")
+
+[node name="wall10" type="MeshInstance3D" parent="the bakers room" unique_id=269834997]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5, -22, -56.5)
+mesh = SubResource("BoxMesh_c3piv")
+
+[node name="wall7" type="MeshInstance3D" parent="the bakers room" unique_id=1696703130]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.5, -22, 5.5)
+mesh = SubResource("BoxMesh_p8obs")
+
+[node name="wall8" type="MeshInstance3D" parent="the bakers room" unique_id=451493493]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.5, -9.5, -54.5)
+mesh = SubResource("BoxMesh_5j5i4")
+
+[node name="wall3" type="MeshInstance3D" parent="the bakers room" unique_id=559207472]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -116.5, -34, 25)
+mesh = SubResource("BoxMesh_4663c")
+
+[node name="wall4" type="MeshInstance3D" parent="the bakers room" unique_id=1804075011]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -116.5, -10, 25)
+mesh = SubResource("BoxMesh_6dw5y")
+
+[node name="the storage array" type="Node3D" parent="." unique_id=1727257182]
+
+[node name="floor1" type="MeshInstance3D" parent="the storage array" unique_id=1252568123]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, -38, 169.5)
+mesh = SubResource("BoxMesh_a2pcf")
+
+[node name="ceiling1" type="MeshInstance3D" parent="the storage array" unique_id=259663045]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.5, -6, 170)
+mesh = SubResource("BoxMesh_mmf4h")
+
+[node name="ceiling2" type="MeshInstance3D" parent="the storage array" unique_id=1737822875]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.5, -6, 83.5)
+mesh = SubResource("BoxMesh_27lw5")
+
+[node name="floor2" type="MeshInstance3D" parent="the storage array" unique_id=1009874979]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -103, -38, 83)
+mesh = SubResource("BoxMesh_kgyc7")
+
+[node name="wall1" type="MeshInstance3D" parent="the storage array" unique_id=2003307685]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -116.5, -21.5, 84)
+mesh = SubResource("BoxMesh_2vfrv")
+
+[node name="wall3" type="MeshInstance3D" parent="the storage array" unique_id=1132748305]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -116.5, -21.5, 207)
+mesh = SubResource("BoxMesh_16p43")
+
+[node name="wall7" type="MeshInstance3D" parent="the storage array" unique_id=1991362572]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.5, -21.5, 230)
+mesh = SubResource("BoxMesh_ls310")
+
+[node name="wall8" type="MeshInstance3D" parent="the storage array" unique_id=1659348439]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.5, -21.5, 170)
+mesh = SubResource("BoxMesh_nt7pj")
+
+[node name="wall5" type="MeshInstance3D" parent="the storage array" unique_id=1714159751]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -116.5, -33, 168)
+mesh = SubResource("BoxMesh_dryum")
+
+[node name="wall6" type="MeshInstance3D" parent="the storage array" unique_id=2077383593]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -116.5, -8, 168)
+mesh = SubResource("BoxMesh_wo5mq")
+
+[node name="wall4" type="MeshInstance3D" parent="the storage array" unique_id=700619335]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -116.5, -21.5, 131)
+mesh = SubResource("BoxMesh_u42el")
+
+[node name="wall9" type="MeshInstance3D" parent="the storage array" unique_id=1177723302]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.5, -9, 110)
+mesh = SubResource("BoxMesh_12asa")
+
+[node name="wall10" type="MeshInstance3D" parent="the storage array" unique_id=131097060]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -91.5, -25, 110)
+mesh = SubResource("BoxMesh_bwfop")
+
+[node name="wall11" type="MeshInstance3D" parent="the storage array" unique_id=1275832116]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -113.5, -25, 110)
+mesh = SubResource("BoxMesh_iqats")
+
+[node name="childs room" type="Node3D" parent="." unique_id=1944989618]
+
+[node name="floor1" type="MeshInstance3D" parent="childs room" unique_id=194498921]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -38, 213.5)
+mesh = SubResource("BoxMesh_qsduo")
+
+[node name="ceiling1" type="MeshInstance3D" parent="childs room" unique_id=58752871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -6, 213.5)
+mesh = SubResource("BoxMesh_87w4k")
+
+[node name="ceiling2" type="MeshInstance3D" parent="childs room" unique_id=524285216]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.5, -6, 176)
+mesh = SubResource("BoxMesh_ddq5d")
+
+[node name="floor2" type="MeshInstance3D" parent="childs room" unique_id=243259616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.5, -38, 176)
+mesh = SubResource("BoxMesh_11bna")
+
+[node name="wall1" type="MeshInstance3D" parent="childs room" unique_id=527835388]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.5, -21.5, 128)
+mesh = SubResource("BoxMesh_5js8x")
+
+[node name="wall4" type="MeshInstance3D" parent="childs room" unique_id=983157872]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.5, -21.5, 204.5)
+mesh = SubResource("BoxMesh_iu1fc")
+
+[node name="wall7" type="MeshInstance3D" parent="childs room" unique_id=257923874]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, -21.5, 231)
+mesh = SubResource("BoxMesh_da3m0")
+
+[node name="wall8" type="MeshInstance3D" parent="childs room" unique_id=1995856320]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -21.5, 213)
+mesh = SubResource("BoxMesh_x14vm")
+
+[node name="wall9" type="MeshInstance3D" parent="childs room" unique_id=1984888566]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -21.5, 196)
+mesh = SubResource("BoxMesh_cljx3")
+
+[node name="wall10" type="MeshInstance3D" parent="childs room" unique_id=471760938]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5, -21.5, 181.5)
+mesh = SubResource("BoxMesh_jvjbt")
+
+[node name="wall11" type="MeshInstance3D" parent="childs room" unique_id=1476216524]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5, -21.5, 199.5)
+mesh = SubResource("BoxMesh_ntxrc")
+
+[node name="wall12" type="MeshInstance3D" parent="childs room" unique_id=719748258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5, -21.5, 227.5)
+mesh = SubResource("BoxMesh_p0awn")
+
+[node name="wall13" type="MeshInstance3D" parent="childs room" unique_id=1042827619]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5, -9, 213.5)
+mesh = SubResource("BoxMesh_exuu1")
+
+[node name="wall5" type="MeshInstance3D" parent="childs room" unique_id=968372976]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.5, -33.5, 157)
+mesh = SubResource("BoxMesh_d13h7")
+
+[node name="wall6" type="MeshInstance3D" parent="childs room" unique_id=196706134]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.5, -9, 157)
+mesh = SubResource("BoxMesh_228c8")
+
+[node name="wall2" type="MeshInstance3D" parent="childs room" unique_id=1854400679]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67, -21.5, 121)
+mesh = SubResource("BoxMesh_uxpqv")
+
+[node name="wall3" type="MeshInstance3D" parent="childs room" unique_id=1875631431]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -21.5, 121)
+mesh = SubResource("BoxMesh_m17yi")
+
+[node name="bathroom" type="Node3D" parent="." unique_id=1294856171]
+
+[node name="floor1" type="MeshInstance3D" parent="bathroom" unique_id=1742315729]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, -38, 60.5)
+mesh = SubResource("BoxMesh_5wgma")
+
+[node name="wall1" type="MeshInstance3D" parent="bathroom" unique_id=265585564]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, -21.5, 60)
+mesh = SubResource("BoxMesh_84srt")
+
+[node name="wall2" type="MeshInstance3D" parent="bathroom" unique_id=26535409]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, -21.5, 38)
+mesh = SubResource("BoxMesh_omdy0")
+
+[node name="bathroom2" type="Node3D" parent="." unique_id=792870868]
+
+[node name="wall1" type="MeshInstance3D" parent="bathroom2" unique_id=1705391717]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5, 7.5, 87.5)
+mesh = SubResource("BoxMesh_uonpi")
+
+[node name="wall2" type="MeshInstance3D" parent="bathroom2" unique_id=1088966475]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.5, 7.5, 72)
+mesh = SubResource("BoxMesh_mjuvd")
+
+[node name="floor1" type="MeshInstance3D" parent="bathroom2" unique_id=1639052507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.5, 0, 80.5)
+mesh = SubResource("BoxMesh_gekln")
+
+[node name="floor2" type="MeshInstance3D" parent="bathroom2" unique_id=1676299083]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.5, 0, 96.5)
+mesh = SubResource("BoxMesh_2wspu")
+
+[node name="the parents room" type="Node3D" parent="." unique_id=273904209]
+
+[node name="wall1" type="MeshInstance3D" parent="the parents room" unique_id=1587714054]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107, 7.5, 117)
+mesh = SubResource("BoxMesh_dgick")
+
+[node name="wall7" type="MeshInstance3D" parent="the parents room" unique_id=1126621029]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 98.5, 7.5, 110)
+mesh = SubResource("BoxMesh_sw642")
+
+[node name="wall8" type="MeshInstance3D" parent="the parents room" unique_id=2102149197]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 7.5, 104)
+mesh = SubResource("BoxMesh_htgio")
+
+[node name="wall9" type="MeshInstance3D" parent="the parents room" unique_id=2045104556]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 7.5, 104)
+mesh = SubResource("BoxMesh_pqodi")
+
+[node name="wall10" type="MeshInstance3D" parent="the parents room" unique_id=488817021]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 114, 7.5, 104)
+mesh = SubResource("BoxMesh_gd1mo")
+
+[node name="wall11" type="MeshInstance3D" parent="the parents room" unique_id=2017008197]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107, 14, 104)
+mesh = SubResource("BoxMesh_tlapk")
+
+[node name="floor1" type="MeshInstance3D" parent="the parents room" unique_id=1279980981]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81, 0, 73)
+mesh = SubResource("BoxMesh_pebdp")
+
+[node name="floor2" type="MeshInstance3D" parent="the parents room" unique_id=902940601]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.5, 0, 56.5)
+mesh = SubResource("BoxMesh_02uhj")
+
+[node name="wall2" type="MeshInstance3D" parent="the parents room" unique_id=709618635]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 115.5, 7.5, 79)
+mesh = SubResource("BoxMesh_xildt")
+
+[node name="wall3" type="MeshInstance3D" parent="the parents room" unique_id=938130418]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82, 7.5, 41)
+mesh = SubResource("BoxMesh_vurie")
+
+[node name="wall4" type="MeshInstance3D" parent="the parents room" unique_id=921070154]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5, 7.5, 62.5)
+mesh = SubResource("BoxMesh_1dmv1")
+
+[node name="wall6" type="MeshInstance3D" parent="the parents room" unique_id=1905602020]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5, 14.5, 49)
+mesh = SubResource("BoxMesh_ihyrc")
+
+[node name="wall5" type="MeshInstance3D" parent="the parents room" unique_id=1456881180]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5, 7.5, 43)
+mesh = SubResource("BoxMesh_gscs6")
+
+[node name="x room" type="Node3D" parent="." unique_id=1802335805]
+
+[node name="floor1" type="MeshInstance3D" parent="x room" unique_id=1600917519]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0, 166)
+mesh = SubResource("BoxMesh_kuimn")
+
+[node name="wall1" type="MeshInstance3D" parent="x room" unique_id=348981686]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 7.5, 185)
+mesh = SubResource("BoxMesh_1kja2")
+
+[node name="wall3" type="MeshInstance3D" parent="x room" unique_id=286685342]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.5, 7.5, 166)
+mesh = SubResource("BoxMesh_aklxf")
+
+[node name="wall2" type="MeshInstance3D" parent="x room" unique_id=152757928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.5, 7.5, 147)
+mesh = SubResource("BoxMesh_4cuq1")
+
+[node name="other bedroom" type="Node3D" parent="." unique_id=229256695]
+
+[node name="wall1" type="MeshInstance3D" parent="other bedroom" unique_id=1915947665]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 7.5, 147)
+mesh = SubResource("BoxMesh_rc25g")
+
+[node name="wall2" type="MeshInstance3D" parent="other bedroom" unique_id=876049993]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 115.5, 7.5, 132.5)
+mesh = SubResource("BoxMesh_t1bi1")
+
+[node name="wall3" type="MeshInstance3D" parent="other bedroom" unique_id=1793863769]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 97, 7.5, 117)
+mesh = SubResource("BoxMesh_1o7x4")
+
+[node name="wall4" type="MeshInstance3D" parent="other bedroom" unique_id=305150388]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 83, 7.5, 117)
+mesh = SubResource("BoxMesh_6s6tm")
+
+[node name="wall5" type="MeshInstance3D" parent="other bedroom" unique_id=620406621]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 14.5, 117)
+mesh = SubResource("BoxMesh_ymrh1")
+
+[node name="floor1" type="MeshInstance3D" parent="other bedroom" unique_id=1274044344]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99, 0, 126)
+mesh = SubResource("BoxMesh_gcqmg")
+
+[node name="floor2" type="MeshInstance3D" parent="other bedroom" unique_id=345394005]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.5, 0, 134.5)
+mesh = SubResource("BoxMesh_lq45t")
+
+[node name="front wall13" type="MeshInstance3D" parent="." unique_id=1945032661]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5, 16, 77)
+mesh = SubResource("BoxMesh_j0chu")
