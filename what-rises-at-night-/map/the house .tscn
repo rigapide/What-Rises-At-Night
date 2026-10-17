@@ -1037,6 +1037,46 @@ mesh = SubResource("BoxMesh_pf502")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 4, 85.5)
 mesh = SubResource("BoxMesh_hdfok")
 
+[node name="wall collider1" type="StaticBody3D" parent="the living roon" unique_id=1450427675]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.23861, 10, 61.702953)
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="the living roon/wall collider1" unique_id=372005525]
+transform = Transform3D(-4.371139e-08, 4.371139e-08, 1, 1, 1.9106855e-15, 4.371139e-08, 0, 1, -4.371139e-08, 25.682884, -14, -7)
+polygon = PackedVector2Array(4.2430396, 12.01199, 4.5309834, -14.326611, 22.491938, -14.149143, 22.504099, 11.775639)
+debug_color = Color(0.9635635, 5.7756904e-07, 0.5016073, 0.41960785)
+
+[node name="wall collider2" type="StaticBody3D" parent="the living roon" unique_id=1232647275]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79.14785, 10, 61.702953)
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="the living roon/wall collider2" unique_id=50612018]
+transform = Transform3D(-4.371139e-08, 4.371139e-08, 1, 1, 1.9106855e-15, 4.371139e-08, 0, 1, -4.371139e-08, 25.682884, -14, -7)
+polygon = PackedVector2Array(4.4986086, 64.796745, 4.4854045, -29.18792, 22.49449, -29.209122, 22.492386, 64.805626)
+debug_color = Color(0.9635635, 5.7756904e-07, 0.5016073, 0.41960785)
+
+[node name="wall collider3" type="StaticBody3D" parent="the living roon" unique_id=1485808724]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.21731, 10, 61.702953)
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="the living roon/wall collider3" unique_id=1421775205]
+transform = Transform3D(-4.371139e-08, 4.371139e-08, 1, 1, 1.9106855e-15, 4.371139e-08, 0, 1, -4.371139e-08, 25.682884, -14, -7)
+polygon = PackedVector2Array(4.518072, 49.806652, 4.4990025, 11.858479, 12.503464, 11.808002, 12.530724, 49.77915)
+debug_color = Color(0.9635635, 5.7756904e-07, 0.5016073, 0.41960785)
+
+[node name="floor collider" type="StaticBody3D" parent="the living roon" unique_id=735272817]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -49.013233, -25, 61.702953)
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="the living roon/floor collider" unique_id=147188848]
+transform = Transform3D(-4.371139e-08, 4.371139e-08, 1, 1, 1.9106855e-15, 4.371139e-08, 0, 1, -4.371139e-08, 24.989492, -14, -7)
+polygon = PackedVector2Array(-33.16388, -28.196293, -13.023674, -28.175133, 17.988205, -28.23793, 17.942005, 64.82977, -23.03085, 64.79274, -23.324451, -13.67551, -33.0556, -13.326756)
+debug_color = Color(0.9635635, 5.7756904e-07, 0.5016073, 0.41960785)
+
+[node name="wall collider4" type="StaticBody3D" parent="the living roon" unique_id=388025203]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -9.095196, 10, 0.35155487)
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="the living roon/wall collider4" unique_id=362506196]
+transform = Transform3D(-4.371139e-08, 4.371139e-08, 1, 1, 1.9106855e-15, 4.371139e-08, 0, 1, -4.371139e-08, 25.682884, -14, -7)
+polygon = PackedVector2Array(4.509939, 50.90456, 4.507025, 10.924183, 22.535683, 10.880414, 22.513412, 50.905262)
+debug_color = Color(0.9635635, 5.7756904e-07, 0.5016073, 0.41960785)
+
 [node name="The Kitchen" type="Node3D" parent="." unique_id=1423698993]
 
 [node name="floor1" type="MeshInstance3D" parent="The Kitchen" unique_id=647616032]
