@@ -54,7 +54,7 @@ light_energy = 0.3
 light_specular = 16.0
 
 [node name="testfloor" parent="." unique_id=1900875952 instance=ExtResource("1_dji2h")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 48.12933)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -271.78302)
 
 [node name="player" parent="." unique_id=1332932682 instance=ExtResource("2_eu055")]
 transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 0, 6.9791203, -2.1708355)
