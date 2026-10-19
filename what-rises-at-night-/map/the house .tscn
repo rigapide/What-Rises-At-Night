@@ -856,7 +856,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, -31)
 mesh = SubResource("BoxMesh_rxcbq")
 
 [node name="front wall5" type="MeshInstance3D" parent="The garrage" unique_id=907404647]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 7, 41)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 7, 41.001)
 mesh = SubResource("BoxMesh_nya1o")
 
 [node name="front wall4" type="MeshInstance3D" parent="The garrage" unique_id=1835625853]
