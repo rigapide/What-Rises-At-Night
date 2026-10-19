@@ -14,9 +14,6 @@ volumetric_fog_albedo = Color(0, 0, 0, 1)
 
 [sub_resource type="Compositor" id="Compositor_npmfu"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_6rob7"]
-size = Vector3(314.0515, 1, 280.1759)
-
 [node name="Main" type="Node3D" unique_id=21197261]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1966113210]
@@ -32,7 +29,3 @@ transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 20.197569, 10.306566, -2.1708
 
 [node name="MeshInstance3D" parent="." unique_id=1752869269 instance=ExtResource("3_628wc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.728145, 6.512904)
-
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=38049585]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.98059, 22.78244, 96.98859)
-mesh = SubResource("BoxMesh_6rob7")

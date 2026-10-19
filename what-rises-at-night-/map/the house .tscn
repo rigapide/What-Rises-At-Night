@@ -847,6 +847,15 @@ size = Vector3(34, 1, 43)
 resource_local_to_scene = true
 size = Vector3(15, 1, 27)
 
+[sub_resource type="BoxMesh" id="BoxMesh_6rob7"]
+size = Vector3(46, 1, 106)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tf1j8"]
+size = Vector3(124, 1, 66)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1wl02"]
+size = Vector3(124, 1, 68)
+
 [node name="THE HOUSE" type="Node3D" unique_id=671822904]
 
 [node name="The garrage" type="Node3D" parent="." unique_id=1819014838]
@@ -2181,3 +2190,17 @@ debug_color = Color(0.91764706, 0, 0.7019608, 0.8235294)
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.491356, 0, -22)
 polygon = PackedVector2Array(-4.6783676, 0.510036, 7.9016647, 0.4940443, 7.7290955, 18.570108, -4.6675873, 18.496479)
 debug_color = Color(0.91764706, 0, 0.7019608, 0.8235294)
+
+[node name="The Attic" type="Node3D" parent="." unique_id=403540564]
+
+[node name="floor1" type="MeshInstance3D" parent="The Attic" unique_id=1351978026]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 19, 94)
+mesh = SubResource("BoxMesh_6rob7")
+
+[node name="floor2" type="MeshInstance3D" parent="The Attic" unique_id=8983602]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 19, 73.5)
+mesh = SubResource("BoxMesh_tf1j8")
+
+[node name="floor3" type="MeshInstance3D" parent="The Attic" unique_id=252687895]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 19, 151.5)
+mesh = SubResource("BoxMesh_1wl02")
