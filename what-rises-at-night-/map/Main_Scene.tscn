@@ -25,7 +25,7 @@ compositor = SubResource("Compositor_npmfu")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -271.78302)
 
 [node name="player" parent="." unique_id=1332932682 instance=ExtResource("2_eu055")]
-transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 75.721466, 32.50211, 84.8768)
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 53.43425, 30.822968, 118.42935)
 
 [node name="MeshInstance3D" parent="." unique_id=1752869269 instance=ExtResource("3_628wc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.728145, 6.512904)
