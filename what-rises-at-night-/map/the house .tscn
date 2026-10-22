@@ -1956,6 +1956,54 @@ mesh = SubResource("BoxMesh_4663c")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -116.5, -10, 25)
 mesh = SubResource("BoxMesh_6dw5y")
 
+[node name="bakers room collider" type="StaticBody3D" parent="the bakers room" unique_id=1127947730]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.10949, -22.87832, 0)
+
+[node name="wall1" type="CollisionPolygon3D" parent="the bakers room/bakers room collider" unique_id=458432906]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -72.97884)
+polygon = PackedVector2Array(-62.862564, -14.614157, 23.111042, -14.605143, 23.110506, 16.424236, -62.98262, 16.379139)
+debug_color = Color(0.654902, 0.3254902, 1, 0.8)
+
+[node name="wall2" type="CollisionPolygon3D" parent="the bakers room/bakers room collider" unique_id=1329906040]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 23.593735, 0, 0)
+polygon = PackedVector2Array(56.496826, -14.6184635, -45.498554, -14.620043, -45.511486, 9.364316, -63.46105, 9.345481, -63.488827, -14.611361, -72.4628, -14.635435, -72.49614, 16.382711, 56.49647, 16.37557)
+debug_color = Color(0.654902, 0.3254902, 1, 0.8)
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="the bakers room/bakers room collider" unique_id=745695720]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 6.5992584, 0, 56.97871)
+polygon = PackedVector2Array(69.481445, -14.596365, 23.480198, -14.603056, 23.465298, 10.314974, 4.5336494, 10.334787, 4.490944, -14.629118, -16.500738, -14.628252, -16.495094, 16.359467, 69.487915, 16.37215)
+debug_color = Color(0.654902, 0.3254902, 1, 0.8)
+
+[node name="wall4" type="CollisionPolygon3D" parent="the bakers room/bakers room collider" unique_id=633230024]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -63.384003, 0, 0)
+polygon = PackedVector2Array(72.526, -14.620993, 72.48776, 16.39631, -40.23778, 16.369057, -40.50956, 8.369303, -9.522, 8.336004, -9.525119, -6.597994, -40.494217, -6.6003456, -41.220406, -14.61038)
+debug_color = Color(0.654902, 0.3254902, 1, 0.8)
+
+[node name="CollisionPolygon3D2" type="CollisionPolygon3D" parent="the bakers room/bakers room collider" unique_id=1777108410]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -63.385574, 0, 41.622627)
+polygon = PackedVector2Array(1.1383858, -14.700434, -14.879169, -14.627192, -14.858566, 16.380022, 1.4528122, 16.376837)
+debug_color = Color(0.654902, 0.3254902, 1, 0.8)
+
+[node name="wall6" type="CollisionPolygon3D" parent="the bakers room/bakers room collider" unique_id=1581824333]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 40.5744, 0, -47.536625)
+polygon = PackedVector2Array(7.0396423, -14.618708, -24.979092, -14.601202, -24.962109, 16.36474, 7.015423, 16.363409)
+debug_color = Color(0.654902, 0.3254902, 1, 0.8)
+
+[node name="wall7" type="CollisionPolygon3D" parent="the bakers room/bakers room collider" unique_id=1559084685]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.169373, 0, -72.994545)
+polygon = PackedVector2Array(5.914322, -14.627302, -10.046268, -14.642061, -10.075369, 16.39368, 5.930731, 16.352163)
+debug_color = Color(0.654902, 0.3254902, 1, 0.8)
+
+[node name="CollisionPolygon3D3" type="CollisionPolygon3D" parent="the bakers room/bakers room collider" unique_id=1643518844]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 29.311342, 0, -40.003983)
+polygon = PackedVector2Array(5.234886, -14.62726, -10.807658, -14.625929, -10.816036, 16.392885, 5.1999702, 16.386183)
+debug_color = Color(0.654902, 0.3254902, 1, 0.8)
+
+[node name="wall9" type="CollisionPolygon3D" parent="the bakers room/bakers room collider" unique_id=1630934686]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -15.086138, 0)
+polygon = PackedVector2Array(23.116283, -57.506508, -63.03495, -57.47412, -62.847214, 72.4854, 40.084858, 72.49138, 40.07132, 40.577805, 23.41512, 40.512543)
+debug_color = Color(0.654902, 0.3254902, 1, 0.8)
+
 [node name="the storage array" type="Node3D" parent="." unique_id=1727257182]
 
 [node name="floor1" type="MeshInstance3D" parent="the storage array" unique_id=1252568123]
@@ -2013,6 +2061,49 @@ mesh = SubResource("BoxMesh_bwfop")
 [node name="wall11" type="MeshInstance3D" parent="the storage array" unique_id=1275832116]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -113.5, -25, 110)
 mesh = SubResource("BoxMesh_iqats")
+
+[node name="storage colliders" type="StaticBody3D" parent="the storage array" unique_id=1747508698]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64.60374, -32.266956, 163.62575)
+
+[node name="wall1" type="CollisionPolygon3D" parent="the storage array/storage colliders" unique_id=2052534668]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 26.099842, 0, 0)
+polygon = PackedVector2Array(65.86391, -5.170971, -53.124657, -5.2213936, -53.134636, 25.748198, 65.89392, 25.764744)
+debug_color = Color(0, 0.6431373, 0.33333334, 0.7607843)
+
+[node name="wall2" type="CollisionPolygon3D" parent="the storage array/storage colliders" unique_id=1693599901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.221512, 20.422611, -53.617165)
+polygon = PackedVector2Array(12.838837, -25.679386, -11.173256, -25.65498, -11.176849, -0.6631336, -28.16703, -0.66261387, -28.174667, -25.66668, -33.162956, -25.65813, -33.168808, 5.3458877, 43.805016, 5.3336215, 43.811325, -25.65496, 27.811241, -25.644932, 27.813194, -1.1670246, 12.834808, -1.1623278)
+debug_color = Color(0, 0.6431373, 0.33333334, 0.7607843)
+
+[node name="wall3" type="CollisionPolygon3D" parent="the storage array/storage colliders" unique_id=332401043]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 66.3582)
+polygon = PackedVector2Array(51.386032, -5.199703, -25.588844, -5.198612, -25.59694, 25.747757, 51.392906, 25.761578)
+debug_color = Color(0, 0.6431373, 0.33333334, 0.7607843)
+
+[node name="wall4" type="CollisionPolygon3D" parent="the storage array/storage colliders" unique_id=2024392067]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -51.882324, 0, 0)
+polygon = PackedVector2Array(-20.862427, 3.765192, -20.676697, -5.2243843, 106.12085, -5.212406, 106.132935, 25.757732, -20.840088, 25.78093, -20.849213, 21.744083, 12.090393, 21.750076, 12.099762, 3.7802048)
+debug_color = Color(0, 0.6431373, 0.33333334, 0.7607843)
+
+[node name="wall5" type="CollisionPolygon3D" parent="the storage array/storage colliders" unique_id=1810676413]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -51.870567, 0, 24.68782)
+polygon = PackedVector2Array(-41.163193, -5.2287636, 4.0221405, -5.2014656, 3.8560486, 25.751842, -41.182068, 25.762295)
+debug_color = Color(0, 0.6431373, 0.33333334, 0.7607843)
+
+[node name="wall6" type="CollisionPolygon3D" parent="the storage array/storage colliders" unique_id=1070821887]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.18801, 0, -106.614136)
+polygon = PackedVector2Array(-17.198982, -5.244137, 9.836739, -5.2419395, 9.803322, 25.787655, -17.226059, 25.790836)
+debug_color = Color(0, 0.6431373, 0.33333334, 0.7607843)
+
+[node name="floor" type="CollisionPolygon3D" parent="the storage array/storage colliders" unique_id=1786235971]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -5.7, 0)
+polygon = PackedVector2Array(-51.3696, -65.857285, 25.613876, -65.85379, 25.536568, 53.110832, -24.394394, 53.126633, -24.417717, 106.13565, -51.387947, 106.10991)
+debug_color = Color(0, 0.6431373, 0.33333334, 0.7607843)
+
+[node name="ceiling" type="CollisionPolygon3D" parent="the storage array/storage colliders" unique_id=160784528]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 26.215103, 0)
+polygon = PackedVector2Array(-51.3696, -65.857285, 25.613876, -65.85379, 25.536568, 53.110832, -24.394394, 53.126633, -24.417717, 106.13565, -51.387947, 106.10991)
+debug_color = Color(0, 0.6431373, 0.33333334, 0.7607843)
 
 [node name="childs room" type="Node3D" parent="." unique_id=1944989618]
 
@@ -2084,6 +2175,45 @@ mesh = SubResource("BoxMesh_uxpqv")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -21.5, 121)
 mesh = SubResource("BoxMesh_m17yi")
 
+[node name="childs room collider" type="StaticBody3D" parent="childs room" unique_id=1982022277]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.29031, -29.568333, 159.82239)
+
+[node name="wall1" type="CollisionPolygon3D" parent="childs room/childs room collider" unique_id=1489724109]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.408863, 0, -38.76664)
+polygon = PackedVector2Array(-7.759392, -7.9195976, 31.249, -7.880806, 31.268715, 22.992142, -39.655384, 22.99868, -39.65467, -7.8952866, -28.671656, -7.903206, -28.645985, 17.03366, -7.702446, 17.04932)
+
+[node name="wall2" type="CollisionPolygon3D" parent="childs room/childs room collider" unique_id=2078649646]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 71.15721)
+polygon = PackedVector2Array(-46.691566, -7.910679, 50.281593, -7.8791847, 50.303734, 23.059772, -46.662636, 23.019985)
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="childs room/childs room collider" unique_id=56240858]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -24.778923, 0, 0)
+polygon = PackedVector2Array(-42.67285, -7.914974, 38.262306, -7.8987274, 38.28887, 23.066519, -70.64305, 23.12392, -70.69801, -7.880886, -64.63591, -7.9599648, -64.61778, 17.013382, -42.718643, 17.031408)
+
+[node name="wall4" type="CollisionPolygon3D" parent="childs room/childs room collider" unique_id=2095673724]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 47.20859, -6.0434723, 0)
+polygon = PackedVector2Array(-24.310944, 6.106409, -24.718521, -1.9050293, 70.61342, -1.8296204, 70.66815, 29.074768, -24.209122, 29.125385, -24.05516, 23.09208, 18.675644, 23.079311, 18.619858, 6.1364098)
+
+[node name="wall5" type="CollisionPolygon3D" parent="childs room/childs room collider" unique_id=115827521]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 47.17171, 0, -33.31743)
+polygon = PackedVector2Array(-4.9611435, -7.90794, 9.105164, -7.9555206, 9.2443695, 23.025494, -4.9118195, 23.069153)
+
+[node name="wall7" type="CollisionPolygon3D" parent="childs room/childs room collider" unique_id=645348864]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.89457, 0, 36.20906)
+polygon = PackedVector2Array(-7.34383, -7.933159, 17.65532, -7.9228973, 17.587042, 23.04551, -7.4535236, 23.11161)
+
+[node name="wall6" type="CollisionPolygon3D" parent="childs room/childs room collider" unique_id=684614518]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -50.70708, 0, 54.171494)
+polygon = PackedVector2Array(-16.477356, -7.927223, 17.436493, -7.8842125, 17.478806, 23.034359, -16.507858, 22.98035)
+
+[node name="floor" type="CollisionPolygon3D" parent="childs room/childs room collider" unique_id=1528329738]
+transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, 0.99999994, 0, -0.99999994, -4.3711385e-08, 0, -8.293007, 0)
+polygon = PackedVector2Array(-24.228027, 38.315453, 46.68413, 38.281357, 46.68823, -70.70613, -50.24746, -70.57555, -50.01903, -36.69133, -24.262352, -36.758163)
+
+[node name="ceiling" type="CollisionPolygon3D" parent="childs room/childs room collider" unique_id=1026865471]
+transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, 0.99999994, 0, -0.99999994, -4.3711385e-08, 0, 23.368643, 0)
+polygon = PackedVector2Array(-24.228027, 38.315453, 46.68413, 38.281357, 46.68823, -70.70613, -50.24746, -70.57555, -50.01903, -36.69133, -24.262352, -36.758163)
+
 [node name="bathroom" type="Node3D" parent="." unique_id=1294856171]
 
 [node name="floor1" type="MeshInstance3D" parent="bathroom" unique_id=1742315729]
@@ -2097,6 +2227,25 @@ mesh = SubResource("BoxMesh_84srt")
 [node name="wall2" type="MeshInstance3D" parent="bathroom" unique_id=26535409]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, -21.5, 38)
 mesh = SubResource("BoxMesh_omdy0")
+
+[node name="bathroom1 colliders" type="StaticBody3D" parent="bathroom" unique_id=1545198328]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7579565, -26.215048, 68.15805)
+
+[node name="wall1" type="CollisionPolygon3D" parent="bathroom/bathroom1 colliders" unique_id=649002022]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -30.120632)
+polygon = PackedVector2Array(-8.732689, -11.26845, 16.217903, -11.262213, 16.224579, 19.703075, -8.732413, 19.691984)
+
+[node name="wall2" type="CollisionPolygon3D" parent="bathroom/bathroom1 colliders" unique_id=589095928]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.204201, 0, 0)
+polygon = PackedVector2Array(-14.3098755, -11.248693, 29.619278, -11.268274, 29.632996, 19.707684, -14.340744, 19.702488)
+
+[node name="floor" type="CollisionPolygon3D" parent="bathroom/bathroom1 colliders" unique_id=903666614]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, -11.7588215, 0)
+polygon = PackedVector2Array(-8.746529, -15.340363, 16.249416, -15.329628, 16.199574, 29.64653, -8.745537, 29.648586)
+
+[node name="ceiling" type="CollisionPolygon3D" parent="bathroom/bathroom1 colliders" unique_id=1325844735]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 20.110317, 0)
+polygon = PackedVector2Array(-8.746529, -15.340363, 16.249416, -15.329628, 16.199574, 29.64653, -8.745537, 29.648586)
 
 [node name="bathroom2" type="Node3D" parent="." unique_id=792870868]
 
