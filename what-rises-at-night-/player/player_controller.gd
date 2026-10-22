@@ -1,7 +1,8 @@
 extends CharacterBody3D
 
-const runspeed = 14
-const SPEED = 8
+const runspeed = 24
+const SPEED = 12
+
 const JUMP_VELOCITY = 4.5
 
 @onready var camera = $SpringArm3D/Camera3D

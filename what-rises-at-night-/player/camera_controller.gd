@@ -22,11 +22,6 @@ func _process(_delta: float) -> void:
 	#locks zoom on inventory open
 			#print(invopen)
 	
-	if Input.is_action_just_pressed("ScrollDown"):
-		spring_length = spring_length + 0.5
-	if Input.is_action_just_pressed("ScrollUp") and spring_length > 0:
-		spring_length = spring_length - 0.5
-	
 	
 	
 	
@@ -44,9 +39,3 @@ func _process(_delta: float) -> void:
 	if spring_length == 0:
 		if Input.mouse_mode == Input.MOUSE_MODE_VISIBLE:
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	
-	#if invopen == true:
-		
-		
-		
-		pass
