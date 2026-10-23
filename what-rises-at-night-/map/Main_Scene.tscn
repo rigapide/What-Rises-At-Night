@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://u51t7bof3nf2" path="res://map/map_elements/testfloor.tscn" id="1_dji2h"]
 [ext_resource type="PackedScene" uid="uid://8nmasytum8m0" path="res://player/player.tscn" id="2_eu055"]
-[ext_resource type="PackedScene" uid="uid://4p8mvf45c1fq" path="res://map/the house .tscn" id="3_628wc"]
+[ext_resource type="PackedScene" uid="uid://4p8mvf45c1fq" path="res://map/map_elements/the house .tscn" id="3_628wc"]
 
 [sub_resource type="Environment" id="Environment_rkbax"]
 background_mode = 1

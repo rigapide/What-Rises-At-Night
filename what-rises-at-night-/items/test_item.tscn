@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://baeorktct2o3i"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xl1sa"]
+transparency = 1
+albedo_color = Color(0.38039216, 0.2509804, 0.08627451, 0.6745098)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6rob7"]
+material = SubResource("StandardMaterial3D_xl1sa")
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.05
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gw73d"]
+transparency = 1
+albedo_color = Color(0.53517914, 0.36013564, 0.13805562, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_rx7pe"]
+material = SubResource("StandardMaterial3D_gw73d")
+top_radius = 0.022949219
+bottom_radius = 0.022949219
+height = 0.023535157
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i8ldy"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_gw73d"]
+material = SubResource("StandardMaterial3D_i8ldy")
+top_radius = 0.028320313
+bottom_radius = 0.028320313
+height = 0.01
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_6rob7"]
+height = 0.053
+radius = 0.025
+
+[node name="yeast" type="Node3D" unique_id=500006765]
+
+[node name="bottle" type="MeshInstance3D" parent="." unique_id=128257658]
+transform = Transform3D(0.9999994, -0.0010805542, 0.00016475712, 0.0010807419, 0.99999875, -0.0011647528, -0.00016352213, 0.0011649267, 0.99999934, 0, 0, 0)
+mesh = SubResource("CylinderMesh_6rob7")
+
+[node name="yeast powder" type="MeshInstance3D" parent="." unique_id=908186802]
+transform = Transform3D(0.9999994, -0.0010805542, 0.00016475712, 0.0010807419, 0.99999875, -0.0011647528, -0.00016352213, 0.0011649267, 0.99999934, 1.4298349e-05, -0.011053435, -1.5414802e-05)
+mesh = SubResource("CylinderMesh_rx7pe")
+
+[node name="lid" type="MeshInstance3D" parent="." unique_id=975062844]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.022033792, 0)
+mesh = SubResource("CylinderMesh_gw73d")
+
+[node name="yeast collider" type="StaticBody3D" parent="." unique_id=116010487]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="yeast collider" unique_id=1415662506]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0008789096, 0)
+shape = SubResource("CylinderShape3D_6rob7")

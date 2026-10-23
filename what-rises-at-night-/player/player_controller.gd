@@ -61,7 +61,8 @@ func _physics_process(delta: float) -> void:
 	
 	if Input.is_action_just_pressed("f"):
 		toggle_flashlight()
-	
+	if Input.is_action_just_pressed("r"):
+		global_position = Vector3(33.272,14.707,-1.029)
 	
 	
 	
