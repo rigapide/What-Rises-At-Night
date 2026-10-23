@@ -26,19 +26,19 @@ size = Vector3(1, 1, 9)
 
 [sub_resource type="BoxMesh" id="BoxMesh_5clk6"]
 resource_local_to_scene = true
-size = Vector3(1, 1, 9)
+size = Vector3(1, 5, 9)
 
 [sub_resource type="BoxMesh" id="BoxMesh_3kake"]
 resource_local_to_scene = true
-size = Vector3(1, 1, 9)
+size = Vector3(1, 4, 9)
 
 [sub_resource type="BoxMesh" id="BoxMesh_1h06t"]
 resource_local_to_scene = true
-size = Vector3(1, 1, 9)
+size = Vector3(1, 3, 9)
 
 [sub_resource type="BoxMesh" id="BoxMesh_sulg3"]
 resource_local_to_scene = true
-size = Vector3(1, 1, 9)
+size = Vector3(1, 2, 9)
 
 [sub_resource type="BoxMesh" id="BoxMesh_su3vj"]
 resource_local_to_scene = true
@@ -906,19 +906,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 36)
 mesh = SubResource("BoxMesh_e8nwk")
 
 [node name="front wall7" type="MeshInstance3D" parent="The garrage" unique_id=1961231816]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 36)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, -2, 36)
 mesh = SubResource("BoxMesh_5clk6")
 
 [node name="front wall8" type="MeshInstance3D" parent="The garrage" unique_id=2022854653]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -1, 36)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -2.5, 36)
 mesh = SubResource("BoxMesh_3kake")
 
 [node name="front wall9" type="MeshInstance3D" parent="The garrage" unique_id=1856673460]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -2, 36)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -3, 36)
 mesh = SubResource("BoxMesh_1h06t")
 
 [node name="front wall10" type="MeshInstance3D" parent="The garrage" unique_id=1261459182]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, -3, 36)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, -3.5, 36)
 mesh = SubResource("BoxMesh_sulg3")
 
 [node name="front wall11" type="MeshInstance3D" parent="The garrage" unique_id=1124194721]
@@ -965,7 +965,7 @@ polygon = PackedVector2Array(-0.81940544, 46.229256, -0.7988064, 37.190704, 7, 3
 debug_color = Color(0.8109718, 0.0021531773, 0.985985, 0.41960785)
 
 [node name="CollisionPolygon3D6" type="CollisionPolygon3D" parent="The garrage/garrage colliders" unique_id=1336055039]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1, -5, -7)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -1, -5.01, -7)
 polygon = PackedVector2Array(-1, 47.5, -1, -23.5, 48, -23.5, 48, 47.5)
 debug_color = Color(0.8109718, 0.0021531773, 0.985985, 0.41960785)
 
@@ -1521,12 +1521,12 @@ debug_color = Color(0, 0.6156863, 0.5882353, 0.75686276)
 
 [node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="The stairwell/stairwell colliders" unique_id=964832900]
 transform = Transform3D(-4.371139e-08, 4.371139e-08, 1, 1, 1.9106855e-15, 4.371139e-08, 0, 1, -4.371139e-08, -11.494131, -20.084417, 69.562645)
-polygon = PackedVector2Array(13.17476, -59.08056, 13.556448, -27.914257, 21.954782, -27.32296, 20.628529, 23.356201, -13.440149, -44.78093, -13.488939, -59.09167)
+polygon = PackedVector2Array(13.570101, -59.054546, 13.556448, -27.914257, 22.026354, -28.06427, 20.628529, 23.356201, -13.440149, -44.78093, -13.488939, -59.09167)
 debug_color = Color(0, 0.6156863, 0.5882353, 0.75686276)
 
 [node name="CollisionPolygon3D2" type="CollisionPolygon3D" parent="The stairwell/stairwell colliders" unique_id=1591788884]
 transform = Transform3D(1.9106855e-15, 1, -8.742278e-08, 1, 1.9106855e-15, 4.371139e-08, 4.371139e-08, -8.742278e-08, -1, 14.265484, -36.083008, 10.030763)
-polygon = PackedVector2Array(-1.4177475, 16.736948, -1.65728, -26.264606, 29.114237, -26.27438, 28.562782, 16.581259)
+polygon = PackedVector2Array(-1.4177475, 16.736948, -1.65728, -26.264606, 29.494362, -25.717962, 29.546621, 16.639347)
 debug_color = Color(0, 0.6156863, 0.5882353, 0.75686276)
 
 [node name="CollisionPolygon3D4" type="CollisionPolygon3D" parent="The stairwell/stairwell colliders" unique_id=349148130]
@@ -1551,7 +1551,7 @@ debug_color = Color(0, 0.6156863, 0.5882353, 0.75686276)
 
 [node name="CollisionPolygon3D9" type="CollisionPolygon3D" parent="The stairwell/stairwell colliders" unique_id=1247305552]
 transform = Transform3D(-4.371139e-08, 4.371139e-08, 1, 1, 1.9106855e-15, 4.371139e-08, 0, 1, -4.371139e-08, 3.4926434, 1.5276413, 75.3915)
-polygon = PackedVector2Array(-8.870663, -50.841896, -9.524844, -33.79861, 16.999973, -33.89539, 16.941435, 28.635147, -1.3822432, 28.910522, -1.4670086, 17.080078, -34.85708, -50.93181)
+polygon = PackedVector2Array(-8.026502, -50.901943, -8.028528, -33.898285, 16.999973, -33.89539, 16.941435, 28.635147, -1.3822432, 28.910522, -1.4670086, 17.080078, -34.85708, -50.93181)
 debug_color = Color(0, 0.6156863, 0.5882353, 0.75686276)
 
 [node name="CollisionPolygon3D10" type="CollisionPolygon3D" parent="The stairwell/stairwell colliders" unique_id=1615773582]
@@ -1583,6 +1583,15 @@ debug_color = Color(0, 0.6156863, 0.5882353, 0.75686276)
 transform = Transform3D(1.9106855e-15, 1, -8.742278e-08, 1, 1.9106855e-15, 4.371139e-08, 4.371139e-08, -8.742278e-08, -1, 22.272015, 2.3351173, 103.97163)
 polygon = PackedVector2Array(-1.6463423, -9.236835, -1.5834258, -19.32026, 16.203598, -19.307909, 16.219933, 59.736168, -2.1020935, 59.79622, -1.8607035, 40.718437, 13.115517, 40.69249, 13.098858, 31.74381, -1.9996893, 31.780745, -1.9003236, 19.71705, 13.132382, 19.712381, 13.17702, 9.733782, -1.7957684, 9.731958, -1.6505892, 0.6068344, 13.9197645, 0.42440414, 13.915985, -9.463426)
 debug_color = Color(0, 0.6156863, 0.5882353, 0.75686276)
+
+[node name="CollisionPolygon3D17" type="CollisionPolygon3D" parent="The stairwell/stairwell colliders" unique_id=1331291494]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.499912, 0, 41.009315)
+polygon = PackedVector2Array(0.5167217, -6.4722204, 14.457783, -6.541642, 14.476816, 18.50589, 0.5014324, 18.500824)
+debug_color = Color(0, 0.6156863, 0.5882353, 0.75686276)
+
+[node name="CollisionPolygon3D18" type="CollisionPolygon3D" parent="The stairwell/stairwell colliders" unique_id=805324507]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.1535254, -6.0056343, 40.265976)
+polygon = PackedVector2Array(-4.8396664, 1.23209, 9.118338, 1.2799911, 9.176657, -15.751051, 36.207996, -15.78956, 36.12734, -29.737732, -4.8328342, -29.796608)
 
 [node name="The game room" type="Node3D" parent="." unique_id=884936530]
 

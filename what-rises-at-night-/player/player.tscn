@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cvy7u6dc8rlik" path="res://player/player_controller.gd" id="1_oul6g"]
 [ext_resource type="Script" uid="uid://b2hie6mj74gf5" path="res://player/camera_controller.gd" id="2_rkbax"]
+[ext_resource type="Texture2D" uid="uid://s8p0la63wtwb" path="res://textures/flashlight texture.png" id="3_g1dw6"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_npmfu"]
 radius = 0.25
@@ -11,6 +12,7 @@ radius = 0.25
 
 [node name="CharacterBody3D" type="CharacterBody3D" unique_id=1601194801]
 transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
+collision_layer = 2
 script = ExtResource("1_oul6g")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1266450466]
@@ -25,13 +27,14 @@ spring_length = 0.0
 script = ExtResource("2_rkbax")
 
 [node name="Camera3D" type="Camera3D" parent="SpringArm3D" unique_id=902038608]
-fov = 55.0
+fov = 37.849285
 
 [node name="SpotLight3D" type="SpotLight3D" parent="SpringArm3D/Camera3D" unique_id=1424823570]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.707425e-08, -0.9818711, -0.8816266)
 light_color = Color(1.6613292, 1.6613292, 1.6613292, 1)
 light_energy = 16.0
 light_volumetric_fog_energy = 0.0
+light_projector = ExtResource("3_g1dw6")
 light_size = 1.0
 light_specular = 8.111
 light_cull_mask = 4293918721
@@ -41,4 +44,19 @@ shadow_opacity = 0.55
 spot_range = 120.0
 spot_attenuation = 2.0
 spot_angle = 20.0
+spot_angle_attenuation = 2.6390178
+
+[node name="off ambient light" type="SpotLight3D" parent="SpringArm3D/Camera3D" unique_id=1355833286]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.707425e-08, -0.9818711, -0.8816266)
+light_color = Color(0.07123137, 0.0712314, 0.07123134, 1)
+light_indirect_energy = 0.0
+light_size = 1.0
+light_specular = 0.0
+light_cull_mask = 4293918721
+shadow_enabled = true
+shadow_bias = 0.1
+shadow_opacity = 0.55
+spot_range = 58.497
+spot_attenuation = 0.0
+spot_angle = 80.88
 spot_angle_attenuation = 2.6390178

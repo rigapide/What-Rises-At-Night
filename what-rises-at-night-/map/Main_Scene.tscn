@@ -6,21 +6,16 @@
 
 [sub_resource type="Environment" id="Environment_rkbax"]
 background_mode = 1
+background_energy_multiplier = 0.07
 tonemap_exposure = 5.0
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.02
 volumetric_fog_albedo = Color(0, 0, 0, 1)
 
-[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_eu055"]
-
-[sub_resource type="Compositor" id="Compositor_npmfu"]
-
 [node name="Main" type="Node3D" unique_id=21197261]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1966113210]
 environment = SubResource("Environment_rkbax")
-camera_attributes = SubResource("CameraAttributesPractical_eu055")
-compositor = SubResource("Compositor_npmfu")
 
 [node name="testfloor" parent="." unique_id=1900875952 instance=ExtResource("1_dji2h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -271.78302)

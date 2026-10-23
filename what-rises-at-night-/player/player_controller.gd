@@ -11,6 +11,12 @@ var running: bool
 
 
 
+
+@onready var flashlight = $SpringArm3D/Camera3D/SpotLight3D
+
+
+
+
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	running = false
@@ -20,11 +26,6 @@ func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += (get_gravity() * 4) * delta
-
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir := Input.get_vector("a", "d", "w", "s")
@@ -58,14 +59,26 @@ func _physics_process(delta: float) -> void:
 				velocity.z = move_toward(velocity.z, 0, SPEED)
 	
 	
-	
-	
-	
-	
-	
+	if Input.is_action_just_pressed("f"):
+		toggle_flashlight()
 	
 	
 	
 	
 	
 	move_and_slide()
+
+
+
+
+
+func toggle_flashlight():
+	if flashlight.visible == true:
+		flashlight.visible = false
+		
+		
+		
+	elif flashlight.visible == false:
+		flashlight.visible = true
+		
+		
