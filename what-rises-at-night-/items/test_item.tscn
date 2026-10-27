@@ -47,7 +47,8 @@ mesh = SubResource("CylinderMesh_rx7pe")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.022033792, 0)
 mesh = SubResource("CylinderMesh_gw73d")
 
-[node name="yeast collider" type="StaticBody3D" parent="." unique_id=116010487]
+[node name="yeast collider" type="StaticBody3D" parent="." unique_id=116010487 groups=["baking ingridents", "items"]]
+collision_layer = 8
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="yeast collider" unique_id=1415662506]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0008789096, 0)

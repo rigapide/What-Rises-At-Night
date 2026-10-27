@@ -63,3 +63,4 @@ spot_angle_attenuation = 2.6390178
 
 [node name="item_checker" type="RayCast3D" parent="SpringArm3D" unique_id=1838114424]
 target_position = Vector3(0, 0, -2.5)
+collide_with_areas = true

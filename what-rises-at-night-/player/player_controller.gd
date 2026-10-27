@@ -14,7 +14,7 @@ var running: bool
 
 @onready var flashlight = $SpringArm3D/Camera3D/SpotLight3D
 
-
+@onready var item_checker = $SpringArm3D/item_checker
 
 
 func _ready() -> void:
