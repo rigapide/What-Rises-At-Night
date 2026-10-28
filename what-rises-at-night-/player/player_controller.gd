@@ -67,6 +67,24 @@ func _physics_process(delta: float) -> void:
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	#interact logic
+	if item_checker.is_colliding():
+		var collider = item_checker.get_collider()
+		
+		if collider == null:
+			pass
+		elif collider.is_in_group("items"):
+			print("lookin at some yeast")
+	
+	
+	
 	move_and_slide()
 
 

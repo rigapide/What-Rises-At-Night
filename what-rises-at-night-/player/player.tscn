@@ -6,6 +6,7 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_npmfu"]
 radius = 0.25
+height = 1.2993164
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6rob7"]
 radius = 0.25
@@ -16,6 +17,7 @@ collision_layer = 2
 script = ExtResource("1_oul6g")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1266450466]
+transform = Transform3D(1.0000002, 0, 0, 0, 1.0000002, 0, 0, 0, 1.0000002, 0, 0.3503418, 0)
 mesh = SubResource("CapsuleMesh_npmfu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1233610272]
@@ -30,8 +32,8 @@ script = ExtResource("2_rkbax")
 fov = 37.849285
 
 [node name="SpotLight3D" type="SpotLight3D" parent="SpringArm3D/Camera3D" unique_id=1424823570]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.707425e-08, -0.9818711, -0.8816266)
-light_color = Color(1.6613292, 1.6613292, 1.6613292, 1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.882)
+light_color = Color(1.1730844, 1.1730844, 1.1730844, 1)
 light_energy = 16.0
 light_volumetric_fog_energy = 0.0
 light_projector = ExtResource("3_g1dw6")
@@ -39,12 +41,14 @@ light_size = 1.0
 light_specular = 8.111
 light_cull_mask = 4293918721
 shadow_enabled = true
-shadow_bias = 0.1
+shadow_bias = 0.0
+shadow_normal_bias = 0.005
+shadow_reverse_cull_face = true
 shadow_opacity = 0.55
 spot_range = 120.0
 spot_attenuation = 2.0
 spot_angle = 20.0
-spot_angle_attenuation = 2.6390178
+spot_angle_attenuation = 2.4622903
 
 [node name="off ambient light" type="SpotLight3D" parent="SpringArm3D/Camera3D" unique_id=1355833286]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.707425e-08, -0.9818711, -0.8816266)
@@ -54,7 +58,9 @@ light_size = 1.0
 light_specular = 0.0
 light_cull_mask = 4293918721
 shadow_enabled = true
-shadow_bias = 0.1
+shadow_bias = 0.0
+shadow_normal_bias = 0.005
+shadow_reverse_cull_face = true
 shadow_opacity = 0.55
 spot_range = 58.497
 spot_attenuation = 0.0
@@ -63,4 +69,6 @@ spot_angle_attenuation = 2.6390178
 
 [node name="item_checker" type="RayCast3D" parent="SpringArm3D" unique_id=1838114424]
 target_position = Vector3(0, 0, -2.5)
+collision_mask = 9
 collide_with_areas = true
+debug_shape_thickness = 1

@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://u51t7bof3nf2" path="res://map/map_elements/testfloor.tscn" id="1_dji2h"]
 [ext_resource type="PackedScene" uid="uid://8nmasytum8m0" path="res://player/player.tscn" id="2_eu055"]
 [ext_resource type="PackedScene" uid="uid://4p8mvf45c1fq" path="res://map/map_elements/the house .tscn" id="3_628wc"]
+[ext_resource type="PackedScene" uid="uid://baeorktct2o3i" path="res://items/test_item.tscn" id="4_y0b4v"]
 
 [sub_resource type="Environment" id="Environment_rkbax"]
 background_mode = 1
@@ -11,6 +12,8 @@ tonemap_exposure = 5.0
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.02
 volumetric_fog_albedo = Color(0, 0, 0, 1)
+adjustment_enabled = true
+adjustment_brightness = 1.33
 
 [node name="Main" type="Node3D" unique_id=21197261]
 
@@ -25,3 +28,6 @@ transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 33.27233, 14.607073, -1.02931
 
 [node name="MeshInstance3D" parent="." unique_id=1752869269 instance=ExtResource("3_628wc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.728145, 6.512904)
+
+[node name="yeast" parent="." unique_id=500006765 instance=ExtResource("4_y0b4v")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 3.414958, 6.103418, 0)
