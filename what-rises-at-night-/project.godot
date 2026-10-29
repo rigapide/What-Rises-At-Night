@@ -27,6 +27,7 @@ project/assembly_name="What rises at night"
 
 "baking ingridents"="for hiding/finding"
 items="anything that can be picked up by the player"
+map=""
 
 [input]
 

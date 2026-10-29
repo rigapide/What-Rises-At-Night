@@ -937,7 +937,7 @@ mesh = SubResource("BoxMesh_lf80t")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5, 7, 5)
 mesh = SubResource("BoxMesh_cv6lw")
 
-[node name="garrage colliders" type="StaticBody3D" parent="The garrage" unique_id=2074779148]
+[node name="garrage colliders" type="StaticBody3D" parent="The garrage" unique_id=2074779148 groups=["map"]]
 
 [node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="The garrage/garrage colliders" unique_id=1684504968]
 transform = Transform3D(1.9106855e-15, 1, -8.742278e-08, 1, 1.9106855e-15, 4.371139e-08, 4.371139e-08, -8.742278e-08, -1, 11.423538, -4, -30.965576)
@@ -1051,7 +1051,7 @@ mesh = SubResource("BoxMesh_pf502")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 4, 85.5)
 mesh = SubResource("BoxMesh_hdfok")
 
-[node name="living room colliders" type="StaticBody3D" parent="the living roon" unique_id=1139768491]
+[node name="living room colliders" type="StaticBody3D" parent="the living roon" unique_id=1139768491 groups=["map"]]
 
 [node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="the living roon/living room colliders" unique_id=372005525]
 transform = Transform3D(-4.371139e-08, 4.371139e-08, 1, 1, 1.9106855e-15, 4.371139e-08, 0, 1, -4.371139e-08, -11.555725, -4, 54.702953)
@@ -1124,7 +1124,7 @@ mesh = SubResource("BoxMesh_qp3o1")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 7, 185)
 mesh = SubResource("BoxMesh_ki4et")
 
-[node name="kitchen colliders" type="StaticBody3D" parent="The Kitchen" unique_id=288586071]
+[node name="kitchen colliders" type="StaticBody3D" parent="The Kitchen" unique_id=288586071 groups=["map"]]
 
 [node name="CollisionPolygon3D3" type="CollisionPolygon3D" parent="The Kitchen/kitchen colliders" unique_id=1831857011]
 transform = Transform3D(1.9106855e-15, -1, 0, 1, 1.9106855e-15, 4.371139e-08, -4.371139e-08, 0, 1, -3.4606, 1.5276413, 119.95239)
@@ -1477,7 +1477,7 @@ mesh = SubResource("BoxMesh_u2jf0")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.5, 9, 134)
 mesh = SubResource("BoxMesh_sfwxt")
 
-[node name="stairwell colliders" type="StaticBody3D" parent="The stairwell" unique_id=1858831112]
+[node name="stairwell colliders" type="StaticBody3D" parent="The stairwell" unique_id=1858831112 groups=["map"]]
 
 [node name="CollisionPolygon3D15" type="CollisionPolygon3D" parent="The stairwell/stairwell colliders" unique_id=26716397]
 transform = Transform3D(1.9106855e-15, 1, -8.742278e-08, 1, 1.9106855e-15, 4.371139e-08, 4.371139e-08, -8.742278e-08, -1, 39.512238, 1.5276413, 119.99191)
@@ -1791,7 +1791,7 @@ mesh = SubResource("BoxMesh_qsk8w")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79, -22, 110.001)
 mesh = SubResource("BoxMesh_6pwvl")
 
-[node name="game room colliders" type="StaticBody3D" parent="The game room" unique_id=1783255344]
+[node name="game room colliders" type="StaticBody3D" parent="The game room" unique_id=1783255344 groups=["map"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44, -30, 77)
 
 [node name="wall1" type="CollisionPolygon3D" parent="The game room/game room colliders" unique_id=80178073]
@@ -1965,7 +1965,7 @@ mesh = SubResource("BoxMesh_4663c")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -116.5, -10, 25)
 mesh = SubResource("BoxMesh_6dw5y")
 
-[node name="bakers room collider" type="StaticBody3D" parent="the bakers room" unique_id=1127947730]
+[node name="bakers room collider" type="StaticBody3D" parent="the bakers room" unique_id=1127947730 groups=["map"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.10949, -22.87832, 0)
 
 [node name="wall1" type="CollisionPolygon3D" parent="the bakers room/bakers room collider" unique_id=458432906]
@@ -2071,7 +2071,7 @@ mesh = SubResource("BoxMesh_bwfop")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -113.5, -25, 110)
 mesh = SubResource("BoxMesh_iqats")
 
-[node name="storage colliders" type="StaticBody3D" parent="the storage array" unique_id=1747508698]
+[node name="storage colliders" type="StaticBody3D" parent="the storage array" unique_id=1747508698 groups=["map"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64.60374, -32.266956, 163.62575)
 
 [node name="wall1" type="CollisionPolygon3D" parent="the storage array/storage colliders" unique_id=2052534668]
@@ -2184,7 +2184,7 @@ mesh = SubResource("BoxMesh_uxpqv")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -21.5, 121)
 mesh = SubResource("BoxMesh_m17yi")
 
-[node name="childs room collider" type="StaticBody3D" parent="childs room" unique_id=1982022277]
+[node name="childs room collider" type="StaticBody3D" parent="childs room" unique_id=1982022277 groups=["map"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.29031, -29.568333, 159.82239)
 
 [node name="wall1" type="CollisionPolygon3D" parent="childs room/childs room collider" unique_id=1489724109]
@@ -2237,7 +2237,7 @@ mesh = SubResource("BoxMesh_84srt")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, -21.5, 38)
 mesh = SubResource("BoxMesh_omdy0")
 
-[node name="bathroom1 colliders" type="StaticBody3D" parent="bathroom" unique_id=1545198328]
+[node name="bathroom1 colliders" type="StaticBody3D" parent="bathroom" unique_id=1545198328 groups=["map"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7579565, -26.215048, 68.15805)
 
 [node name="wall1" type="CollisionPolygon3D" parent="bathroom/bathroom1 colliders" unique_id=649002022]
@@ -2278,7 +2278,7 @@ mesh = SubResource("BoxMesh_2wspu")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.5, 9, 80.5)
 mesh = SubResource("BoxMesh_kl6ln")
 
-[node name="bathroom2 colliders" type="StaticBody3D" parent="bathroom2" unique_id=1979409085]
+[node name="bathroom2 colliders" type="StaticBody3D" parent="bathroom2" unique_id=1979409085 groups=["map"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.527054, 15.527641, 87.126656)
 
 [node name="wall1" type="CollisionPolygon3D" parent="bathroom2/bathroom2 colliders" unique_id=988274030]
@@ -2355,7 +2355,7 @@ mesh = SubResource("BoxMesh_ihyrc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.5, 9, 43)
 mesh = SubResource("BoxMesh_gscs6")
 
-[node name="parents room colliders" type="StaticBody3D" parent="the parents room" unique_id=2066575161]
+[node name="parents room colliders" type="StaticBody3D" parent="the parents room" unique_id=2066575161 groups=["map"]]
 
 [node name="floor" type="CollisionPolygon3D" parent="the parents room/parents room colliders" unique_id=1790047080]
 transform = Transform3D(1.9106855e-15, -1, 0, -8.742278e-08, -8.3518724e-23, 1, -1, -1.9106855e-15, -8.742278e-08, 94.37142, 0.16698837, 82.97394)
@@ -2400,7 +2400,7 @@ mesh = SubResource("BoxMesh_aklxf")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.5, 9, 147)
 mesh = SubResource("BoxMesh_4cuq1")
 
-[node name="grandparents room colliders" type="StaticBody3D" parent="grandparents room" unique_id=741264668]
+[node name="grandparents room colliders" type="StaticBody3D" parent="grandparents room" unique_id=741264668 groups=["map"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 0, 161)
 
 [node name="floor" type="CollisionPolygon3D" parent="grandparents room/grandparents room colliders" unique_id=648163221]
@@ -2458,7 +2458,7 @@ mesh = SubResource("BoxMesh_gcqmg")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.5, 0, 134)
 mesh = SubResource("BoxMesh_lq45t")
 
-[node name="other bedroom colliders" type="StaticBody3D" parent="other bedroom" unique_id=1363360533]
+[node name="other bedroom colliders" type="StaticBody3D" parent="other bedroom" unique_id=1363360533 groups=["map"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 91, 0, 131)
 
 [node name="floor" type="CollisionPolygon3D" parent="other bedroom/other bedroom colliders" unique_id=1310011123]
@@ -2512,7 +2512,7 @@ mesh = SubResource("BoxMesh_4sgbh")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5, 19, -3)
 mesh = SubResource("BoxMesh_naelv")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="The Attic" unique_id=381781750]
+[node name="StaticBody3D" type="StaticBody3D" parent="The Attic" unique_id=381781750 groups=["map"]]
 
 [node name="floor 1" type="CollisionPolygon3D" parent="The Attic/StaticBody3D" unique_id=2051140877]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 19.027931, 145)
