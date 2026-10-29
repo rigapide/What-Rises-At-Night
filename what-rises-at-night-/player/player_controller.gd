@@ -113,6 +113,7 @@ func pick_up_item():
 	item.scale.y = 3
 	item.scale.z = 3
 	
+	
 	holding_item = true
 
 func drop_item():

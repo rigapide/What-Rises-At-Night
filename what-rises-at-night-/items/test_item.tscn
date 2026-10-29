@@ -4,7 +4,7 @@
 transparency = 1
 vertex_color_use_as_albedo = true
 vertex_color_is_srgb = true
-albedo_color = Color(0.38039216, 0.2509804, 0.08627451, 0.6745098)
+albedo_color = Color(0.20548332, 0.12787741, 0.029709103, 0.6745098)
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_6rob7"]
 material = SubResource("StandardMaterial3D_xl1sa")
@@ -26,9 +26,17 @@ top_radius = 0.028320313
 bottom_radius = 0.028320313
 height = 0.01
 
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_i8ldy"]
+noise_type = 0
+frequency = 0.0642
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_xl1sa"]
+noise = SubResource("FastNoiseLite_i8ldy")
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gw73d"]
 transparency = 1
 albedo_color = Color(0.53517914, 0.36013564, 0.13805562, 1)
+albedo_texture = SubResource("NoiseTexture2D_xl1sa")
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_rx7pe"]
 material = SubResource("StandardMaterial3D_gw73d")
@@ -45,14 +53,17 @@ transform = Transform3D(16, 0, 0, 0, 16, 0, 0, 0, 16, 0, 0, 0)
 
 [node name="bottle" type="MeshInstance3D" parent="." unique_id=128257658]
 transform = Transform3D(0.9999994, -0.0010805542, 0.00016475712, 0.0010807419, 0.99999875, -0.0011647528, -0.00016352213, 0.0011649267, 0.99999934, 0, 0, 0)
+layers = 3
 mesh = SubResource("CylinderMesh_6rob7")
 
 [node name="lid" type="MeshInstance3D" parent="bottle" unique_id=975062844]
 transform = Transform3D(0.9999994, 0.0010807454, -0.00016349833, -0.0010805505, 0.99999857, 0.00116493, 0.0001647809, -0.001164749, 0.9999992, 3.161867e-05, 0.029256312, -3.4076314e-05)
+layers = 3
 mesh = SubResource("CylinderMesh_gw73d")
 
 [node name="yeast powder" type="MeshInstance3D" parent="bottle" unique_id=908186802]
 transform = Transform3D(1, -8.100187e-12, 0, -3.6394e-11, 1, 1.1641532e-10, -1.4551915e-11, 1.1641532e-10, 1.0000001, 2.3549128e-06, -0.011053454, -2.537955e-06)
+layers = 3
 mesh = SubResource("CylinderMesh_rx7pe")
 
 [node name="yeast collider" type="Area3D" parent="bottle" unique_id=640649800 groups=["baking ingridents", "items"]]

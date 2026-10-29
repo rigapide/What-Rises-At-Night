@@ -51,7 +51,7 @@ spot_angle = 20.0
 spot_angle_attenuation = 2.4622903
 
 [node name="off ambient light" type="SpotLight3D" parent="SpringArm3D/Camera3D" unique_id=1355833286]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.707425e-08, -0.9818711, -0.8816266)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.44)
 light_color = Color(0.07123137, 0.0712314, 0.07123134, 1)
 light_indirect_energy = 0.0
 light_size = 1.0
@@ -69,6 +69,14 @@ spot_angle_attenuation = 2.6390178
 
 [node name="item hold marker" type="Marker3D" parent="SpringArm3D/Camera3D" unique_id=1043481301]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29718223, -0.13297921, -0.60507166)
+
+[node name="highlight held items" type="OmniLight3D" parent="SpringArm3D/Camera3D" unique_id=1896682607]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.826382e-09, 0.07079911, -0.089523375)
+light_energy = 3.0
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 0.0
+light_cull_mask = 4293918722
+omni_range = 0.674
 
 [node name="item_checker" type="RayCast3D" parent="SpringArm3D" unique_id=1838114424]
 target_position = Vector3(0, 0, -2.5)
