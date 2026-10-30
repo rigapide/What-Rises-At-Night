@@ -8,12 +8,13 @@ vertex_color_is_srgb = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_3lynd"]
 material = SubResource("StandardMaterial3D_w58fh")
-size = Vector3(1, 1, 0.5)
+size = Vector3(0.08, 0.1, 0.04)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6rob7"]
-size = Vector3(1, 1, 0.5)
+size = Vector3(0.08, 0.1, 0.04)
 
 [node name="the flour" type="Node3D" unique_id=635210469]
+transform = Transform3D(16, 0, 0, 0, 16, 0, 0, 0, 16, 0, 0, 0)
 
 [node name="The body" type="MeshInstance3D" parent="." unique_id=153962347]
 mesh = SubResource("BoxMesh_3lynd")
@@ -24,6 +25,6 @@ mesh = SubResource("BoxMesh_3lynd")
 shape = SubResource("BoxShape3D_6rob7")
 
 [node name="Decal" type="Decal" parent="The body" unique_id=29668297]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 3.8408874e-08, 0.24538374)
-size = Vector3(1, 0.023010254, 1)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.00017822254, 0.011983682, 0.019232625)
+size = Vector3(0.079458006, 0.005, 0.06639648)
 texture_albedo = ExtResource("1_rt8nv")
