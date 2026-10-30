@@ -1,3 +1,29 @@
 [gd_scene format=3 uid="uid://8khyxbwv2lj7"]
 
+[ext_resource type="Texture2D" uid="uid://dh6jw76npu014" path="res://textures/flour label.png" id="1_rt8nv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w58fh"]
+vertex_color_use_as_albedo = true
+vertex_color_is_srgb = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_3lynd"]
+material = SubResource("StandardMaterial3D_w58fh")
+size = Vector3(1, 1, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6rob7"]
+size = Vector3(1, 1, 0.5)
+
 [node name="the flour" type="Node3D" unique_id=635210469]
+
+[node name="The body" type="MeshInstance3D" parent="." unique_id=153962347]
+mesh = SubResource("BoxMesh_3lynd")
+
+[node name="flour collider" type="Area3D" parent="The body" unique_id=1580256694 groups=["baking ingridents", "items"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="The body/flour collider" unique_id=1167811661]
+shape = SubResource("BoxShape3D_6rob7")
+
+[node name="Decal" type="Decal" parent="The body" unique_id=29668297]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 3.8408874e-08, 0.24538374)
+size = Vector3(1, 0.023010254, 1)
+texture_albedo = ExtResource("1_rt8nv")
