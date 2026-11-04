@@ -109,9 +109,9 @@ func pick_up_item():
 	item.global_position = hold_spot.global_position
 	item.rotation = camera.rotation
 	
-	item.scale.x = 3
-	item.scale.y = 3
-	item.scale.z = 3
+	item.scale.x = 0.2
+	item.scale.y = 0.2
+	item.scale.z = 0.2
 	
 	
 	holding_item = true
@@ -122,9 +122,9 @@ func drop_item():
 	
 	
 	
-	item.scale.x = 16
-	item.scale.y = 16
-	item.scale.z = 16
+	item.scale.x = 1
+	item.scale.y = 1
+	item.scale.z = 1
 	
 	item.global_position = looking_point
 	item.reparent(get_tree().root)

@@ -72,7 +72,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29718223, -0.13297921, -0.6
 
 [node name="highlight held items" type="OmniLight3D" parent="SpringArm3D/Camera3D" unique_id=1896682607]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.826382e-09, 0.07079911, -0.089523375)
-light_energy = 3.0
+light_energy = 0.6
 light_indirect_energy = 0.0
 light_volumetric_fog_energy = 0.0
 light_cull_mask = 4293918722
