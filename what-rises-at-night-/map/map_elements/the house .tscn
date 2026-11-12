@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://4p8mvf45c1fq"]
 
+[ext_resource type="PackedScene" uid="uid://doc21muvryg5a" path="res://map/map_elements/placeholder_furniture.tscn" id="1_miawf"]
+
 [sub_resource type="BoxMesh" id="BoxMesh_rxcbq"]
 resource_local_to_scene = true
 size = Vector3(6, 23, 1)
@@ -85,7 +87,15 @@ resource_local_to_scene = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_s21u1"]
 resource_local_to_scene = true
-size = Vector3(39, 23, 1)
+size = Vector3(39, 10, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_miawf"]
+resource_local_to_scene = true
+size = Vector3(8, 13, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wpn36"]
+resource_local_to_scene = true
+size = Vector3(8, 13, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_bcays"]
 resource_local_to_scene = true
@@ -135,6 +145,36 @@ size = Vector3(1, 2, 4)
 resource_local_to_scene = true
 size = Vector3(1, 9, 38)
 
+[sub_resource type="BoxMesh" id="BoxMesh_0xb4c"]
+size = Vector3(7, 7, 35)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_miawf"]
+size = Vector3(7, 7, 35)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ddslr"]
+size = Vector3(7, 8, 12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0xb4c"]
+size = Vector3(7, 8, 12)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rcgxa"]
+size = Vector3(7, 7, 32)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ga7fp"]
+size = Vector3(7, 7, 32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ga7fp"]
+size = Vector3(7, 10, 23)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wpn36"]
+size = Vector3(7, 10, 23)
+
+[sub_resource type="BoxMesh" id="BoxMesh_oxtba"]
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rhmaj"]
+size = Vector3(5, 5, 5)
+
 [sub_resource type="BoxMesh" id="BoxMesh_6h2lj"]
 resource_local_to_scene = true
 size = Vector3(41, 1, 65)
@@ -178,6 +218,36 @@ size = Vector3(8, 23, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_ki4et"]
 resource_local_to_scene = true
 size = Vector3(56, 23, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rhmaj"]
+size = Vector3(7, 17, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ek8jt"]
+size = Vector3(7, 17, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ek8jt"]
+resource_local_to_scene = true
+size = Vector3(7, 7, 9)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pt5gp"]
+resource_local_to_scene = true
+size = Vector3(7, 7, 9)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pt5gp"]
+resource_local_to_scene = true
+size = Vector3(7, 7, 22)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_htlm1"]
+resource_local_to_scene = true
+size = Vector3(7, 7, 22)
+
+[sub_resource type="BoxMesh" id="BoxMesh_htlm1"]
+resource_local_to_scene = true
+size = Vector3(8, 7, 9)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gdvmt"]
+resource_local_to_scene = true
+size = Vector3(8, 7, 9)
 
 [sub_resource type="BoxMesh" id="BoxMesh_4din4"]
 resource_local_to_scene = true
@@ -971,86 +1041,6 @@ debug_color = Color(0.8109718, 0.0021531773, 0.985985, 0.41960785)
 
 [node name="the living roon" type="Node3D" parent="." unique_id=742412009]
 
-[node name="floor1" type="MeshInstance3D" parent="the living roon" unique_id=606653304]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0, 33.5)
-mesh = SubResource("BoxMesh_k0g6f")
-
-[node name="floor3" type="MeshInstance3D" parent="the living roon" unique_id=1572364200]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.5, 0, 80)
-mesh = SubResource("BoxMesh_ebth5")
-
-[node name="wall1" type="MeshInstance3D" parent="the living roon" unique_id=745945994]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 3, 54)
-mesh = SubResource("BoxMesh_6h2x7")
-
-[node name="wall14" type="MeshInstance3D" parent="the living roon" unique_id=26331591]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -19, 48.5)
-mesh = SubResource("BoxMesh_04isc")
-
-[node name="wall15" type="MeshInstance3D" parent="the living roon" unique_id=1186714560]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -13.5, 60)
-mesh = SubResource("BoxMesh_c3a5c")
-
-[node name="wall16" type="MeshInstance3D" parent="the living roon" unique_id=1143053387]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -15.5, 58)
-mesh = SubResource("BoxMesh_e2jxk")
-
-[node name="wall17" type="MeshInstance3D" parent="the living roon" unique_id=1836574943]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -17, 56)
-mesh = SubResource("BoxMesh_4keks")
-
-[node name="wall3" type="MeshInstance3D" parent="the living roon" unique_id=416380233]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.5, 7, 26)
-mesh = SubResource("BoxMesh_s21u1")
-
-[node name="wall7" type="MeshInstance3D" parent="the living roon" unique_id=1166963241]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.5, 7, 72.5)
-mesh = SubResource("BoxMesh_bcays")
-
-[node name="wall4" type="MeshInstance3D" parent="the living roon" unique_id=2031914750]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 9.5, 26)
-mesh = SubResource("BoxMesh_mrcal")
-
-[node name="wall6" type="MeshInstance3D" parent="the living roon" unique_id=1059553740]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 16.5, 26)
-mesh = SubResource("BoxMesh_fl0si")
-
-[node name="wall5" type="MeshInstance3D" parent="the living roon" unique_id=756083178]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 9.5, 26)
-mesh = SubResource("BoxMesh_34i44")
-
-[node name="wall2" type="MeshInstance3D" parent="the living roon" unique_id=622017180]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 6.5, 41)
-mesh = SubResource("BoxMesh_bbdup")
-
-[node name="wall8" type="MeshInstance3D" parent="the living roon" unique_id=1831645798]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -6, 67.5)
-mesh = SubResource("BoxMesh_c4t0s")
-
-[node name="wall9" type="MeshInstance3D" parent="the living roon" unique_id=96605398]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -5.5, 69.5)
-mesh = SubResource("BoxMesh_mr5bh")
-
-[node name="wall10" type="MeshInstance3D" parent="the living roon" unique_id=1021552248]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -5, 71.5)
-mesh = SubResource("BoxMesh_f7uxg")
-
-[node name="wall11" type="MeshInstance3D" parent="the living roon" unique_id=1668969887]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -4.5, 73.5)
-mesh = SubResource("BoxMesh_eybsj")
-
-[node name="wall12" type="MeshInstance3D" parent="the living roon" unique_id=545513231]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -3, 81.5)
-mesh = SubResource("BoxMesh_dox4x")
-
-[node name="wall13" type="MeshInstance3D" parent="the living roon" unique_id=965505507]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -6.5, 76.5)
-mesh = SubResource("BoxMesh_pf502")
-
-[node name="rail" type="MeshInstance3D" parent="the living roon" unique_id=1828942307]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 4, 85.5)
-mesh = SubResource("BoxMesh_hdfok")
-
 [node name="living room colliders" type="StaticBody3D" parent="the living roon" unique_id=1139768491 groups=["map"]]
 
 [node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="the living roon/living room colliders" unique_id=372005525]
@@ -1078,51 +1068,154 @@ transform = Transform3D(1.9106855e-15, -1, 0, 1, 1.9106855e-15, 4.371139e-08, -4
 polygon = PackedVector2Array(4.509939, 50.90456, 4.507025, 10.924183, 22.535683, 10.880414, 22.513412, 50.905262)
 debug_color = Color(0.9635635, 5.7756904e-07, 0.5016073, 0.41960785)
 
+[node name="layout" type="Node3D" parent="the living roon" unique_id=1181193878]
+
+[node name="floor1" type="MeshInstance3D" parent="the living roon/layout" unique_id=606653304]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 0, 33.5)
+mesh = SubResource("BoxMesh_k0g6f")
+
+[node name="floor3" type="MeshInstance3D" parent="the living roon/layout" unique_id=1572364200]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.5, 0, 80)
+mesh = SubResource("BoxMesh_ebth5")
+
+[node name="wall1" type="MeshInstance3D" parent="the living roon/layout" unique_id=745945994]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 3, 54)
+mesh = SubResource("BoxMesh_6h2x7")
+
+[node name="wall14" type="MeshInstance3D" parent="the living roon/layout" unique_id=26331591]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -19, 48.5)
+mesh = SubResource("BoxMesh_04isc")
+
+[node name="wall15" type="MeshInstance3D" parent="the living roon/layout" unique_id=1186714560]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -13.5, 60)
+mesh = SubResource("BoxMesh_c3a5c")
+
+[node name="wall16" type="MeshInstance3D" parent="the living roon/layout" unique_id=1143053387]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -15.5, 58)
+mesh = SubResource("BoxMesh_e2jxk")
+
+[node name="wall17" type="MeshInstance3D" parent="the living roon/layout" unique_id=1836574943]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -17, 56)
+mesh = SubResource("BoxMesh_4keks")
+
+[node name="wall3" type="MeshInstance3D" parent="the living roon/layout" unique_id=416380233]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.5, 0.5, 26)
+mesh = SubResource("BoxMesh_s21u1")
+
+[node name="wall18" type="MeshInstance3D" parent="the living roon/layout" unique_id=164680569]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 12, 26)
+mesh = SubResource("BoxMesh_miawf")
+
+[node name="wall19" type="MeshInstance3D" parent="the living roon/layout" unique_id=910379054]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 12, 26)
+mesh = SubResource("BoxMesh_wpn36")
+
+[node name="wall7" type="MeshInstance3D" parent="the living roon/layout" unique_id=1166963241]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.5, 7, 72.5)
+mesh = SubResource("BoxMesh_bcays")
+
+[node name="wall4" type="MeshInstance3D" parent="the living roon/layout" unique_id=2031914750]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 9.5, 26)
+mesh = SubResource("BoxMesh_mrcal")
+
+[node name="wall6" type="MeshInstance3D" parent="the living roon/layout" unique_id=1059553740]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 16.5, 26)
+mesh = SubResource("BoxMesh_fl0si")
+
+[node name="wall5" type="MeshInstance3D" parent="the living roon/layout" unique_id=756083178]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 9.5, 26)
+mesh = SubResource("BoxMesh_34i44")
+
+[node name="wall2" type="MeshInstance3D" parent="the living roon/layout" unique_id=622017180]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 6.5, 41)
+mesh = SubResource("BoxMesh_bbdup")
+
+[node name="wall8" type="MeshInstance3D" parent="the living roon/layout" unique_id=1831645798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -6, 67.5)
+mesh = SubResource("BoxMesh_c4t0s")
+
+[node name="wall9" type="MeshInstance3D" parent="the living roon/layout" unique_id=96605398]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -5.5, 69.5)
+mesh = SubResource("BoxMesh_mr5bh")
+
+[node name="wall10" type="MeshInstance3D" parent="the living roon/layout" unique_id=1021552248]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -5, 71.5)
+mesh = SubResource("BoxMesh_f7uxg")
+
+[node name="wall11" type="MeshInstance3D" parent="the living roon/layout" unique_id=1668969887]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -4.5, 73.5)
+mesh = SubResource("BoxMesh_eybsj")
+
+[node name="wall12" type="MeshInstance3D" parent="the living roon/layout" unique_id=545513231]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -3, 81.5)
+mesh = SubResource("BoxMesh_dox4x")
+
+[node name="wall13" type="MeshInstance3D" parent="the living roon/layout" unique_id=965505507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -6.5, 76.5)
+mesh = SubResource("BoxMesh_pf502")
+
+[node name="rail" type="MeshInstance3D" parent="the living roon/layout" unique_id=1828942307]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 4, 85.5)
+mesh = SubResource("BoxMesh_hdfok")
+
+[node name="furniture" type="Node3D" parent="the living roon" unique_id=2122058989]
+
+[node name="placeholder furniture" parent="the living roon/furniture" unique_id=1862049999 instance=ExtResource("1_miawf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.531268, 1.0031283, 57.40236)
+
+[node name="MeshInstance3D" parent="the living roon/furniture/placeholder furniture" index="0" unique_id=1234929732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.000001, 2.9999998, 17)
+mesh = SubResource("BoxMesh_0xb4c")
+
+[node name="CollisionShape3D" parent="the living roon/furniture/placeholder furniture/Area3D" parent_id_path=PackedInt32Array(1862049999, 871773437) index="0" unique_id=1275664662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.9999998, 17)
+shape = SubResource("BoxShape3D_miawf")
+
+[node name="placeholder furniture2" parent="the living roon/furniture" unique_id=599546386 instance=ExtResource("1_miawf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.195004, 1.0031283, 104.50836)
+
+[node name="MeshInstance3D" parent="the living roon/furniture/placeholder furniture2" index="0" unique_id=1234929732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 3.4999998, 5.5)
+mesh = SubResource("BoxMesh_ddslr")
+
+[node name="CollisionShape3D" parent="the living roon/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(599546386, 871773437) index="0" unique_id=1275664662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 3.4999998, 5.5)
+shape = SubResource("BoxShape3D_0xb4c")
+
+[node name="placeholder furniture3" parent="the living roon/furniture" unique_id=1360061115 instance=ExtResource("1_miawf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.195004, 1.0031283, 70.54036)
+
+[node name="MeshInstance3D" parent="the living roon/furniture/placeholder furniture3" index="0" unique_id=1234929732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.9999998, 15.5)
+mesh = SubResource("BoxMesh_rcgxa")
+
+[node name="CollisionShape3D" parent="the living roon/furniture/placeholder furniture3/Area3D" parent_id_path=PackedInt32Array(1360061115, 871773437) index="0" unique_id=1275664662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.9999998, 15.5)
+shape = SubResource("BoxShape3D_ga7fp")
+
+[node name="placeholder furniture4" parent="the living roon/furniture" unique_id=1015734331 instance=ExtResource("1_miawf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.374317, 1.0031283, 29.025078)
+
+[node name="MeshInstance3D" parent="the living roon/furniture/placeholder furniture4" index="0" unique_id=1234929732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 4.5, 11)
+mesh = SubResource("BoxMesh_ga7fp")
+
+[node name="CollisionShape3D" parent="the living roon/furniture/placeholder furniture4/Area3D" parent_id_path=PackedInt32Array(1015734331, 871773437) index="0" unique_id=1275664662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 4.5, 11)
+shape = SubResource("BoxShape3D_wpn36")
+
+[node name="placeholder furniture5" parent="the living roon/furniture" unique_id=69977948 instance=ExtResource("1_miawf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.529045, 1.0031283, 26.895107)
+
+[node name="MeshInstance3D" parent="the living roon/furniture/placeholder furniture5" index="0" unique_id=1234929732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1.9999998, 13)
+mesh = SubResource("BoxMesh_oxtba")
+
+[node name="CollisionShape3D" parent="the living roon/furniture/placeholder furniture5/Area3D" parent_id_path=PackedInt32Array(69977948, 871773437) index="0" unique_id=1275664662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1.9999998, 13)
+shape = SubResource("BoxShape3D_rhmaj")
+
 [node name="The Kitchen" type="Node3D" parent="." unique_id=1423698993]
-
-[node name="floor1" type="MeshInstance3D" parent="The Kitchen" unique_id=647616032]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.5, 0, 152)
-mesh = SubResource("BoxMesh_6h2lj")
-
-[node name="floor2" type="MeshInstance3D" parent="The Kitchen" unique_id=656972006]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 159.5)
-mesh = SubResource("BoxMesh_1pjac")
-
-[node name="floor3" type="MeshInstance3D" parent="The Kitchen" unique_id=1031420877]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 127.5)
-mesh = SubResource("BoxMesh_wey6u")
-
-[node name="wall1" type="MeshInstance3D" parent="The Kitchen" unique_id=613797763]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 7, 127)
-mesh = SubResource("BoxMesh_y2ffl")
-
-[node name="wall8" type="MeshInstance3D" parent="The Kitchen" unique_id=4580667]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 7, 120)
-mesh = SubResource("BoxMesh_6qkip")
-
-[node name="wall5" type="MeshInstance3D" parent="The Kitchen" unique_id=43200248]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 7, 134)
-mesh = SubResource("BoxMesh_nicvx")
-
-[node name="wall6" type="MeshInstance3D" parent="The Kitchen" unique_id=399774536]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5, 7, 134)
-mesh = SubResource("BoxMesh_ux5jp")
-
-[node name="wall7" type="MeshInstance3D" parent="The Kitchen" unique_id=310545747]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5, 7, 152.5)
-mesh = SubResource("BoxMesh_nwcmf")
-
-[node name="wall2" type="MeshInstance3D" parent="The Kitchen" unique_id=1753143247]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.5, 7, 152)
-mesh = SubResource("BoxMesh_4nabj")
-
-[node name="wall3" type="MeshInstance3D" parent="The Kitchen" unique_id=1164405872]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 7, 185)
-mesh = SubResource("BoxMesh_qp3o1")
-
-[node name="wall4" type="MeshInstance3D" parent="The Kitchen" unique_id=1079648374]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 7, 185)
-mesh = SubResource("BoxMesh_ki4et")
 
 [node name="kitchen colliders" type="StaticBody3D" parent="The Kitchen" unique_id=288586071 groups=["map"]]
 
@@ -1170,6 +1263,98 @@ debug_color = Color(0.043115728, 0.5261026, 1, 0.41960785)
 transform = Transform3D(-4.371139e-08, 4.371139e-08, 1, 1, 1.9106855e-15, 4.371139e-08, 0, 1, -4.371139e-08, -53.38101, 1.5276413, 142.39511)
 polygon = PackedVector2Array(-1.0485526, 43.267303, -1, -23.5, 16.918379, -23.507797, 16.98199, 43.097366)
 debug_color = Color(0.043115728, 0.5261026, 1, 0.41960785)
+
+[node name="layout" type="Node3D" parent="The Kitchen" unique_id=1265849050]
+
+[node name="floor1" type="MeshInstance3D" parent="The Kitchen/layout" unique_id=647616032]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.5, 0, 152)
+mesh = SubResource("BoxMesh_6h2lj")
+
+[node name="floor2" type="MeshInstance3D" parent="The Kitchen/layout" unique_id=656972006]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 159.5)
+mesh = SubResource("BoxMesh_1pjac")
+
+[node name="floor3" type="MeshInstance3D" parent="The Kitchen/layout" unique_id=1031420877]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 127.5)
+mesh = SubResource("BoxMesh_wey6u")
+
+[node name="wall1" type="MeshInstance3D" parent="The Kitchen/layout" unique_id=613797763]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 7, 127)
+mesh = SubResource("BoxMesh_y2ffl")
+
+[node name="wall8" type="MeshInstance3D" parent="The Kitchen/layout" unique_id=4580667]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 7, 120)
+mesh = SubResource("BoxMesh_6qkip")
+
+[node name="wall5" type="MeshInstance3D" parent="The Kitchen/layout" unique_id=43200248]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 7, 134)
+mesh = SubResource("BoxMesh_nicvx")
+
+[node name="wall6" type="MeshInstance3D" parent="The Kitchen/layout" unique_id=399774536]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5, 7, 134)
+mesh = SubResource("BoxMesh_ux5jp")
+
+[node name="wall7" type="MeshInstance3D" parent="The Kitchen/layout" unique_id=310545747]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5, 7, 152.5)
+mesh = SubResource("BoxMesh_nwcmf")
+
+[node name="wall2" type="MeshInstance3D" parent="The Kitchen/layout" unique_id=1753143247]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.5, 7, 152)
+mesh = SubResource("BoxMesh_4nabj")
+
+[node name="wall3" type="MeshInstance3D" parent="The Kitchen/layout" unique_id=1164405872]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 7, 185)
+mesh = SubResource("BoxMesh_qp3o1")
+
+[node name="wall4" type="MeshInstance3D" parent="The Kitchen/layout" unique_id=1079648374]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 7, 185)
+mesh = SubResource("BoxMesh_ki4et")
+
+[node name="furniture" type="Node3D" parent="The Kitchen" unique_id=1310897156]
+
+[node name="placeholder furniture" parent="The Kitchen/furniture" unique_id=1984877919 instance=ExtResource("1_miawf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.446749, 1.0031283, 134.99774)
+
+[node name="MeshInstance3D" parent="The Kitchen/furniture/placeholder furniture" index="0" unique_id=1234929732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.000002, 8, 4.5)
+mesh = SubResource("BoxMesh_rhmaj")
+
+[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture/Area3D" parent_id_path=PackedInt32Array(1984877919, 871773437) index="0" unique_id=1275664662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 8, 4.5)
+shape = SubResource("BoxShape3D_ek8jt")
+
+[node name="placeholder furniture2" parent="The Kitchen/furniture" unique_id=1119512908 instance=ExtResource("1_miawf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.503504, 0.99522626, 144.99292)
+
+[node name="MeshInstance3D" parent="The Kitchen/furniture/placeholder furniture2" index="0" unique_id=1234929732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 3, 4)
+mesh = SubResource("BoxMesh_ek8jt")
+
+[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(1119512908, 871773437) index="0" unique_id=1275664662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 3, 4)
+shape = SubResource("BoxShape3D_pt5gp")
+
+[node name="placeholder furniture4" parent="The Kitchen/furniture" unique_id=1779328057 instance=ExtResource("1_miawf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.503504, 0.99522626, 163.00163)
+
+[node name="MeshInstance3D" parent="The Kitchen/furniture/placeholder furniture4" index="0" unique_id=1234929732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 3, 10.5)
+mesh = SubResource("BoxMesh_pt5gp")
+
+[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture4/Area3D" parent_id_path=PackedInt32Array(1779328057, 871773437) index="0" unique_id=1275664662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 3, 10.5)
+shape = SubResource("BoxShape3D_htlm1")
+
+[node name="placeholder furniture3" parent="The Kitchen/furniture" unique_id=1019488576 instance=ExtResource("1_miawf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.503504, 0.99522626, 154.00871)
+
+[node name="MeshInstance3D" parent="The Kitchen/furniture/placeholder furniture3" index="0" unique_id=1234929732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 3, 4)
+mesh = SubResource("BoxMesh_htlm1")
+
+[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture3/Area3D" parent_id_path=PackedInt32Array(1019488576, 871773437) index="0" unique_id=1275664662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 3, 4)
+shape = SubResource("BoxShape3D_gdvmt")
 
 [node name="The stairwell" type="Node3D" parent="." unique_id=595686356]
 
@@ -2521,3 +2706,13 @@ polygon = PackedVector2Array(-54.045338, -40.766144, 70.017204, -40.54367, 69.88
 [node name="floor 2" type="CollisionPolygon3D" parent="The Attic/StaticBody3D" unique_id=66314433]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 113.59955, 19.079546, 109)
 polygon = PackedVector2Array(2.4178467, 68.509094, -44.703278, 68.52811, -43.577835, -38.514664, 2.4427338, -38.457306)
+
+[editable path="the living roon/furniture/placeholder furniture"]
+[editable path="the living roon/furniture/placeholder furniture2"]
+[editable path="the living roon/furniture/placeholder furniture3"]
+[editable path="the living roon/furniture/placeholder furniture4"]
+[editable path="the living roon/furniture/placeholder furniture5"]
+[editable path="The Kitchen/furniture/placeholder furniture"]
+[editable path="The Kitchen/furniture/placeholder furniture2"]
+[editable path="The Kitchen/furniture/placeholder furniture4"]
+[editable path="The Kitchen/furniture/placeholder furniture3"]
