@@ -219,12 +219,6 @@ size = Vector3(8, 23, 1)
 resource_local_to_scene = true
 size = Vector3(56, 23, 1)
 
-[sub_resource type="BoxMesh" id="BoxMesh_rhmaj"]
-size = Vector3(7, 17, 10)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_ek8jt"]
-size = Vector3(7, 17, 10)
-
 [sub_resource type="BoxMesh" id="BoxMesh_ek8jt"]
 resource_local_to_scene = true
 size = Vector3(7, 7, 9)
@@ -232,6 +226,14 @@ size = Vector3(7, 7, 9)
 [sub_resource type="BoxShape3D" id="BoxShape3D_pt5gp"]
 resource_local_to_scene = true
 size = Vector3(7, 7, 9)
+
+[sub_resource type="BoxMesh" id="BoxMesh_35odr"]
+resource_local_to_scene = true
+size = Vector3(7, 15, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dathq"]
+resource_local_to_scene = true
+size = Vector3(7, 15, 10)
 
 [sub_resource type="BoxMesh" id="BoxMesh_htlm1"]
 resource_local_to_scene = true
@@ -456,6 +458,12 @@ size = Vector3(1, 3, 10)
 [sub_resource type="BoxMesh" id="BoxMesh_sfwxt"]
 resource_local_to_scene = true
 size = Vector3(1, 19, 27)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rhmaj"]
+size = Vector3(7, 12, 13)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ek8jt"]
+size = Vector3(7, 12, 13)
 
 [sub_resource type="BoxMesh" id="BoxMesh_lolmt"]
 resource_local_to_scene = true
@@ -1352,17 +1360,6 @@ mesh = SubResource("BoxMesh_ki4et")
 
 [node name="furniture" type="Node3D" parent="The Kitchen" unique_id=1310897156]
 
-[node name="placeholder furniture" parent="The Kitchen/furniture" unique_id=1984877919 instance=ExtResource("1_miawf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.446749, 1.0031283, 134.99774)
-
-[node name="MeshInstance3D" parent="The Kitchen/furniture/placeholder furniture" index="0" unique_id=1234929732]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.000002, 8, 4.5)
-mesh = SubResource("BoxMesh_rhmaj")
-
-[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture/Area3D" parent_id_path=PackedInt32Array(1984877919, 871773437) index="0" unique_id=1275664662]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 8, 4.5)
-shape = SubResource("BoxShape3D_ek8jt")
-
 [node name="placeholder furniture2" parent="The Kitchen/furniture" unique_id=1119512908 instance=ExtResource("1_miawf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.503504, 0.99522626, 144.99292)
 
@@ -1373,6 +1370,17 @@ mesh = SubResource("BoxMesh_ek8jt")
 [node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(1119512908, 871773437) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 3, 4)
 shape = SubResource("BoxShape3D_pt5gp")
+
+[node name="placeholder furniture10" parent="The Kitchen/furniture" unique_id=2046429477 instance=ExtResource("1_miawf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.503504, 0.99522626, 136.02927)
+
+[node name="MeshInstance3D" parent="The Kitchen/furniture/placeholder furniture10" index="0" unique_id=1234929732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 7, 3.5)
+mesh = SubResource("BoxMesh_35odr")
+
+[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture10/Area3D" parent_id_path=PackedInt32Array(2046429477, 871773437) index="0" unique_id=1275664662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 7, 3.5)
+shape = SubResource("BoxShape3D_dathq")
 
 [node name="placeholder furniture4" parent="The Kitchen/furniture" unique_id=1779328057 instance=ExtResource("1_miawf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.503504, 0.99522626, 163.00163)
@@ -1452,310 +1460,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, 22)
 shape = SubResource("BoxShape3D_37iw5")
 
 [node name="The stairwell" type="Node3D" parent="." unique_id=595686356]
-
-[node name="floor1" type="MeshInstance3D" parent="The stairwell" unique_id=978686564]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 112)
-mesh = SubResource("BoxMesh_4din4")
-
-[node name="floor5" type="MeshInstance3D" parent="The stairwell" unique_id=1647236437]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, 127)
-mesh = SubResource("BoxMesh_4nwnf")
-
-[node name="floor4" type="MeshInstance3D" parent="The stairwell" unique_id=1904805449]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5, 0, 97)
-mesh = SubResource("BoxMesh_6g3c3")
-
-[node name="floor3" type="MeshInstance3D" parent="The stairwell" unique_id=1794679389]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 0, 112.5)
-mesh = SubResource("BoxMesh_l6558")
-
-[node name="floor6" type="MeshInstance3D" parent="The stairwell" unique_id=1720892109]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.5, 0, 133.5)
-mesh = SubResource("BoxMesh_1jbw7")
-
-[node name="floor2" type="MeshInstance3D" parent="The stairwell" unique_id=487063098]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 97.5)
-mesh = SubResource("BoxMesh_wlybh")
-
-[node name="stair1" type="MeshInstance3D" parent="The stairwell" unique_id=1122842610]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -1, 89.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair2" type="MeshInstance3D" parent="The stairwell" unique_id=1574151752]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 87.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair3" type="MeshInstance3D" parent="The stairwell" unique_id=803535019]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -3, 85.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair4" type="MeshInstance3D" parent="The stairwell" unique_id=1460878195]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -4, 83.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair5" type="MeshInstance3D" parent="The stairwell" unique_id=711748483]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -5, 81.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair6" type="MeshInstance3D" parent="The stairwell" unique_id=1012321828]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -6, 79.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair7" type="MeshInstance3D" parent="The stairwell" unique_id=1489305986]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, 77.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair8" type="MeshInstance3D" parent="The stairwell" unique_id=1496622772]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -8, 75.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair9" type="MeshInstance3D" parent="The stairwell" unique_id=637273960]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -9, 73.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair10" type="MeshInstance3D" parent="The stairwell" unique_id=932843159]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -10, 71.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair11" type="MeshInstance3D" parent="The stairwell" unique_id=400507481]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -11, 69.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair12" type="MeshInstance3D" parent="The stairwell" unique_id=1609157779]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -12, 67.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair13" type="MeshInstance3D" parent="The stairwell" unique_id=1798269450]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -13, 65.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair14" type="MeshInstance3D" parent="The stairwell" unique_id=1152603094]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -14, 63.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair15" type="MeshInstance3D" parent="The stairwell" unique_id=530476400]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -15, 61.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair16" type="MeshInstance3D" parent="The stairwell" unique_id=1990613146]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -16, 59.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair17" type="MeshInstance3D" parent="The stairwell" unique_id=817579315]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -17, 57.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair18" type="MeshInstance3D" parent="The stairwell" unique_id=1516654182]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -18, 55.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair20" type="MeshInstance3D" parent="The stairwell" unique_id=2093206604]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -19, 53.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair21" type="MeshInstance3D" parent="The stairwell" unique_id=2118601426]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -20, 51.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair22" type="MeshInstance3D" parent="The stairwell" unique_id=1124942203]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -21, 49.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair23" type="MeshInstance3D" parent="The stairwell" unique_id=1288061267]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -22, 47.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair24" type="MeshInstance3D" parent="The stairwell" unique_id=1193537995]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -23, 45.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair25" type="MeshInstance3D" parent="The stairwell" unique_id=1043901505]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -24, 43.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair26" type="MeshInstance3D" parent="The stairwell" unique_id=411458021]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -25, 41.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair27" type="MeshInstance3D" parent="The stairwell" unique_id=1327541933]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -26, 39.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair28" type="MeshInstance3D" parent="The stairwell" unique_id=585090348]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -27, 37.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair29" type="MeshInstance3D" parent="The stairwell" unique_id=1882380464]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -28, 35.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair30" type="MeshInstance3D" parent="The stairwell" unique_id=84464254]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -29, 33.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair31" type="MeshInstance3D" parent="The stairwell" unique_id=1724929220]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -30, 31.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair32" type="MeshInstance3D" parent="The stairwell" unique_id=1710253760]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -31, 29.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair33" type="MeshInstance3D" parent="The stairwell" unique_id=1898673236]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -32, 27.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="stair34" type="MeshInstance3D" parent="The stairwell" unique_id=238934954]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -33, 25.5)
-mesh = SubResource("BoxMesh_tu6lm")
-
-[node name="floor 3" type="MeshInstance3D" parent="The stairwell" unique_id=1981569743]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -34, 17.5)
-mesh = SubResource("BoxMesh_2ryge")
-
-[node name="floor 5" type="MeshInstance3D" parent="The stairwell" unique_id=1934149126]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -6, 26)
-mesh = SubResource("BoxMesh_nljph")
-
-[node name="floor 6" type="MeshInstance3D" parent="The stairwell" unique_id=1897353078]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5, -6, 17.5)
-mesh = SubResource("BoxMesh_dqnll")
-
-[node name="floor 4" type="MeshInstance3D" parent="The stairwell" unique_id=1458855312]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -38, 17.5)
-mesh = SubResource("BoxMesh_k0eby")
-
-[node name="stair19" type="MeshInstance3D" parent="The stairwell" unique_id=71870795]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -35, 17.5)
-mesh = SubResource("BoxMesh_si2de")
-
-[node name="stair35" type="MeshInstance3D" parent="The stairwell" unique_id=1583601897]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -36, 17.5)
-mesh = SubResource("BoxMesh_si2de")
-
-[node name="stair36" type="MeshInstance3D" parent="The stairwell" unique_id=1450721971]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, -37, 17.5)
-mesh = SubResource("BoxMesh_si2de")
-
-[node name="wall1" type="MeshInstance3D" parent="The stairwell" unique_id=1663443332]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 6.5, 73)
-mesh = SubResource("BoxMesh_r8sb8")
-
-[node name="wall2" type="MeshInstance3D" parent="The stairwell" unique_id=234925908]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 9, 104)
-mesh = SubResource("BoxMesh_y8ly2")
-
-[node name="wall15" type="MeshInstance3D" parent="The stairwell" unique_id=2027270549]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5, 9, 104)
-mesh = SubResource("BoxMesh_g52qd")
-
-[node name="wall17" type="MeshInstance3D" parent="The stairwell" unique_id=1383520164]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5, 9, 96)
-mesh = SubResource("BoxMesh_ju1e1")
-
-[node name="wall18" type="MeshInstance3D" parent="The stairwell" unique_id=506527253]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5, 9, 89)
-mesh = SubResource("BoxMesh_yscuj")
-
-[node name="wall19" type="MeshInstance3D" parent="The stairwell" unique_id=1136960871]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 17, 104)
-mesh = SubResource("BoxMesh_oppfv")
-
-[node name="wall29" type="MeshInstance3D" parent="The stairwell" unique_id=2089870939]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 17, 104)
-mesh = SubResource("BoxMesh_j0chu")
-
-[node name="wall30" type="MeshInstance3D" parent="The stairwell" unique_id=1040011712]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.5, 17, 104)
-mesh = SubResource("BoxMesh_5lxk6")
-
-[node name="wall16" type="MeshInstance3D" parent="The stairwell" unique_id=2003063318]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 9, 104)
-mesh = SubResource("BoxMesh_62hgw")
-
-[node name="wall6" type="MeshInstance3D" parent="The stairwell" unique_id=1183309239]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -21.5, 10)
-mesh = SubResource("BoxMesh_tivmy")
-
-[node name="wall8" type="MeshInstance3D" parent="The stairwell" unique_id=1277052535]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, -21.5, 25)
-mesh = SubResource("BoxMesh_tf85s")
-
-[node name="wall9" type="MeshInstance3D" parent="The stairwell" unique_id=1132055554]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, -12.5, 52)
-mesh = SubResource("BoxMesh_wo0pt")
-
-[node name="wall23" type="MeshInstance3D" parent="The stairwell" unique_id=1614321667]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, -28.5, 69.5)
-mesh = SubResource("BoxMesh_lpr6r")
-
-[node name="wall10" type="MeshInstance3D" parent="The stairwell" unique_id=1207951434]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, -26.5, 38.5)
-mesh = SubResource("BoxMesh_gxkok")
-
-[node name="wall7" type="MeshInstance3D" parent="The stairwell" unique_id=1532884343]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -19.5, 25.5)
-mesh = SubResource("BoxMesh_lstqy")
-
-[node name="wall3" type="MeshInstance3D" parent="The stairwell" unique_id=820329765]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.5, 9, 104)
-mesh = SubResource("BoxMesh_1k3ce")
-
-[node name="wall4" type="MeshInstance3D" parent="The stairwell" unique_id=818780679]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.5, 9, 104.5)
-mesh = SubResource("BoxMesh_abilu")
-
-[node name="wall11" type="MeshInstance3D" parent="The stairwell" unique_id=970833050]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.5, 9, 104)
-mesh = SubResource("BoxMesh_ed8wa")
-
-[node name="wall14" type="MeshInstance3D" parent="The stairwell" unique_id=1930052277]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.5, 9, 120)
-mesh = SubResource("BoxMesh_kkp4i")
-
-[node name="wall12" type="MeshInstance3D" parent="The stairwell" unique_id=498427765]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.5, 9, 112)
-mesh = SubResource("BoxMesh_yr7tm")
-
-[node name="wall13" type="MeshInstance3D" parent="The stairwell" unique_id=890629915]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 9, 120)
-mesh = SubResource("BoxMesh_qldmg")
-
-[node name="wall20" type="MeshInstance3D" parent="The stairwell" unique_id=732633234]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.5, 9, 127.5)
-mesh = SubResource("BoxMesh_63mid")
-
-[node name="wall21" type="MeshInstance3D" parent="The stairwell" unique_id=1404139676]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 9, 134)
-mesh = SubResource("BoxMesh_lyvgk")
-
-[node name="wall5" type="MeshInstance3D" parent="The stairwell" unique_id=1293419642]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.5, 9, 127)
-mesh = SubResource("BoxMesh_ol6eo")
-
-[node name="wall24" type="MeshInstance3D" parent="The stairwell" unique_id=1648080907]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.5, 9, 146.5)
-mesh = SubResource("BoxMesh_t5oe2")
-
-[node name="wall25" type="MeshInstance3D" parent="The stairwell" unique_id=426955940]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.5, 9, 147)
-mesh = SubResource("BoxMesh_w1o3p")
-
-[node name="wall26" type="MeshInstance3D" parent="The stairwell" unique_id=398792812]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.5, 9, 147)
-mesh = SubResource("BoxMesh_mo6h7")
-
-[node name="wall27" type="MeshInstance3D" parent="The stairwell" unique_id=2073662452]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.5, 17, 147)
-mesh = SubResource("BoxMesh_28x06")
-
-[node name="wall28" type="MeshInstance3D" parent="The stairwell" unique_id=750412954]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.5, 17, 140.5)
-mesh = SubResource("BoxMesh_u2jf0")
-
-[node name="wall22" type="MeshInstance3D" parent="The stairwell" unique_id=166786196]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.5, 9, 134)
-mesh = SubResource("BoxMesh_sfwxt")
 
 [node name="stairwell colliders" type="StaticBody3D" parent="The stairwell" unique_id=1858831112 groups=["map"]]
 
@@ -1872,6 +1576,325 @@ debug_color = Color(0, 0.6156863, 0.5882353, 0.75686276)
 [node name="CollisionPolygon3D18" type="CollisionPolygon3D" parent="The stairwell/stairwell colliders" unique_id=805324507]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -6.1535254, -6.0056343, 40.265976)
 polygon = PackedVector2Array(-4.8396664, 1.23209, 9.118338, 1.2799911, 9.176657, -15.751051, 36.207996, -15.78956, 36.12734, -29.737732, -4.8328342, -29.796608)
+
+[node name="layout" type="Node3D" parent="The stairwell" unique_id=1959581156]
+
+[node name="floor1" type="MeshInstance3D" parent="The stairwell/layout" unique_id=978686564]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 112)
+mesh = SubResource("BoxMesh_4din4")
+
+[node name="floor5" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1647236437]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, 127)
+mesh = SubResource("BoxMesh_4nwnf")
+
+[node name="floor4" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1904805449]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5, 0, 97)
+mesh = SubResource("BoxMesh_6g3c3")
+
+[node name="floor3" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1794679389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 0, 112.5)
+mesh = SubResource("BoxMesh_l6558")
+
+[node name="floor6" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1720892109]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.5, 0, 133.5)
+mesh = SubResource("BoxMesh_1jbw7")
+
+[node name="floor2" type="MeshInstance3D" parent="The stairwell/layout" unique_id=487063098]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 97.5)
+mesh = SubResource("BoxMesh_wlybh")
+
+[node name="stair1" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1122842610]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -1, 89.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair2" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1574151752]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -2, 87.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair3" type="MeshInstance3D" parent="The stairwell/layout" unique_id=803535019]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -3, 85.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair4" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1460878195]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -4, 83.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair5" type="MeshInstance3D" parent="The stairwell/layout" unique_id=711748483]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -5, 81.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair6" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1012321828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -6, 79.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair7" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1489305986]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -7, 77.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair8" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1496622772]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -8, 75.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair9" type="MeshInstance3D" parent="The stairwell/layout" unique_id=637273960]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -9, 73.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair10" type="MeshInstance3D" parent="The stairwell/layout" unique_id=932843159]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -10, 71.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair11" type="MeshInstance3D" parent="The stairwell/layout" unique_id=400507481]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -11, 69.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair12" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1609157779]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -12, 67.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair13" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1798269450]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -13, 65.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair14" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1152603094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -14, 63.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair15" type="MeshInstance3D" parent="The stairwell/layout" unique_id=530476400]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -15, 61.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair16" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1990613146]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -16, 59.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair17" type="MeshInstance3D" parent="The stairwell/layout" unique_id=817579315]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -17, 57.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair18" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1516654182]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -18, 55.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair20" type="MeshInstance3D" parent="The stairwell/layout" unique_id=2093206604]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -19, 53.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair21" type="MeshInstance3D" parent="The stairwell/layout" unique_id=2118601426]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -20, 51.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair22" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1124942203]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -21, 49.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair23" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1288061267]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -22, 47.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair24" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1193537995]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -23, 45.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair25" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1043901505]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -24, 43.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair26" type="MeshInstance3D" parent="The stairwell/layout" unique_id=411458021]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -25, 41.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair27" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1327541933]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -26, 39.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair28" type="MeshInstance3D" parent="The stairwell/layout" unique_id=585090348]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -27, 37.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair29" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1882380464]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -28, 35.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair30" type="MeshInstance3D" parent="The stairwell/layout" unique_id=84464254]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -29, 33.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair31" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1724929220]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -30, 31.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair32" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1710253760]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -31, 29.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair33" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1898673236]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -32, 27.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="stair34" type="MeshInstance3D" parent="The stairwell/layout" unique_id=238934954]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -33, 25.5)
+mesh = SubResource("BoxMesh_tu6lm")
+
+[node name="floor 3" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1981569743]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -34, 17.5)
+mesh = SubResource("BoxMesh_2ryge")
+
+[node name="floor 5" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1934149126]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -6, 26)
+mesh = SubResource("BoxMesh_nljph")
+
+[node name="floor 6" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1897353078]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5, -6, 17.5)
+mesh = SubResource("BoxMesh_dqnll")
+
+[node name="floor 4" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1458855312]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -38, 17.5)
+mesh = SubResource("BoxMesh_k0eby")
+
+[node name="stair19" type="MeshInstance3D" parent="The stairwell/layout" unique_id=71870795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -35, 17.5)
+mesh = SubResource("BoxMesh_si2de")
+
+[node name="stair35" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1583601897]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -36, 17.5)
+mesh = SubResource("BoxMesh_si2de")
+
+[node name="stair36" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1450721971]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, -37, 17.5)
+mesh = SubResource("BoxMesh_si2de")
+
+[node name="wall1" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1663443332]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 6.5, 73)
+mesh = SubResource("BoxMesh_r8sb8")
+
+[node name="wall2" type="MeshInstance3D" parent="The stairwell/layout" unique_id=234925908]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 9, 104)
+mesh = SubResource("BoxMesh_y8ly2")
+
+[node name="wall15" type="MeshInstance3D" parent="The stairwell/layout" unique_id=2027270549]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5, 9, 104)
+mesh = SubResource("BoxMesh_g52qd")
+
+[node name="wall17" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1383520164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5, 9, 96)
+mesh = SubResource("BoxMesh_ju1e1")
+
+[node name="wall18" type="MeshInstance3D" parent="The stairwell/layout" unique_id=506527253]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5, 9, 89)
+mesh = SubResource("BoxMesh_yscuj")
+
+[node name="wall19" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1136960871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 17, 104)
+mesh = SubResource("BoxMesh_oppfv")
+
+[node name="wall29" type="MeshInstance3D" parent="The stairwell/layout" unique_id=2089870939]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 17, 104)
+mesh = SubResource("BoxMesh_j0chu")
+
+[node name="wall30" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1040011712]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.5, 17, 104)
+mesh = SubResource("BoxMesh_5lxk6")
+
+[node name="wall16" type="MeshInstance3D" parent="The stairwell/layout" unique_id=2003063318]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 9, 104)
+mesh = SubResource("BoxMesh_62hgw")
+
+[node name="wall6" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1183309239]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -21.5, 10)
+mesh = SubResource("BoxMesh_tivmy")
+
+[node name="wall8" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1277052535]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, -21.5, 25)
+mesh = SubResource("BoxMesh_tf85s")
+
+[node name="wall9" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1132055554]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, -12.5, 52)
+mesh = SubResource("BoxMesh_wo0pt")
+
+[node name="wall23" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1614321667]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, -28.5, 69.5)
+mesh = SubResource("BoxMesh_lpr6r")
+
+[node name="wall10" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1207951434]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, -26.5, 38.5)
+mesh = SubResource("BoxMesh_gxkok")
+
+[node name="wall7" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1532884343]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, -19.5, 25.5)
+mesh = SubResource("BoxMesh_lstqy")
+
+[node name="wall3" type="MeshInstance3D" parent="The stairwell/layout" unique_id=820329765]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.5, 9, 104)
+mesh = SubResource("BoxMesh_1k3ce")
+
+[node name="wall4" type="MeshInstance3D" parent="The stairwell/layout" unique_id=818780679]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.5, 9, 104.5)
+mesh = SubResource("BoxMesh_abilu")
+
+[node name="wall11" type="MeshInstance3D" parent="The stairwell/layout" unique_id=970833050]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.5, 9, 104)
+mesh = SubResource("BoxMesh_ed8wa")
+
+[node name="wall14" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1930052277]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.5, 9, 120)
+mesh = SubResource("BoxMesh_kkp4i")
+
+[node name="wall12" type="MeshInstance3D" parent="The stairwell/layout" unique_id=498427765]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.5, 9, 112)
+mesh = SubResource("BoxMesh_yr7tm")
+
+[node name="wall13" type="MeshInstance3D" parent="The stairwell/layout" unique_id=890629915]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 9, 120)
+mesh = SubResource("BoxMesh_qldmg")
+
+[node name="wall20" type="MeshInstance3D" parent="The stairwell/layout" unique_id=732633234]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.5, 9, 127.5)
+mesh = SubResource("BoxMesh_63mid")
+
+[node name="wall21" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1404139676]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 9, 134)
+mesh = SubResource("BoxMesh_lyvgk")
+
+[node name="wall5" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1293419642]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.5, 9, 127)
+mesh = SubResource("BoxMesh_ol6eo")
+
+[node name="wall24" type="MeshInstance3D" parent="The stairwell/layout" unique_id=1648080907]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.5, 9, 146.5)
+mesh = SubResource("BoxMesh_t5oe2")
+
+[node name="wall25" type="MeshInstance3D" parent="The stairwell/layout" unique_id=426955940]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.5, 9, 147)
+mesh = SubResource("BoxMesh_w1o3p")
+
+[node name="wall26" type="MeshInstance3D" parent="The stairwell/layout" unique_id=398792812]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.5, 9, 147)
+mesh = SubResource("BoxMesh_mo6h7")
+
+[node name="wall27" type="MeshInstance3D" parent="The stairwell/layout" unique_id=2073662452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.5, 17, 147)
+mesh = SubResource("BoxMesh_28x06")
+
+[node name="wall28" type="MeshInstance3D" parent="The stairwell/layout" unique_id=750412954]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.5, 17, 140.5)
+mesh = SubResource("BoxMesh_u2jf0")
+
+[node name="wall22" type="MeshInstance3D" parent="The stairwell/layout" unique_id=166786196]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.5, 9, 134)
+mesh = SubResource("BoxMesh_sfwxt")
+
+[node name="furniture" type="Node3D" parent="The stairwell" unique_id=897495970]
+
+[node name="placeholder furniture" parent="The stairwell/furniture" unique_id=1317754191 instance=ExtResource("1_miawf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.40593, 1.0031283, 109.292946)
+
+[node name="MeshInstance3D" parent="The stairwell/furniture/placeholder furniture" index="0" unique_id=1234929732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 5.5, 3)
+mesh = SubResource("BoxMesh_rhmaj")
+
+[node name="CollisionShape3D" parent="The stairwell/furniture/placeholder furniture/Area3D" parent_id_path=PackedInt32Array(1317754191, 871773437) index="0" unique_id=1275664662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 5.5, 3)
+shape = SubResource("BoxShape3D_ek8jt")
 
 [node name="The game room" type="Node3D" parent="." unique_id=884936530]
 
@@ -2807,8 +2830,8 @@ polygon = PackedVector2Array(2.4178467, 68.509094, -44.703278, 68.52811, -43.577
 [editable path="the living roon/furniture/placeholder furniture3"]
 [editable path="the living roon/furniture/placeholder furniture4"]
 [editable path="the living roon/furniture/placeholder furniture5"]
-[editable path="The Kitchen/furniture/placeholder furniture"]
 [editable path="The Kitchen/furniture/placeholder furniture2"]
+[editable path="The Kitchen/furniture/placeholder furniture10"]
 [editable path="The Kitchen/furniture/placeholder furniture4"]
 [editable path="The Kitchen/furniture/placeholder furniture5"]
 [editable path="The Kitchen/furniture/placeholder furniture6"]
@@ -2816,3 +2839,4 @@ polygon = PackedVector2Array(2.4178467, 68.509094, -44.703278, 68.52811, -43.577
 [editable path="The Kitchen/furniture/placeholder furniture8"]
 [editable path="The Kitchen/furniture/placeholder furniture3"]
 [editable path="The Kitchen/furniture/placeholder furniture9"]
+[editable path="The stairwell/furniture/placeholder furniture"]
