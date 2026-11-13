@@ -8,14 +8,21 @@ const JUMP_VELOCITY = 4.5
 @onready var camera = $SpringArm3D/Camera3D
 
 var running: bool
-
-
+@onready var collision_shape = $CollisionShape3D
+@onready var height: CapsuleShape3D = collision_shape.shape as CapsuleShape3D
 
 
 @onready var flashlight = $SpringArm3D/Camera3D/SpotLight3D
 
 @onready var item_checker = $SpringArm3D/item_checker
 @onready var hold_spot = $"SpringArm3D/Camera3D/item hold marker"
+
+
+
+
+
+
+
 var holding_item: bool = false
 
 var item = null
@@ -25,6 +32,15 @@ var looking_point: Vector3 = Vector3(0,0,0)
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	running = false
+	
+
+
+
+
+
+
+
+
 
 
 func _physics_process(delta: float) -> void:
@@ -71,8 +87,17 @@ func _physics_process(delta: float) -> void:
 	
 	
 	
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+		velocity.y = 20
 	
 	
+	
+	if Input.is_action_just_pressed("ctrl"):
+		height.height = 1
+		global_position.y = global_position.y - 1
+	if Input.is_action_just_released("ctrl"):
+		height.height = 2 
+		global_position.y = global_position.y + 1
 	
 	
 	

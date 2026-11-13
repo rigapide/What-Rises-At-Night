@@ -6,7 +6,7 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_npmfu"]
 radius = 0.25
-height = 1.2993164
+height = 0.5
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6rob7"]
 radius = 0.25
@@ -17,10 +17,11 @@ collision_layer = 2
 script = ExtResource("1_oul6g")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1266450466]
-transform = Transform3D(1.0000002, 0, 0, 0, 1.0000002, 0, 0, 0, 1.0000002, 0, 0.3503418, 0)
+transform = Transform3D(1.0000002, 0, 0, 0, 1.0000002, 0, 0, 0, 1.0000002, 0, 0.5157455, 0)
 mesh = SubResource("CapsuleMesh_npmfu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1233610272]
+transform = Transform3D(1.0000002, 0, 0, 0, 1.0000002, 0, 0, 0, 1.0000002, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_6rob7")
 
 [node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=1399204489]
