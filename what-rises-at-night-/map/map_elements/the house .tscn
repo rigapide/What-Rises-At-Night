@@ -790,11 +790,11 @@ size = Vector3(1, 9, 31)
 resource_local_to_scene = true
 size = Vector3(1, 9, 31)
 
-[sub_resource type="BoxMesh" id="BoxMesh_pt5gp"]
+[sub_resource type="BoxMesh" id="BoxMesh_a37qi"]
 resource_local_to_scene = true
 size = Vector3(26, 12, 26)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_htlm1"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_kwria"]
 resource_local_to_scene = true
 size = Vector3(26, 12, 26)
 
@@ -854,29 +854,45 @@ size = Vector3(5, 25, 1)
 resource_local_to_scene = true
 size = Vector3(5, 25, 1)
 
-[sub_resource type="BoxMesh" id="BoxMesh_35odr"]
+[sub_resource type="BoxMesh" id="BoxMesh_jt744"]
 resource_local_to_scene = true
 size = Vector3(6, 23, 45)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_dathq"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_30ccl"]
 resource_local_to_scene = true
 size = Vector3(6, 23, 45)
 
-[sub_resource type="BoxMesh" id="BoxMesh_kch3n"]
+[sub_resource type="BoxMesh" id="BoxMesh_dqgsa"]
 resource_local_to_scene = true
 size = Vector3(6, 23, 39)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_k7ws4"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_bxjor"]
 resource_local_to_scene = true
 size = Vector3(6, 23, 39)
 
-[sub_resource type="BoxMesh" id="BoxMesh_4qks1"]
+[sub_resource type="BoxMesh" id="BoxMesh_uxdmv"]
 resource_local_to_scene = true
 size = Vector3(6, 23, 98)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ef3c0"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_3avwf"]
 resource_local_to_scene = true
 size = Vector3(6, 23, 98)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jnjxd"]
+resource_local_to_scene = true
+size = Vector3(6, 23, 57)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vm72s"]
+resource_local_to_scene = true
+size = Vector3(6, 23, 57)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lxoy1"]
+resource_local_to_scene = true
+size = Vector3(26, 23, 6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t4dho"]
+resource_local_to_scene = true
+size = Vector3(26, 23, 6)
 
 [sub_resource type="BoxMesh" id="BoxMesh_qsduo"]
 resource_local_to_scene = true
@@ -946,19 +962,19 @@ size = Vector3(38, 32, 1)
 resource_local_to_scene = true
 size = Vector3(10, 32, 1)
 
-[sub_resource type="BoxMesh" id="BoxMesh_a37qi"]
+[sub_resource type="BoxMesh" id="BoxMesh_1x4ip"]
 resource_local_to_scene = true
 size = Vector3(26, 12, 45)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_kwria"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_3yc1f"]
 resource_local_to_scene = true
 size = Vector3(26, 12, 45)
 
-[sub_resource type="BoxMesh" id="BoxMesh_jt744"]
+[sub_resource type="BoxMesh" id="BoxMesh_l1336"]
 resource_local_to_scene = true
 size = Vector3(8, 27, 30)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_30ccl"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_swv65"]
 resource_local_to_scene = true
 size = Vector3(8, 27, 30)
 
@@ -974,11 +990,11 @@ size = Vector3(1, 32, 45)
 resource_local_to_scene = true
 size = Vector3(25, 32, 1)
 
-[sub_resource type="BoxMesh" id="BoxMesh_gdvmt"]
+[sub_resource type="BoxMesh" id="BoxMesh_eyu2m"]
 resource_local_to_scene = true
 size = Vector3(25, 12, 11)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_37iw5"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_p0ooe"]
 resource_local_to_scene = true
 size = Vector3(25, 12, 11)
 
@@ -1336,7 +1352,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.531268, 1.0031283, 57.402
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.000001, 2.9999998, 17)
 mesh = SubResource("BoxMesh_0xb4c")
 
-[node name="CollisionShape3D" parent="the living roon/furniture/placeholder furniture/Area3D" parent_id_path=PackedInt32Array(1862049999, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="the living roon/furniture/placeholder furniture/Area3D" parent_id_path=PackedInt32Array(1862049999, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.9999998, 17)
 shape = SubResource("BoxShape3D_miawf")
 
@@ -1347,7 +1363,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.195004, 1.0031283, 104.50
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 3.4999998, 5.5)
 mesh = SubResource("BoxMesh_ddslr")
 
-[node name="CollisionShape3D" parent="the living roon/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(599546386, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="the living roon/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(599546386, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 3.4999998, 5.5)
 shape = SubResource("BoxShape3D_0xb4c")
 
@@ -1358,7 +1374,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.195004, 1.0031283, 70.540
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.9999998, 15.5)
 mesh = SubResource("BoxMesh_rcgxa")
 
-[node name="CollisionShape3D" parent="the living roon/furniture/placeholder furniture3/Area3D" parent_id_path=PackedInt32Array(1360061115, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="the living roon/furniture/placeholder furniture3/Area3D" parent_id_path=PackedInt32Array(1360061115, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.9999998, 15.5)
 shape = SubResource("BoxShape3D_ga7fp")
 
@@ -1369,7 +1385,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.374317, 1.0031283, 29.025
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 4.5, 11)
 mesh = SubResource("BoxMesh_ga7fp")
 
-[node name="CollisionShape3D" parent="the living roon/furniture/placeholder furniture4/Area3D" parent_id_path=PackedInt32Array(1015734331, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="the living roon/furniture/placeholder furniture4/Area3D" parent_id_path=PackedInt32Array(1015734331, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 4.5, 11)
 shape = SubResource("BoxShape3D_wpn36")
 
@@ -1380,7 +1396,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.529045, 1.0031283, 26.895
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1.9999998, 13)
 mesh = SubResource("BoxMesh_oxtba")
 
-[node name="CollisionShape3D" parent="the living roon/furniture/placeholder furniture5/Area3D" parent_id_path=PackedInt32Array(69977948, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="the living roon/furniture/placeholder furniture5/Area3D" parent_id_path=PackedInt32Array(69977948, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1.9999998, 13)
 shape = SubResource("BoxShape3D_rhmaj")
 
@@ -1488,7 +1504,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.503504, 0.99522626, 144.99
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 3, 4)
 mesh = SubResource("BoxMesh_ek8jt")
 
-[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(1119512908, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(1119512908, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 3, 4)
 shape = SubResource("BoxShape3D_pt5gp")
 
@@ -1499,7 +1515,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.503504, 0.99522626, 136.02
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 7, 3.5)
 mesh = SubResource("BoxMesh_htlm1")
 
-[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture10/Area3D" parent_id_path=PackedInt32Array(2046429477, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture10/Area3D" parent_id_path=PackedInt32Array(2046429477, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 7, 3.5)
 shape = SubResource("BoxShape3D_gdvmt")
 
@@ -1510,7 +1526,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.503504, 0.99522626, 163.00
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 3, 10.5)
 mesh = SubResource("BoxMesh_37iw5")
 
-[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture4/Area3D" parent_id_path=PackedInt32Array(1779328057, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture4/Area3D" parent_id_path=PackedInt32Array(1779328057, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 3, 10.5)
 shape = SubResource("BoxShape3D_35odr")
 
@@ -1521,7 +1537,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.504518, 0.99522626, 163.00
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3, 18)
 mesh = SubResource("BoxMesh_dathq")
 
-[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture5/Area3D" parent_id_path=PackedInt32Array(683170755, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture5/Area3D" parent_id_path=PackedInt32Array(683170755, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3, 18)
 shape = SubResource("BoxShape3D_kch3n")
 
@@ -1532,7 +1548,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.484271, 0.99522626, 163.00
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.000001, 2.5, 18)
 mesh = SubResource("BoxMesh_k7ws4")
 
-[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture6/Area3D" parent_id_path=PackedInt32Array(1198340038, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture6/Area3D" parent_id_path=PackedInt32Array(1198340038, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.000001, 2.5, 18)
 shape = SubResource("BoxShape3D_4qks1")
 
@@ -1543,7 +1559,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.484271, 0.99522626, 163.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.500001, 3, 18)
 mesh = SubResource("BoxMesh_ef3c0")
 
-[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture7/Area3D" parent_id_path=PackedInt32Array(904427955, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture7/Area3D" parent_id_path=PackedInt32Array(904427955, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.500001, 3, 18)
 shape = SubResource("BoxShape3D_o18nq")
 
@@ -1554,7 +1570,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.82364, 0.99522626, 188.14
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0000019, 2, -7)
 mesh = SubResource("BoxMesh_ue376")
 
-[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture8/Area3D" parent_id_path=PackedInt32Array(722912015, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture8/Area3D" parent_id_path=PackedInt32Array(722912015, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0000019, 2, -7)
 shape = SubResource("BoxShape3D_4tbkf")
 
@@ -1565,7 +1581,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.503504, 0.99522626, 154.00
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 3, 4)
 mesh = SubResource("BoxMesh_wbpuc")
 
-[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture3/Area3D" parent_id_path=PackedInt32Array(1019488576, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture3/Area3D" parent_id_path=PackedInt32Array(1019488576, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 3, 4)
 shape = SubResource("BoxShape3D_v7cxh")
 
@@ -1576,7 +1592,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.855312, 0.99522626, 127.1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, 22)
 mesh = SubResource("BoxMesh_6v1rj")
 
-[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture9/Area3D" parent_id_path=PackedInt32Array(626889831, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The Kitchen/furniture/placeholder furniture9/Area3D" parent_id_path=PackedInt32Array(626889831, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, 22)
 shape = SubResource("BoxShape3D_wncav")
 
@@ -2013,7 +2029,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.40593, 1.0031283, 109.2929
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 5.5, 3)
 mesh = SubResource("BoxMesh_rhmaj")
 
-[node name="CollisionShape3D" parent="The stairwell/furniture/placeholder furniture/Area3D" parent_id_path=PackedInt32Array(1317754191, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The stairwell/furniture/placeholder furniture/Area3D" parent_id_path=PackedInt32Array(1317754191, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 5.5, 3)
 shape = SubResource("BoxShape3D_qx8d5")
 
@@ -2334,7 +2350,7 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 79.5
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 5.5, 10)
 mesh = SubResource("BoxMesh_rb5wm")
 
-[node name="CollisionShape3D" parent="The game room/furniture/placeholder furniture/Area3D" parent_id_path=PackedInt32Array(963212107, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The game room/furniture/placeholder furniture/Area3D" parent_id_path=PackedInt32Array(963212107, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 5.5, 10)
 shape = SubResource("BoxShape3D_fal47")
 
@@ -2345,7 +2361,7 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 79.5
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9999847, 13, 0.5)
 mesh = SubResource("BoxMesh_dsfvm")
 
-[node name="CollisionShape3D" parent="The game room/furniture/placeholder furniture5/Area3D" parent_id_path=PackedInt32Array(829188867, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The game room/furniture/placeholder furniture5/Area3D" parent_id_path=PackedInt32Array(829188867, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 13, 0.5)
 shape = SubResource("BoxShape3D_mk0j8")
 
@@ -2356,7 +2372,7 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 68.5
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 5.5, 2)
 mesh = SubResource("BoxMesh_m1rdf")
 
-[node name="CollisionShape3D" parent="The game room/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(1145891959, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The game room/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(1145891959, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 5.5, 2)
 shape = SubResource("BoxShape3D_d8ti0")
 
@@ -2367,7 +2383,7 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 68.5
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.000008, 4, -7)
 mesh = SubResource("BoxMesh_3a7fw")
 
-[node name="CollisionShape3D" parent="The game room/furniture/placeholder furniture8/Area3D" parent_id_path=PackedInt32Array(271459827, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The game room/furniture/placeholder furniture8/Area3D" parent_id_path=PackedInt32Array(271459827, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.000023, 4, -7.0000153)
 shape = SubResource("BoxShape3D_2cos7")
 
@@ -2378,7 +2394,7 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 6.67
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 5.5, 16)
 mesh = SubResource("BoxMesh_m8idg")
 
-[node name="CollisionShape3D" parent="The game room/furniture/placeholder furniture6/Area3D" parent_id_path=PackedInt32Array(1025471952, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The game room/furniture/placeholder furniture6/Area3D" parent_id_path=PackedInt32Array(1025471952, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 5.5, 16)
 shape = SubResource("BoxShape3D_df8xb")
 
@@ -2389,7 +2405,7 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -72.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 5.5, 14)
 mesh = SubResource("BoxMesh_u3dnb")
 
-[node name="CollisionShape3D" parent="The game room/furniture/placeholder furniture7/Area3D" parent_id_path=PackedInt32Array(406214251, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The game room/furniture/placeholder furniture7/Area3D" parent_id_path=PackedInt32Array(406214251, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 5.5, 14)
 shape = SubResource("BoxShape3D_nvvpg")
 
@@ -2400,7 +2416,7 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 68.5
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 3.5, 4.499999)
 mesh = SubResource("BoxMesh_68lvb")
 
-[node name="CollisionShape3D" parent="The game room/furniture/placeholder furniture3/Area3D" parent_id_path=PackedInt32Array(77795337, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The game room/furniture/placeholder furniture3/Area3D" parent_id_path=PackedInt32Array(77795337, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 3.5, 4.499999)
 shape = SubResource("BoxShape3D_ljfck")
 
@@ -2411,7 +2427,7 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 68.5
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 8.5, 4.999999)
 mesh = SubResource("BoxMesh_awhym")
 
-[node name="CollisionShape3D" parent="The game room/furniture/placeholder furniture4/Area3D" parent_id_path=PackedInt32Array(1172220044, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="The game room/furniture/placeholder furniture4/Area3D" parent_id_path=PackedInt32Array(1172220044, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 8.5, 4.999999)
 shape = SubResource("BoxShape3D_2iq3u")
 
@@ -2538,11 +2554,11 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -62.
 
 [node name="MeshInstance3D" parent="the bakers room/furniture/placeholder furniture2" index="0" unique_id=1234929732]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.499996, 5.5, 9.500001)
-mesh = SubResource("BoxMesh_pt5gp")
+mesh = SubResource("BoxMesh_a37qi")
 
-[node name="CollisionShape3D" parent="the bakers room/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(2004525564, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="the bakers room/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(2004525564, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.499996, 5.5, 9.500001)
-shape = SubResource("BoxShape3D_htlm1")
+shape = SubResource("BoxShape3D_kwria")
 
 [node name="the storage array" type="Node3D" parent="." unique_id=1727257182]
 
@@ -2654,33 +2670,55 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -53.
 
 [node name="MeshInstance3D" parent="the storage array/furniture/placeholder furniture2" index="0" unique_id=1234929732]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 11, -15)
-mesh = SubResource("BoxMesh_35odr")
+mesh = SubResource("BoxMesh_jt744")
 
-[node name="CollisionShape3D" parent="the storage array/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(656239954, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="the storage array/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(656239954, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 11, -15)
-shape = SubResource("BoxShape3D_dathq")
+shape = SubResource("BoxShape3D_30ccl")
 
 [node name="placeholder furniture3" parent="the storage array/furniture" unique_id=602542291 instance=ExtResource("1_miawf")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -53.925346, -36.9929, 130.52802)
 
 [node name="MeshInstance3D" parent="the storage array/furniture/placeholder furniture3" index="0" unique_id=1234929732]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 11, -12)
-mesh = SubResource("BoxMesh_kch3n")
+mesh = SubResource("BoxMesh_dqgsa")
 
-[node name="CollisionShape3D" parent="the storage array/furniture/placeholder furniture3/Area3D" parent_id_path=PackedInt32Array(602542291, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="the storage array/furniture/placeholder furniture3/Area3D" parent_id_path=PackedInt32Array(602542291, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 11, -12)
-shape = SubResource("BoxShape3D_k7ws4")
+shape = SubResource("BoxShape3D_bxjor")
 
 [node name="placeholder furniture4" parent="the storage array/furniture" unique_id=1830903695 instance=ExtResource("1_miawf")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -78.92535, -36.9929, 130.52802)
 
 [node name="MeshInstance3D" parent="the storage array/furniture/placeholder furniture4" index="0" unique_id=1234929732]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5000381, 11, -41.5)
-mesh = SubResource("BoxMesh_4qks1")
+mesh = SubResource("BoxMesh_uxdmv")
 
-[node name="CollisionShape3D" parent="the storage array/furniture/placeholder furniture4/Area3D" parent_id_path=PackedInt32Array(1830903695, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="the storage array/furniture/placeholder furniture4/Area3D" parent_id_path=PackedInt32Array(1830903695, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5000153, 11, -41.5)
-shape = SubResource("BoxShape3D_ef3c0")
+shape = SubResource("BoxShape3D_3avwf")
+
+[node name="placeholder furniture5" parent="the storage array/furniture" unique_id=621388770 instance=ExtResource("1_miawf")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -99.92535, -36.9929, 130.52802)
+
+[node name="MeshInstance3D" parent="the storage array/furniture/placeholder furniture5" index="0" unique_id=1234929732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5000458, 11, -62)
+mesh = SubResource("BoxMesh_jnjxd")
+
+[node name="CollisionShape3D" parent="the storage array/furniture/placeholder furniture5/Area3D" parent_id_path=PackedInt32Array(621388770, 1356608476) index="0" unique_id=1275664662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.500023, 11, -62)
+shape = SubResource("BoxShape3D_vm72s")
+
+[node name="placeholder furniture6" parent="the storage array/furniture" unique_id=303942740 instance=ExtResource("1_miawf")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -100.40556, -36.9929, 141.82663)
+
+[node name="MeshInstance3D" parent="the storage array/furniture/placeholder furniture6" index="0" unique_id=1234929732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4999008, 11, -6.5)
+mesh = SubResource("BoxMesh_lxoy1")
+
+[node name="CollisionShape3D" parent="the storage array/furniture/placeholder furniture6/Area3D" parent_id_path=PackedInt32Array(303942740, 1356608476) index="0" unique_id=1275664662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4999237, 11, -6.5)
+shape = SubResource("BoxShape3D_t4dho")
 
 [node name="childs room" type="Node3D" parent="." unique_id=1944989618]
 
@@ -2800,22 +2838,22 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 79.5
 
 [node name="MeshInstance3D" parent="childs room/furniture/placeholder furniture2" index="0" unique_id=1234929732]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5000153, 5.5, 19)
-mesh = SubResource("BoxMesh_a37qi")
+mesh = SubResource("BoxMesh_1x4ip")
 
-[node name="CollisionShape3D" parent="childs room/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(1897961359, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="childs room/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(1897961359, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5000153, 5.5, 19)
-shape = SubResource("BoxShape3D_kwria")
+shape = SubResource("BoxShape3D_3yc1f")
 
 [node name="placeholder furniture3" parent="childs room/furniture" unique_id=694725046 instance=ExtResource("1_miawf")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 34.29267, -36.9929, 175.13754)
 
 [node name="MeshInstance3D" parent="childs room/furniture/placeholder furniture3" index="0" unique_id=1234929732]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.500011, 13, 11.5)
-mesh = SubResource("BoxMesh_jt744")
+mesh = SubResource("BoxMesh_l1336")
 
-[node name="CollisionShape3D" parent="childs room/furniture/placeholder furniture3/Area3D" parent_id_path=PackedInt32Array(694725046, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="childs room/furniture/placeholder furniture3/Area3D" parent_id_path=PackedInt32Array(694725046, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.500011, 13, 11.5)
-shape = SubResource("BoxShape3D_30ccl")
+shape = SubResource("BoxShape3D_swv65")
 
 [node name="bathroom" type="Node3D" parent="." unique_id=1294856171]
 
@@ -2859,11 +2897,11 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 23.4
 
 [node name="MeshInstance3D" parent="bathroom/furniture/placeholder furniture2" index="0" unique_id=1234929732]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 5.5, 1.9999924)
-mesh = SubResource("BoxMesh_gdvmt")
+mesh = SubResource("BoxMesh_eyu2m")
 
-[node name="CollisionShape3D" parent="bathroom/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(2023969931, 871773437) index="0" unique_id=1275664662]
+[node name="CollisionShape3D" parent="bathroom/furniture/placeholder furniture2/Area3D" parent_id_path=PackedInt32Array(2023969931, 1356608476) index="0" unique_id=1275664662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 5.5, 1.9999924)
-shape = SubResource("BoxShape3D_37iw5")
+shape = SubResource("BoxShape3D_p0ooe")
 
 [node name="bathroom2" type="Node3D" parent="." unique_id=792870868]
 
@@ -3158,6 +3196,8 @@ polygon = PackedVector2Array(2.4178467, 68.509094, -44.703278, 68.52811, -43.577
 [editable path="the storage array/furniture/placeholder furniture2"]
 [editable path="the storage array/furniture/placeholder furniture3"]
 [editable path="the storage array/furniture/placeholder furniture4"]
+[editable path="the storage array/furniture/placeholder furniture5"]
+[editable path="the storage array/furniture/placeholder furniture6"]
 [editable path="childs room/furniture/placeholder furniture2"]
 [editable path="childs room/furniture/placeholder furniture3"]
 [editable path="bathroom/furniture/placeholder furniture2"]
