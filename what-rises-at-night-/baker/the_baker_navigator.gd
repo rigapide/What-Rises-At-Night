@@ -11,7 +11,7 @@ const time_to_update = 0.2
 const smoothing = 0.1
 
 var update_time = 0.0
-@export var speed = 1000
+@export var speed = 500
 
 var target = null
 
@@ -21,7 +21,7 @@ var target = null
 func set_target(current_target = target.position):
 	mover.set_target_position(current_target)
 
-func move_to_nxt_spot(Delta: float, speed: float):
+func move_to_nxt_spot(Delta: float, _Speed: float = speed):
 	
 	update_time -= Delta 
 	if update_time <= 0.0:
