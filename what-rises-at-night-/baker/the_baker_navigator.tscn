@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://deed6x0yluanj"]
+
+[ext_resource type="Script" uid="uid://c0n7fh5t4oj2k" path="res://baker/the_baker_navigator.gd" id="1_ufahk"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6rob7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7b8wm"]
+transparency = 1
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_6rob7"]
+radius = 0.05
+height = 0.1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_npmfu"]
+transparency = 1
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6rob7"]
+
+[node name="The Baker_navigator" type="CharacterBody3D" unique_id=449964478]
+collision_layer = 4
+script = ExtResource("1_ufahk")
+
+[node name="Debug mesh" type="MeshInstance3D" parent="." unique_id=1782850831]
+mesh = SubResource("BoxMesh_6rob7")
+surface_material_override/0 = SubResource("StandardMaterial3D_7b8wm")
+
+[node name="forward indicator" type="MeshInstance3D" parent="Debug mesh" unique_id=62737708]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.3402119)
+mesh = SubResource("SphereMesh_6rob7")
+surface_material_override/0 = SubResource("StandardMaterial3D_npmfu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1196097826]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9970557, 0)
+shape = SubResource("BoxShape3D_6rob7")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=789317370]
+
+[node name="update timer" type="Timer" parent="." unique_id=1635120901]
+wait_time = 0.2
+autostart = true
+
+[connection signal="timeout" from="update timer" to="." method="_on_update_timer_timeout"]
