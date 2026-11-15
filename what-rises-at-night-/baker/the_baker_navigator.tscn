@@ -37,8 +37,6 @@ shape = SubResource("BoxShape3D_6rob7")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=789317370]
 
-[node name="update timer" type="Timer" parent="." unique_id=1635120901]
+[node name="reset timer" type="Timer" parent="." unique_id=1635120901]
 wait_time = 0.2
 autostart = true
-
-[connection signal="timeout" from="update timer" to="." method="_on_update_timer_timeout"]

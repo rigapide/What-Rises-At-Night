@@ -5,7 +5,7 @@ extends CharacterBody3D
 
 @onready var mover = $NavigationAgent3D
 
-@onready var UpdateTimer = $"update timer"
+@onready var reset_timer = $"reset timer"
 
 const time_to_update = 0.2
 const smoothing = 0.1
