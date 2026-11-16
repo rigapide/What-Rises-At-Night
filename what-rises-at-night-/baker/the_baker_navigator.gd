@@ -14,9 +14,16 @@ var update_time = 0.0
 @export var speed = 500
 
 var target = null
+@onready var VertTracker = $VertTracker
 
+@onready var updedect = $"VertTracker/Debug mesh/wall climbing rays/up"
+@onready var downdedect = $"VertTracker/Debug mesh/wall climbing rays/down"
+@onready var frontdedect = $"VertTracker/Debug mesh/wall climbing rays/forward"
+@onready var backdedect = $"VertTracker/Debug mesh/wall climbing rays/backwards"
+@onready var rightdedect = $"VertTracker/Debug mesh/wall climbing rays/right"
+@onready var leftdedect = $"VertTracker/Debug mesh/wall climbing rays/left"
 
-
+#region navigation
 
 func set_target(current_target = target.position):
 	mover.set_target_position(current_target)
@@ -55,10 +62,17 @@ func move_to_nxt_spot(Delta: float, _Speed: float = speed):
 	
 	move_and_slide()
 
-
-
 func _ready() -> void:
 	target = BakerVars.player
 
 func _physics_process(delta: float) -> void:
 	move_to_nxt_spot(delta, speed)
+	
+	if downdedect.is_colliding():
+		VertTracker.position.y = VertTracker.position.y + 1
+	if updedect.is_colliding():
+		pass
+	move_and_slide()
+
+
+#endregion
