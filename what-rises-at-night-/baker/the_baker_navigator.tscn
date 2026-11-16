@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c0n7fh5t4oj2k" path="res://baker/the_baker_navigator.gd" id="1_ufahk"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_6rob7"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_ufahk"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_6rob7"]
 
@@ -23,10 +23,10 @@ collision_layer = 4
 script = ExtResource("1_ufahk")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1196097826]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9970557, 0)
-shape = SubResource("BoxShape3D_6rob7")
+shape = SubResource("SphereShape3D_ufahk")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=789317370]
+path_max_distance = 10.01
 simplify_path = true
 
 [node name="reset timer" type="Timer" parent="." unique_id=1635120901]
