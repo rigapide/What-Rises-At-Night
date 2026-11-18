@@ -16,12 +16,23 @@ var update_time = 0.0
 var target = null
 @onready var VertTracker = $VertTracker
 
+
+@onready var real_pos = $CollisionShape3D
+
 @onready var updedect = $"VertTracker/Debug mesh/wall climbing rays/up"
 @onready var downdedect = $"VertTracker/Debug mesh/wall climbing rays/down"
 @onready var frontdedect = $"VertTracker/Debug mesh/wall climbing rays/forward"
 @onready var backdedect = $"VertTracker/Debug mesh/wall climbing rays/backwards"
 @onready var rightdedect = $"VertTracker/Debug mesh/wall climbing rays/right"
 @onready var leftdedect = $"VertTracker/Debug mesh/wall climbing rays/left"
+
+var floor: bool
+var right_wall: bool
+var left_wall: bool
+var front_wall: bool
+var back_wall: bool
+var ceiling: bool
+
 
 #region navigation
 
@@ -64,15 +75,95 @@ func move_to_nxt_spot(Delta: float, _Speed: float = speed):
 
 func _ready() -> void:
 	target = BakerVars.player
+	
+	
+
+
+
+
+#other than floor surface nav
+
 
 func _physics_process(delta: float) -> void:
 	move_to_nxt_spot(delta, speed)
 	
-	if downdedect.is_colliding():
-		VertTracker.position.y = VertTracker.position.y + 1
-	if updedect.is_colliding():
+	
+	#tells what surface is closest
+	
+	
+	
+	
+	var right_collider = null
+	var left_collider = null
+	var up_collider = null
+	var down_collider = null
+	var forward_collider = null
+	var back_collider = null
+	
+	
+	
+	
+	match frontdedect.is_colliding():
+		true:
+			front_wall = true
+		false:
+			front_wall = false
+	
+	match backdedect.is_colliding():
+		true:
+			back_wall = true
+		false:
+			back_wall = false
+	
+	match downdedect.is_colliding():
+		true:
+			floor = true
+		false:
+			floor = false
+	
+	match updedect.is_colliding():
+		true:
+			ceiling = true
+		false:
+			ceiling = false
+	
+	match leftdedect.is_colliding():
+		true:
+			left_wall = true
+			left_collider = leftdedect.get_collider()
+		false:
+			left_wall = false
+	
+	match rightdedect.is_colliding():
+		true:
+			right_wall = true
+			right_collider = rightdedect.get_collider()
+		false:
+			right_wall = false
+	
+	
+	if right_wall == true:
+		if VertTracker.position.distance_to(right_collider.global_position) > 2:
+			VertTracker.position.x = lerp(VertTracker.position.x, right_collider.position.x +2, delta )
+	else:
+		VertTracker.position.x = lerp(VertTracker.position.x,real_pos.position.x , delta)
+	
+	
+	if left_wall == true:
 		pass
-	move_and_slide()
+	
+	if ceiling == true:
+		pass
+	
+	if floor == true:
+		pass
+	
+	
+	
+	
+	
+	
+
 
 
 #endregion
