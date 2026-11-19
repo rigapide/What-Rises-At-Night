@@ -2051,7 +2051,7 @@ shape = SubResource("BoxShape3D_qx8d5")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44, -30, 77)
 
 [node name="wall1" type="CollisionPolygon3D" parent="NavigationRegion3D/The game room/game room colliders" unique_id=80178073]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13.500847, 0, 0)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13.465809, 0, 0)
 polygon = PackedVector2Array(-6.492584, -7.4945297, 52.488754, -7.463711, 52.499413, 15.503062, 66.52871, 15.508158, 66.49487, 23.501509, -6.4965134, 23.523674)
 debug_color = Color(0.85882354, 0, 0.88235295, 0.8235294)
 

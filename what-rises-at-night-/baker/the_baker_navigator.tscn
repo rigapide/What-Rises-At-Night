@@ -21,6 +21,7 @@ albedo_color = Color(1, 0, 0, 1)
 [sub_resource type="SphereShape3D" id="SphereShape3D_6rob7"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_33cd3"]
+radius = 5.0
 
 [node name="The Baker_navigator" type="CharacterBody3D" unique_id=449964478]
 collision_layer = 4
@@ -41,6 +42,7 @@ wait_time = 0.2
 autostart = true
 
 [node name="VertTracker" type="Node3D" parent="." unique_id=1100901087]
+transform = Transform3D(-4.3711385e-08, -0.99999994, 0, 0.99999994, -4.3711385e-08, 0, 0, 0, 1, 0, 3.803124, 0)
 
 [node name="Debug mesh" type="MeshInstance3D" parent="VertTracker" unique_id=1782850831]
 mesh = SubResource("BoxMesh_6rob7")
@@ -54,22 +56,8 @@ surface_material_override/0 = SubResource("StandardMaterial3D_npmfu")
 [node name="wall climbing rays" type="Node3D" parent="VertTracker/Debug mesh" unique_id=430189810]
 
 [node name="down" type="RayCast3D" parent="VertTracker/Debug mesh/wall climbing rays" unique_id=367394542]
-target_position = Vector3(0, -10, 0)
-
-[node name="forward" type="RayCast3D" parent="VertTracker/Debug mesh/wall climbing rays" unique_id=657579012]
-target_position = Vector3(0, 0, -5)
-
-[node name="backwards" type="RayCast3D" parent="VertTracker/Debug mesh/wall climbing rays" unique_id=559129193]
-target_position = Vector3(0, 0, 5)
-
-[node name="up" type="RayCast3D" parent="VertTracker/Debug mesh/wall climbing rays" unique_id=1521807437]
-target_position = Vector3(0, 10, 0)
-
-[node name="right" type="RayCast3D" parent="VertTracker/Debug mesh/wall climbing rays" unique_id=827265951]
-target_position = Vector3(8, 0, 0)
-
-[node name="left" type="RayCast3D" parent="VertTracker/Debug mesh/wall climbing rays" unique_id=1179711821]
-target_position = Vector3(-8, 0, 0)
+target_position = Vector3(0, 0, -10)
+hit_back_faces = false
 
 [node name="info colliders" type="Node3D" parent="VertTracker/Debug mesh" unique_id=313345958]
 
