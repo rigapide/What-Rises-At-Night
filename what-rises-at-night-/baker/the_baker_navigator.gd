@@ -2,27 +2,38 @@ extends CharacterBody3D
 
 
 
-
-@onready var mover = $NavigationAgent3D
+var target = null
 
 @onready var reset_timer = $"reset timer"
 
 const time_to_update = 0.2
 const smoothing = 0.1
-
 var update_time = 0.0
-@export var speed = 500
 
-var target = null
+
+
+
+@onready var mover = $NavigationAgent3D
+@export var speed = 500
+@export var turn_speed = 12
+@export var preffered_height = 8
+@export var dist_from_wall = 1
+
+var surface_normal = Vector3.UP
+
+
+
 @onready var VertTracker = $VertTracker
 @onready var rotation_marker = $"VertTracker/rotation marker"
 
-@onready var real_pos = $CollisionShape3D
 
 
 @onready var downdedect = $"VertTracker/rotation marker/wall climbing rays/down"
-
+@onready var wall_pathfinding_forward_ray = $"VertTracker/rotation marker/wall climbing rays/forward ray"
 @onready var nearestareashape = $"VertTracker/rotation marker/nearest area/CollisionShape3D"
+
+
+
 
 
 
@@ -82,29 +93,51 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
-	move_to_nxt_spot(delta, speed)
 	
 	
-	#tells what surface is closest
-	
-	
-	
-	
-	if downdedect.is_colliding():
-		pass
+	var closet_point = get_closest_surface()
 	
 	
 	
-	rotation_marker.look_at(get_closest_surface())
+	if closet_point != Vector3.INF:
+		var surface_offset = global_position - closet_point
+		if surface_offset.length_squared() > 0.0001:
+			surface_normal = surface_offset.normalized()
+		else:
+			surface_normal.lerp(Vector3.UP, delta, 3).normalized()
 	
-	#get_closest_surface()
 	
+	if mover.distance_to_target() < 3:
+		preffered_height = 0
+	else: 
+		preffered_height = 8
 	
+	var desired_point = mover.global_position + (Vector3.UP + preffered_height)
 	
+	var to_target = desired_point - global_position
+	var surface_movement = to_target.slide(surface_normal).normalised()
+	
+	if surface_movement.length_squared() > 0.01:
+		var target_basis: Basis = Basis.looking_at(surface_movement, surface_normal)
+		global_transform.basis = global_transform.basis.orthonormalized().slerp(target_basis, delta * turn_speed)
+	
+	var adhesion_force: Vector3 = Vector3.ZERO
+	if closet_point != Vector3.INF:
+		var current_dist: float = global_position.distance_to(closet_point)
+		var dist_error: float = current_dist - dist_from_wall
+		adhesion_force = -surface_normal * (dist_error * 20.0) # Spring-like pull toward stick_radius
 	
 
 
-#not lookint at point, looking at overall quordinate, possible fix is adding a marker at raycast collision than look at that
+
+
+
+
+
+
+
+
+#not lookint at point, looking at overall quordinate, possible f 	ix is adding a marker at raycast collision than look at that
 
 func get_closest_surface():
 	
@@ -128,7 +161,7 @@ func get_closest_surface():
 	
 	
 	var collision_points = space_state.collide_shape(query)
-	var closest_point: Vector3 = collision_points[0]
+	var closest_point: Vector3 = collision_points[0].global_position
 	print(collision_points.size())
 	for i in collision_points:
 		

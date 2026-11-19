@@ -46,4 +46,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.415, 6, -2.063)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.435721, 5.2302027, 4.594141)
 
 [node name="The Baker_navigator" parent="." unique_id=449964478 instance=ExtResource("8_dovsn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.1913824, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.901847, 6.1913824, 0)

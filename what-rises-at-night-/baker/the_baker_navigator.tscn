@@ -59,6 +59,9 @@ surface_material_override/0 = SubResource("StandardMaterial3D_npmfu")
 target_position = Vector3(0, 0, -10)
 hit_back_faces = false
 
+[node name="RayCast3D" type="RayCast3D" parent="VertTracker/rotation marker/wall climbing rays" unique_id=1544548543]
+target_position = Vector3(0, 0, -20)
+
 [node name="nearest area" type="Area3D" parent="VertTracker/rotation marker" unique_id=1510584362]
 collision_layer = 0
 
