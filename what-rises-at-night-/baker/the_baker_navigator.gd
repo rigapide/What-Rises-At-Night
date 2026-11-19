@@ -15,24 +15,20 @@ var update_time = 0.0
 
 var target = null
 @onready var VertTracker = $VertTracker
-
+@onready var rotation_marker = $"VertTracker/rotation marker"
 
 @onready var real_pos = $CollisionShape3D
 
 
-@onready var downdedect = $"VertTracker/Debug mesh/wall climbing rays/down"
+@onready var downdedect = $"VertTracker/rotation marker/wall climbing rays/down"
+
+@onready var nearestareashape = $"VertTracker/rotation marker/nearest area/CollisionShape3D"
 
 
-@onready var nearestareashape = $"VertTracker/Debug mesh/nearest area/CollisionShape3D"
 
-
-
-var floor: bool
-var right_wall: bool
-var left_wall: bool
-var front_wall: bool
-var back_wall: bool
-var ceiling: bool
+var floor_cling: bool
+var wall_cling: bool
+var ceiling_cling: bool
 
 
 #region navigation
@@ -99,7 +95,7 @@ func _physics_process(delta: float) -> void:
 	
 	
 	
-	VertTracker.look_at(get_closest_surface())
+	rotation_marker.look_at(get_closest_surface())
 	
 	#get_closest_surface()
 	
@@ -108,7 +104,7 @@ func _physics_process(delta: float) -> void:
 	
 
 
-
+#not lookint at point, looking at overall quordinate, possible fix is adding a marker at raycast collision than look at that
 
 func get_closest_surface():
 	
@@ -124,6 +120,8 @@ func get_closest_surface():
 	query.collide_with_bodies = true
 	query.collision_mask = 1
 	query.exclude = [self.get_rid()]
+	
+	
 	
 	var detection_center = nearestareashape.global_position
 	

@@ -18,10 +18,10 @@ height = 0.1
 transparency = 1
 albedo_color = Color(1, 0, 0, 1)
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_6rob7"]
-
 [sub_resource type="SphereShape3D" id="SphereShape3D_33cd3"]
-radius = 5.0
+radius = 8.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_6rob7"]
 
 [node name="The Baker_navigator" type="CharacterBody3D" unique_id=449964478]
 collision_layer = 4
@@ -44,66 +44,74 @@ autostart = true
 [node name="VertTracker" type="Node3D" parent="." unique_id=1100901087]
 transform = Transform3D(-4.3711385e-08, -0.99999994, 0, 0.99999994, -4.3711385e-08, 0, 0, 0, 1, 0, 3.803124, 0)
 
-[node name="Debug mesh" type="MeshInstance3D" parent="VertTracker" unique_id=1782850831]
+[node name="rotation marker" type="MeshInstance3D" parent="VertTracker" unique_id=1782850831]
 mesh = SubResource("BoxMesh_6rob7")
 surface_material_override/0 = SubResource("StandardMaterial3D_7b8wm")
 
-[node name="forward indicator" type="MeshInstance3D" parent="VertTracker/Debug mesh" unique_id=62737708]
+[node name="forward indicator" type="MeshInstance3D" parent="VertTracker/rotation marker" unique_id=62737708]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.3402119)
 mesh = SubResource("SphereMesh_6rob7")
 surface_material_override/0 = SubResource("StandardMaterial3D_npmfu")
 
-[node name="wall climbing rays" type="Node3D" parent="VertTracker/Debug mesh" unique_id=430189810]
+[node name="wall climbing rays" type="Node3D" parent="VertTracker/rotation marker" unique_id=430189810]
 
-[node name="down" type="RayCast3D" parent="VertTracker/Debug mesh/wall climbing rays" unique_id=367394542]
+[node name="down" type="RayCast3D" parent="VertTracker/rotation marker/wall climbing rays" unique_id=367394542]
 target_position = Vector3(0, 0, -10)
 hit_back_faces = false
 
-[node name="info colliders" type="Node3D" parent="VertTracker/Debug mesh" unique_id=313345958]
+[node name="nearest area" type="Area3D" parent="VertTracker/rotation marker" unique_id=1510584362]
+collision_layer = 0
 
-[node name="forward" type="Area3D" parent="VertTracker/Debug mesh/info colliders" unique_id=1002293148]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/Debug mesh/info colliders/forward" unique_id=1360288828]
-shape = SubResource("SphereShape3D_6rob7")
-debug_color = Color(1, 0, 0, 0.41960785)
-
-[node name="back" type="Area3D" parent="VertTracker/Debug mesh/info colliders" unique_id=762503984]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/Debug mesh/info colliders/back" unique_id=1797862305]
-shape = SubResource("SphereShape3D_6rob7")
-debug_color = Color(1, 0, 0, 0.41960785)
-
-[node name="up forward" type="Area3D" parent="VertTracker/Debug mesh/info colliders" unique_id=887084663]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -2.5)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/Debug mesh/info colliders/up forward" unique_id=572596339]
-shape = SubResource("SphereShape3D_6rob7")
-debug_color = Color(1, 0, 0, 0.41960785)
-
-[node name="up back" type="Area3D" parent="VertTracker/Debug mesh/info colliders" unique_id=111291928]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 2.5)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/Debug mesh/info colliders/up back" unique_id=2090425219]
-shape = SubResource("SphereShape3D_6rob7")
-debug_color = Color(1, 0, 0, 0.41960785)
-
-[node name="down back" type="Area3D" parent="VertTracker/Debug mesh/info colliders" unique_id=230593106]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.5, 2.5)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/Debug mesh/info colliders/down back" unique_id=1792029746]
-shape = SubResource("SphereShape3D_6rob7")
-debug_color = Color(1, 0, 0, 0.41960785)
-
-[node name="down forward" type="Area3D" parent="VertTracker/Debug mesh/info colliders" unique_id=1200211085]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.5, -2.5)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/Debug mesh/info colliders/down forward" unique_id=1110940526]
-shape = SubResource("SphereShape3D_6rob7")
-debug_color = Color(1, 0, 0, 0.41960785)
-
-[node name="nearest area" type="Area3D" parent="VertTracker/Debug mesh" unique_id=1510584362]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/Debug mesh/nearest area" unique_id=1057506977]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/rotation marker/nearest area" unique_id=1057506977]
 shape = SubResource("SphereShape3D_33cd3")
+
+[node name="info colliders" type="Node3D" parent="VertTracker" unique_id=313345958]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="forward" type="Area3D" parent="VertTracker/info colliders" unique_id=1002293148]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+collision_layer = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/info colliders/forward" unique_id=1360288828]
+shape = SubResource("SphereShape3D_6rob7")
+debug_color = Color(1, 0, 0, 0.41960785)
+
+[node name="back" type="Area3D" parent="VertTracker/info colliders" unique_id=762503984]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+collision_layer = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/info colliders/back" unique_id=1797862305]
+shape = SubResource("SphereShape3D_6rob7")
+debug_color = Color(1, 0, 0, 0.41960785)
+
+[node name="up forward" type="Area3D" parent="VertTracker/info colliders" unique_id=887084663]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -2.5)
+collision_layer = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/info colliders/up forward" unique_id=572596339]
+shape = SubResource("SphereShape3D_6rob7")
+debug_color = Color(1, 0, 0, 0.41960785)
+
+[node name="up back" type="Area3D" parent="VertTracker/info colliders" unique_id=111291928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 2.5)
+collision_layer = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/info colliders/up back" unique_id=2090425219]
+shape = SubResource("SphereShape3D_6rob7")
+debug_color = Color(1, 0, 0, 0.41960785)
+
+[node name="down back" type="Area3D" parent="VertTracker/info colliders" unique_id=230593106]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.5, 2.5)
+collision_layer = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/info colliders/down back" unique_id=1792029746]
+shape = SubResource("SphereShape3D_6rob7")
+debug_color = Color(1, 0, 0, 0.41960785)
+
+[node name="down forward" type="Area3D" parent="VertTracker/info colliders" unique_id=1200211085]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.5, -2.5)
+collision_layer = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/info colliders/down forward" unique_id=1110940526]
+shape = SubResource("SphereShape3D_6rob7")
+debug_color = Color(1, 0, 0, 0.41960785)
