@@ -16,7 +16,7 @@ var update_time = 0.0
 @onready var mover = $NavigationAgent3D
 @export var speed = 500
 @export var turn_speed = 12
-@export var preffered_height = 10
+@export var preffered_height: float = 10
 @export var dist_from_wall = 1
 
 
@@ -36,8 +36,8 @@ var update_time = 0.0
 
 
 
-var wall_cling: bool
-
+var on_surface: bool
+var climbing_mode: bool 
 
 
 #region navigation
@@ -82,8 +82,7 @@ func move_to_nxt_spot(Delta: float, _Speed: float = speed):
 func _ready() -> void:
 	target = BakerVars.player
 	
-	wall_cling = false
-
+	on_surface = false
 
 
 
@@ -92,32 +91,50 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	move_to_nxt_spot(delta)
-	VertTracker.look_at(get_closest_surface(4))
+	rotation_marker.look_at(get_closest_surface(7))
 	
 	
 	
-	#tags on floor so wall cling only happens when on wall
+	if climbing_mode == false:
+		
+		
+		if downdedect.is_colliding():
+			on_surface = true
+		else:
+			on_surface = false
+		
+		
+		
+		
+		if on_surface == false:
+			VertTracker.global_position.y = VertTracker.global_position.y - 7 * delta
+		if on_surface == true:
+			
+			#check if on wall and not just floor here
+			
+			climbing_mode = true
+		
+		
+		
+		
+		
 	
-	if downdedect.is_colliding():
-		wall_cling = true
-	else:
-		wall_cling = false
-	
-	
-	print(wall_cling)
-	
-	if wall_cling == false:
-		VertTracker.global_position.y = VertTracker.global_position.y - 10 * delta
-	
-	
-	
+	if climbing_mode == true:
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		pass
 	
 
 
 
 
-
-#not lookint at point, looking at overall quordinate, possible f 	ix is adding a marker at raycast collision than look at that
 
 func get_closest_surface(radius: float) -> Vector3:
 	var space_state := get_world_3d().direct_space_state
@@ -142,6 +159,7 @@ func get_closest_surface(radius: float) -> Vector3:
 	
 	
 	var contact_point: Vector3 = info["point"]
+	@warning_ignore("unused_variable")
 	var surface_normal: Vector3 = info["normal"]
 	
 	
