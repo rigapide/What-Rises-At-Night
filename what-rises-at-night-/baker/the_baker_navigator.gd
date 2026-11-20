@@ -27,7 +27,19 @@ var update_time = 0.0
 
 
 
-@onready var downdedect = $"VertTracker/rotation marker/wall climbing rays/down"
+
+
+@onready var true_pos = $CollisionShape3D
+
+@onready var floor_detector = $"VertTracker/floor detector"
+@onready var wall_detect = $"VertTracker/wall detector"
+@onready var forward_detect = $"VertTracker/forward detector"
+@onready var ceiling_detect = $"VertTracker/ceiling detector"
+
+@onready var surface_detect = $"VertTracker/rotation marker/wall climbing rays/down"
+
+
+
 
 @onready var nearestareashape = $"VertTracker/rotation marker/nearest area/CollisionShape3D"
 
@@ -83,58 +95,118 @@ func _ready() -> void:
 	target = BakerVars.player
 	
 	on_surface = false
+	
+	
+	climbing_mode = true
+	
 
 
-
-#other than floor surface nav
 
 
 func _physics_process(delta: float) -> void:
-	move_to_nxt_spot(delta)
+	
+	
+	#tracks distance from vertical nav agent from ground nav agent
+	var lower_dist = VertTracker.global_position.distance_to(true_pos.global_position)
+	
+	var dist_to_ceiling
+	
+	
+	var decision = randi_range(1, 10)
+	
+	
+	
+	
+	
+	#looks at nearest surface
 	rotation_marker.look_at(get_closest_surface(7))
 	
+	# checks if currently on any surface
+	if surface_detect.is_colliding():
+		on_surface = true
+	else:
+		on_surface = false
+		climbing_mode = false
 	
 	
-	if climbing_mode == false:
+	
+	
+	
+	
+	#move towards target if on floor and not in climbing mode
+	if floor_detector.has_overlapping_bodies() == true and climbing_mode == false:
 		
 		
-		if downdedect.is_colliding():
-			on_surface = true
-		else:
-			on_surface = false
+		move_to_nxt_spot(delta)
 		
 		
+		if wall_detect.has_overlapping_bodies() == true:
+			climbing_mode = true
+	
+	
+	
+	
+	
+	
+	
+	
+	#fall when off ground and not in climbing mode
+	if floor_detector.has_overlapping_bodies() == false and climbing_mode == false:
+		
+		if lower_dist > 2 and on_surface == false:
+			VertTracker.global_position.y = VertTracker.global_position.y - 4 * delta
+			move_to_nxt_spot(delta)
+			
+		if on_surface == true:
+			climbing_mode = true
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#climbing logig here
+	if floor_detector.has_overlapping_bodies() == false and climbing_mode == true:
 		
 		
-		if on_surface == false:
-			VertTracker.global_position.y = VertTracker.global_position.y - 7 * delta
+		#add ceiling detector logic in this hunk// change preffered height based on ceiling height
+		
+		
 		if on_surface == true:
 			
-			#check if on wall and not just floor here
 			
-			climbing_mode = true
-		
-		
-		
-		
-		
+			#bumper logic here
+			
+			if forward_detect.has_overlapping_bodies() == true and lower_dist > 2:
+				VertTracker.global_position.y = VertTracker.global_position.y - 2 * delta
+				
+				
+			elif floor_detector.has_overlapping_bodies() == false:
+				VertTracker.global_position.y = lerp(VertTracker.global_position.y, preffered_height, delta)
+				move_to_nxt_spot(delta)
+			
+			
+			
+			
+			
+			
+		else: 
+			pass
 	
-	if climbing_mode == true:
+	if floor_detector.has_overlapping_bodies() == true and climbing_mode == true:
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		pass
+		if decision > 5 and on_surface and forward_detect.has_overlapping_bodies() == false:
+			VertTracker.global_position.y = VertTracker.global_position.y + 2 * delta
+			move_to_nxt_spot(delta)
+		else:
+			move_to_nxt_spot(delta)
 	
-
-
-
-
+	
+	print(climbing_mode)
 
 func get_closest_surface(radius: float) -> Vector3:
 	var space_state := get_world_3d().direct_space_state

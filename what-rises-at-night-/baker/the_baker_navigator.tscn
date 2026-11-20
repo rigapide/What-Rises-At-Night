@@ -25,6 +25,15 @@ radius = 7.0
 [sub_resource type="SphereShape3D" id="SphereShape3D_6rob7"]
 radius = 1.0
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ufahk"]
+height = 6.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_6rob7"]
+height = 14.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_33cd3"]
+height = 3.5
+
 [node name="The Baker_navigator" type="CharacterBody3D" unique_id=449964478]
 collision_layer = 4
 script = ExtResource("1_ufahk")
@@ -45,7 +54,7 @@ wait_time = 0.2
 autostart = true
 
 [node name="VertTracker" type="Node3D" parent="." unique_id=1100901087]
-transform = Transform3D(-4.3711385e-08, -0.99999994, 0, 0.99999994, -4.3711385e-08, 0, 0, 0, 1, 0, 8.803123, 0)
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 12.992204, 0)
 
 [node name="rotation marker" type="MeshInstance3D" parent="VertTracker" unique_id=1782850831]
 mesh = SubResource("BoxMesh_6rob7")
@@ -59,7 +68,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_npmfu")
 [node name="wall climbing rays" type="Node3D" parent="VertTracker/rotation marker" unique_id=430189810]
 
 [node name="down" type="RayCast3D" parent="VertTracker/rotation marker/wall climbing rays" unique_id=367394542]
-target_position = Vector3(0, 0, -10)
+target_position = Vector3(0, 0, -7)
 hit_back_faces = false
 
 [node name="nearest area" type="Area3D" parent="VertTracker/rotation marker" unique_id=1510584362]
@@ -134,3 +143,25 @@ collision_layer = 0
 [node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/rotation marker/info colliders/down forward" unique_id=1110940526]
 shape = SubResource("SphereShape3D_6rob7")
 debug_color = Color(1, 0, 0, 0.41960785)
+
+[node name="floor detector" type="Area3D" parent="VertTracker" unique_id=628346996]
+transform = Transform3D(-4.3711374e-08, 0.99999976, 0, -0.99999976, -4.3711374e-08, 0, 0, 0, 1, 0, -3.5743809, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/floor detector" unique_id=1271466799]
+transform = Transform3D(-4.371065e-08, -0.9999901, 0, 0.9999901, -4.371065e-08, 0, 0, 0, 1, 0.501606, -2.1925757e-08, 0)
+shape = SubResource("CylinderShape3D_ufahk")
+
+[node name="wall detector" type="Area3D" parent="VertTracker" unique_id=2002602700]
+transform = Transform3D(-4.3711385e-08, -0.99999994, 0, 0.99999994, -4.3711385e-08, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/wall detector" unique_id=615695138]
+shape = SubResource("CylinderShape3D_6rob7")
+
+[node name="forward detector" type="Area3D" parent="VertTracker" unique_id=19275178]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/forward detector" unique_id=1969768719]
+transform = Transform3D(0.9999998, 0, 0, 0, -4.3711378e-08, -0.99999976, 0, 0.99999994, -4.3711385e-08, 0, 0, -2.1540706)
+shape = SubResource("CylinderShape3D_33cd3")
+
+[node name="ceiling detector" type="RayCast3D" parent="VertTracker" unique_id=644216965]
+target_position = Vector3(0, 20, 0)
