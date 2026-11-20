@@ -19,7 +19,7 @@ transparency = 1
 albedo_color = Color(1, 0, 0, 1)
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_33cd3"]
-radius = 8.0
+radius = 4.0
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_6rob7"]
 
@@ -34,7 +34,8 @@ shape = SubResource("SphereShape3D_ufahk")
 path_max_distance = 10.01
 simplify_path = true
 debug_enabled = true
-debug_path_custom_color = Color(1, 0, 0, 1)
+debug_use_custom = true
+debug_path_custom_color = Color(0.5369744, 0.5675734, 5.7756904e-07, 1)
 debug_path_custom_point_size = 13.81
 
 [node name="reset timer" type="Timer" parent="." unique_id=1635120901]
@@ -42,7 +43,7 @@ wait_time = 0.2
 autostart = true
 
 [node name="VertTracker" type="Node3D" parent="." unique_id=1100901087]
-transform = Transform3D(-4.3711385e-08, -0.99999994, 0, 0.99999994, -4.3711385e-08, 0, 0, 0, 1, 0, 3.803124, 0)
+transform = Transform3D(-4.3711385e-08, -0.99999994, 0, 0.99999994, -4.3711385e-08, 0, 0, 0, 1, 0, 8.803123, 0)
 
 [node name="rotation marker" type="MeshInstance3D" parent="VertTracker" unique_id=1782850831]
 mesh = SubResource("BoxMesh_6rob7")
@@ -59,9 +60,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_npmfu")
 target_position = Vector3(0, 0, -10)
 hit_back_faces = false
 
-[node name="RayCast3D" type="RayCast3D" parent="VertTracker/rotation marker/wall climbing rays" unique_id=1544548543]
-target_position = Vector3(0, 0, -20)
-
 [node name="nearest area" type="Area3D" parent="VertTracker/rotation marker" unique_id=1510584362]
 collision_layer = 0
 
@@ -69,7 +67,7 @@ collision_layer = 0
 shape = SubResource("SphereShape3D_33cd3")
 
 [node name="info colliders" type="Node3D" parent="VertTracker" unique_id=313345958]
-transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(-4.3711385e-08, 0, -0.9999999, 0, 0.9999998, 0, 0.99999994, 0, -4.3711385e-08, 0, 0, 0)
 
 [node name="forward" type="Area3D" parent="VertTracker/info colliders" unique_id=1002293148]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
