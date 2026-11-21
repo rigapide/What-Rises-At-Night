@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bbm5uneg38adf"]
+
+[ext_resource type="Script" uid="uid://cqtx3eft8m7o7" path="res://baker/the_baker_visual_module.gd" id="1_cutlc"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_npmfu"]
+radius = 1.0
+height = 2.0
+
+[node name="The_baker_visual_module" type="Node3D" unique_id=580443800]
+visible = false
+script = ExtResource("1_cutlc")
+
+[node name="head" type="MeshInstance3D" parent="." unique_id=1127884939]
+mesh = SubResource("SphereMesh_npmfu")

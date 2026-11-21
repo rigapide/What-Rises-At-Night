@@ -109,10 +109,13 @@ func _physics_process(delta: float) -> void:
 	#tracks distance from vertical nav agent from ground nav agent
 	var lower_dist = VertTracker.global_position.distance_to(true_pos.global_position)
 	
-	var dist_to_ceiling
+	
 	
 	
 	var decision = randi_range(1, 10)
+	
+	#updates location and rotation for visual module to track
+	BakerVars.baker_nav_agent_pos = VertTracker.global_position
 	
 	
 	
@@ -172,7 +175,10 @@ func _physics_process(delta: float) -> void:
 	if floor_detector.has_overlapping_bodies() == false and climbing_mode == true:
 		
 		
-		#add ceiling detector logic in this hunk// change preffered height based on ceiling height
+		
+		
+		
+		
 		
 		
 		if on_surface == true:
@@ -181,11 +187,11 @@ func _physics_process(delta: float) -> void:
 			#bumper logic here
 			
 			if forward_detect.has_overlapping_bodies() == true and lower_dist > 2:
-				VertTracker.global_position.y = VertTracker.global_position.y - 2 * delta
+				VertTracker.global_position.y = VertTracker.global_position.y - 8 * delta
 				
 				
 			elif floor_detector.has_overlapping_bodies() == false:
-				VertTracker.global_position.y = lerp(VertTracker.global_position.y, preffered_height, delta)
+				VertTracker.global_position.y = lerp(VertTracker.global_position.y, preffered_height - 2, delta)
 				move_to_nxt_spot(delta)
 			
 			
@@ -204,6 +210,42 @@ func _physics_process(delta: float) -> void:
 			move_to_nxt_spot(delta)
 		else:
 			move_to_nxt_spot(delta)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	if ceiling_detect.is_colliding():
+		
+		var ceiling_height = ceiling_detect.get_collision_point()
+		
+		
+		preffered_height = ceiling_height.y - 3
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	print(climbing_mode)

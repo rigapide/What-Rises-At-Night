@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://chxr28d1l2qis" path="res://items/the_water.tscn" id="6_chc70"]
 [ext_resource type="PackedScene" uid="uid://jrcj2pqi10re" path="res://items/the_starter.tscn" id="7_d06vt"]
 [ext_resource type="PackedScene" uid="uid://deed6x0yluanj" path="res://baker/the_baker_navigator.tscn" id="8_dovsn"]
+[ext_resource type="PackedScene" uid="uid://bbm5uneg38adf" path="res://baker/the_baker_visual_module.tscn" id="9_xq7uw"]
 
 [sub_resource type="Environment" id="Environment_rkbax"]
 background_mode = 1
@@ -28,7 +29,7 @@ environment = SubResource("Environment_rkbax")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -271.78302)
 
 [node name="player" parent="." unique_id=1332932682 instance=ExtResource("2_eu055")]
-transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 33.27233, 14.607073, -1.0293121)
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -24.31555, 14.607073, 40.18495)
 
 [node name="MeshInstance3D" parent="." unique_id=1752869269 instance=ExtResource("3_628wc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.728145, 6.512904)
@@ -45,5 +46,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.415, 6, -2.063)
 [node name="The_Starter" parent="." unique_id=1286153519 instance=ExtResource("7_d06vt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.435721, 5.2302027, 4.594141)
 
-[node name="The Baker_navigator" parent="." unique_id=449964478 instance=ExtResource("8_dovsn")]
+[node name="the baker" type="Node3D" parent="." unique_id=598716262]
+
+[node name="The Baker_navigator" parent="the baker" unique_id=449964478 instance=ExtResource("8_dovsn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.112534, 0.79137385, 0)
+
+[node name="The_baker_visual_module" parent="the baker" unique_id=580443800 instance=ExtResource("9_xq7uw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.79827, 12.4373665, 0)
