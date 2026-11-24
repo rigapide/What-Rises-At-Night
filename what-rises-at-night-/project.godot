@@ -109,6 +109,10 @@ ctrl={
 3d_physics/layer_4="items"
 3d_physics/layer_9="furniture"
 
+[navigation]
+
+3d/warnings/navmesh_edge_merge_errors=false
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

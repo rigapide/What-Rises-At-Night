@@ -36,7 +36,7 @@ var update_time = 0.0
 @onready var forward_detect = $"VertTracker/forward detector"
 @onready var ceiling_detect = $"VertTracker/ceiling detector"
 
-@onready var surface_detect = $"VertTracker/rotation marker/wall climbing rays/down"
+@onready var surface_detect = $"VertTracker/rotation marker/wall climbing rays/surface_detect" 
 
 
 
@@ -123,6 +123,21 @@ func _physics_process(delta: float) -> void:
 	
 	#looks at nearest surface
 	rotation_marker.look_at(get_closest_surface(7))
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	# checks if currently on any surface
 	if surface_detect.is_colliding():
@@ -268,8 +283,10 @@ func get_closest_surface(radius: float) -> Vector3:
 	
 	var info := space_state.get_rest_info(params)
 	if info.is_empty():
-		return  Vector3.INF# No collision
+		return  Vector3.MODEL_FRONT# No collision
 		
+	
+	
 	
 	
 	var contact_point: Vector3 = info["point"]

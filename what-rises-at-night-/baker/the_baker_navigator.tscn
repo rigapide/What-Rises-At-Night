@@ -57,6 +57,7 @@ autostart = true
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 12.992204, 0)
 
 [node name="rotation marker" type="MeshInstance3D" parent="VertTracker" unique_id=1782850831]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
 mesh = SubResource("BoxMesh_6rob7")
 surface_material_override/0 = SubResource("StandardMaterial3D_7b8wm")
 
@@ -67,9 +68,11 @@ surface_material_override/0 = SubResource("StandardMaterial3D_npmfu")
 
 [node name="wall climbing rays" type="Node3D" parent="VertTracker/rotation marker" unique_id=430189810]
 
-[node name="down" type="RayCast3D" parent="VertTracker/rotation marker/wall climbing rays" unique_id=367394542]
+[node name="surface_detect" type="RayCast3D" parent="VertTracker/rotation marker/wall climbing rays" unique_id=367394542]
 target_position = Vector3(0, 0, -7)
 hit_back_faces = false
+debug_shape_custom_color = Color(0, 0.7756728, 0.31639448, 1)
+debug_shape_thickness = 5
 
 [node name="nearest area" type="Area3D" parent="VertTracker/rotation marker" unique_id=1510584362]
 collision_layer = 0
