@@ -54,8 +54,7 @@ var climbing_mode: bool
 
 #region navigation
 
-func set_target(current_target = target.position):
-	mover.set_target_position(current_target)
+
 
 func move_to_nxt_spot(Delta: float, _Speed: float = speed):
 	
@@ -106,37 +105,21 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	
 	
+	var decision = randi_range(1, 10)
+	
+	
+	#region vertical navigation stuff
+	
 	#tracks distance from vertical nav agent from ground nav agent
 	var lower_dist = VertTracker.global_position.distance_to(true_pos.global_position)
 	
-	
-	
-	
-	var decision = randi_range(1, 10)
 	
 	#updates location and rotation for visual module to track
 	BakerVars.baker_nav_agent_pos = VertTracker.global_position
 	
 	
-	
-	
-	
 	#looks at nearest surface
 	rotation_marker.look_at(get_closest_surface(7))
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	# checks if currently on any surface
@@ -145,10 +128,6 @@ func _physics_process(delta: float) -> void:
 	else:
 		on_surface = false
 		climbing_mode = false
-	
-	
-	
-	
 	
 	
 	#move towards target if on floor and not in climbing mode
@@ -162,12 +141,6 @@ func _physics_process(delta: float) -> void:
 			climbing_mode = true
 	
 	
-	
-	
-	
-	
-	
-	
 	#fall when off ground and not in climbing mode
 	if floor_detector.has_overlapping_bodies() == false and climbing_mode == false:
 		
@@ -178,26 +151,10 @@ func _physics_process(delta: float) -> void:
 		if on_surface == true:
 			climbing_mode = true
 	
-	
-	
-	
-	
-	
-	
-	
-	
 	#climbing logig here
 	if floor_detector.has_overlapping_bodies() == false and climbing_mode == true:
 		
-		
-		
-		
-		
-		
-		
-		
 		if on_surface == true:
-			
 			
 			#bumper logic here
 			
@@ -208,11 +165,6 @@ func _physics_process(delta: float) -> void:
 			elif floor_detector.has_overlapping_bodies() == false:
 				VertTracker.global_position.y = lerp(VertTracker.global_position.y, preffered_height - 2, delta)
 				move_to_nxt_spot(delta)
-			
-			
-			
-			
-			
 			
 		else: 
 			pass
@@ -227,19 +179,6 @@ func _physics_process(delta: float) -> void:
 			move_to_nxt_spot(delta)
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	if ceiling_detect.is_colliding():
 		
 		var ceiling_height = ceiling_detect.get_collision_point()
@@ -247,6 +186,8 @@ func _physics_process(delta: float) -> void:
 		
 		preffered_height = ceiling_height.y - 3
 	
+	#print(climbing_mode)
+	#endregion 
 	
 	
 	
@@ -255,17 +196,34 @@ func _physics_process(delta: float) -> void:
 	
 	
 	
+
+
+#region targeting logic
+
+func decide_on_target():
 	
 	
 	
-	
-	
-	
-	
-	
-	print(climbing_mode)
+	pass
+
+
+
+func set_target(current_target = target.position):
+	mover.set_target_position(current_target)
+
+
+
+
+#endregion
+
+
+
 
 func get_closest_surface(radius: float) -> Vector3:
+	
+	
+	
+	
 	var space_state := get_world_3d().direct_space_state
 	
 	var sphere := SphereShape3D.new()
@@ -296,7 +254,3 @@ func get_closest_surface(radius: float) -> Vector3:
 	
 	
 	return contact_point
-
-
-
-#endregion
