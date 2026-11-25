@@ -91,7 +91,7 @@ func move_to_nxt_spot(Delta: float, _Speed: float = speed):
 	move_and_slide()
 
 func _ready() -> void:
-	target = BakerVars.player
+	
 	
 	on_surface = false
 	
@@ -103,6 +103,13 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
+	
+	
+	if BakerVars.round_started == true:
+		target = BakerVars.player
+	
+	
+	
 	
 	
 	var decision = randi_range(1, 10)
@@ -205,8 +212,6 @@ func decide_on_target():
 	
 	
 	pass
-
-
 
 func set_target(current_target = target.position):
 	mover.set_target_position(current_target)

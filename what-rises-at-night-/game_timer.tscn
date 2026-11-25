@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dfc656qmyo43o"]
+
+[ext_resource type="Script" uid="uid://cukltre12mdr8" path="res://game_timer.gd" id="1_qxk6v"]
+
+[node name="game timer" type="Control" unique_id=1249705547]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_qxk6v")
+
+[node name="timer_text" type="Label" parent="." unique_id=268771698]
+custom_minimum_size = Vector2(80, 40)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -80.0
+offset_right = 80.0
+offset_bottom = 40.0
+grow_horizontal = 2
+horizontal_alignment = 1
+
+[node name="phase_timer" type="Timer" parent="timer_text" unique_id=490206007]
+wait_time = 120.0
+
+[connection signal="timeout" from="timer_text/phase_timer" to="." method="_on_phase_timer_timeout"]
