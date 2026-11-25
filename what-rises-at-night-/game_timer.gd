@@ -1,7 +1,16 @@
 extends Control
 
-@onready var phase_timer = $timer_text/phase_timer
-@onready var timer_text = $timer_text
+@onready var phase_timer = $VBoxContainer/timer_text/phase_timer
+@onready var timer_text = $VBoxContainer/timer_text
+@onready var objective_text = $"VBoxContainer/current objective"
+
+
+
+
+
+
+
+
 
 var phase : int = 0 
 # 0 - timer paused // menus, pre game
@@ -9,7 +18,7 @@ var phase : int = 0
 # 2 - searching phase
 
 
-var phase_time: int = 5
+var phase_time: int = 0.01
 
 
 
@@ -20,14 +29,10 @@ func _ready() -> void:
 	
 	phase = 0
 	
+	timer_text.text = "enter the house"
+	objective_text.text = ""
 	
-	phase_timer.wait_time = phase_time
-	phase_timer.one_shot = true
-	update_label(phase_time)
-	phase_timer.start()
-
-
-
+	BakerVars.round_started = false
 
 
 
@@ -36,7 +41,25 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	
 	
-	update_label(phase_timer.time_left)
+	if phase == 0 and BakerVars.starting_round == true:
+		
+		phase_timer.start()
+		BakerVars.starting_round = false
+		BakerVars.round_started = true
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	if BakerVars.round_started == true:
+		update_label(phase_timer.time_left)
+	
 	
 	
 	
@@ -49,18 +72,13 @@ func _on_phase_timer_timeout() -> void:
 	
 	
 	match phase:
-		
-		
 		0:
 			phase = 1
-			phase_time = 180
+			phase_time = 60
 			phase_timer.wait_time = phase_time
 			update_label(phase_timer.time_left)
 			phase_timer.start()
-			
-			
-			BakerVars.round_started = true
-			
+			objective_text.text = "hide the ingridients"
 			
 			
 		1:
@@ -70,7 +88,7 @@ func _on_phase_timer_timeout() -> void:
 			phase_timer.wait_time = phase_time
 			update_label(phase_timer.time_left)
 			phase_timer.start()
-			
+			objective_text.text = "survive"
 			
 			
 			
