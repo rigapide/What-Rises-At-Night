@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://b61r08chkv4n6"]
 
-[ext_resource type="PackedScene" uid="uid://u51t7bof3nf2" path="res://map/map_elements/testfloor.tscn" id="1_dji2h"]
 [ext_resource type="PackedScene" uid="uid://8nmasytum8m0" path="res://player/player.tscn" id="2_eu055"]
 [ext_resource type="PackedScene" uid="uid://4p8mvf45c1fq" path="res://map/map_elements/the house .tscn" id="3_628wc"]
 [ext_resource type="PackedScene" uid="uid://baeorktct2o3i" path="res://items/the_yeast.tscn" id="4_y0b4v"]
@@ -24,9 +23,6 @@ adjustment_brightness = 1.33
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1966113210]
 environment = SubResource("Environment_rkbax")
-
-[node name="testfloor" parent="." unique_id=1900875952 instance=ExtResource("1_dji2h")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -271.78302)
 
 [node name="player" parent="." unique_id=1332932682 instance=ExtResource("2_eu055")]
 transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -24.31555, 14.607073, 40.18495)

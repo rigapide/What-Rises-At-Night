@@ -14,7 +14,7 @@ size = Vector3(6, 23, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_nya1o"]
 resource_local_to_scene = true
-size = Vector3(50, 23, 1)
+size = Vector3(50, 24, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_m8ju4"]
 resource_local_to_scene = true
@@ -52,7 +52,7 @@ size = Vector3(1, 2, 9)
 resource_local_to_scene = true
 size = Vector3(1, 1, 5)
 
-[sub_resource type="BoxMesh" id="BoxMesh_r74tx"]
+[sub_resource type="BoxMesh" id="BoxMesh_pt5gp"]
 resource_local_to_scene = true
 size = Vector3(51, 1, 72)
 
@@ -893,6 +893,70 @@ size = Vector3(102, 1, 15)
 [sub_resource type="BoxMesh" id="BoxMesh_naelv"]
 size = Vector3(51, 1, 57)
 
+[sub_resource type="BoxMesh" id="BoxMesh_r74tx"]
+resource_local_to_scene = true
+size = Vector3(51, 1, 34)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fal47"]
+resource_local_to_scene = true
+size = Vector3(83, 2, 152)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mk0j8"]
+resource_local_to_scene = true
+size = Vector3(123, 2, 62)
+
+[sub_resource type="BoxMesh" id="BoxMesh_d8ti0"]
+resource_local_to_scene = true
+size = Vector3(103, 2, 77)
+
+[sub_resource type="BoxMesh" id="BoxMesh_v7cxh"]
+resource_local_to_scene = true
+size = Vector3(51, 1, 52.85498)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gdvmt"]
+resource_local_to_scene = true
+size = Vector3(20, 1, 18)
+
+[sub_resource type="BoxMesh" id="BoxMesh_o18nq"]
+resource_local_to_scene = true
+size = Vector3(20, 1, 30)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4tbkf"]
+resource_local_to_scene = true
+size = Vector3(20, 5, 20)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2cos7"]
+resource_local_to_scene = true
+size = Vector3(20, 20, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_df8xb"]
+resource_local_to_scene = true
+size = Vector3(33, 20, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nvvpg"]
+resource_local_to_scene = true
+size = Vector3(1, 20, 194)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wncav"]
+resource_local_to_scene = true
+size = Vector3(20, 6, 13)
+
+[sub_resource type="BoxMesh" id="BoxMesh_35odr"]
+resource_local_to_scene = true
+size = Vector3(119, 1, 18)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qx8d5"]
+resource_local_to_scene = true
+size = Vector3(9.327637, 1, 18)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kch3n"]
+resource_local_to_scene = true
+size = Vector3(80, 1, 18)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4qks1"]
+resource_local_to_scene = true
+size = Vector3(49, 1, 18)
+
 [sub_resource type="BoxMesh" id="BoxMesh_0xb4c"]
 size = Vector3(7, 7, 35)
 
@@ -1151,7 +1215,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, -31)
 mesh = SubResource("BoxMesh_rxcbq")
 
 [node name="front wall5" type="MeshInstance3D" parent="NavigationRegion3D/The garrage" unique_id=907404647]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 7, 41.001)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 6.5, 41.001)
 mesh = SubResource("BoxMesh_nya1o")
 
 [node name="front wall4" type="MeshInstance3D" parent="NavigationRegion3D/The garrage" unique_id=1835625853]
@@ -1191,8 +1255,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -4, 38)
 mesh = SubResource("BoxMesh_su3vj")
 
 [node name="floor3" type="MeshInstance3D" parent="NavigationRegion3D/The garrage" unique_id=1972730697]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5, -5, 5.5)
-mesh = SubResource("BoxMesh_r74tx")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5, -5, 4.5)
+mesh = SubResource("BoxMesh_pt5gp")
 
 [node name="front wall12" type="MeshInstance3D" parent="NavigationRegion3D/The garrage" unique_id=744135113]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -4, 36)
@@ -2810,6 +2874,80 @@ polygon = PackedVector2Array(-54.045338, -40.766144, 70.017204, -40.54367, 69.88
 [node name="floor 2" type="CollisionPolygon3D" parent="NavigationRegion3D/The Attic/StaticBody3D" unique_id=66314433]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 113.59955, 19.079546, 109)
 polygon = PackedVector2Array(2.4178467, 68.509094, -44.703278, 68.52811, -43.577835, -38.514664, 2.4427338, -38.457306)
+
+[node name="outside" type="Node3D" parent="NavigationRegion3D" unique_id=1537813117]
+
+[node name="front yard" type="Node3D" parent="NavigationRegion3D/outside" unique_id=927868865]
+
+[node name="driveway" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=281942003]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5, -5, -48.5)
+mesh = SubResource("BoxMesh_r74tx")
+
+[node name="grass" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=1056010318]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 89.5, -5.3, -35.5)
+mesh = SubResource("BoxMesh_fal47")
+
+[node name="grass2" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=2006829850]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64.5, -5.3, -80.5)
+mesh = SubResource("BoxMesh_mk0j8")
+
+[node name="grass3" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=1758392787]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.5, -5.3, -13)
+mesh = SubResource("BoxMesh_d8ti0")
+
+[node name="driveway2" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=1150323712]
+transform = Transform3D(1, 0, 0, 0, 0.9996573, 0.026176948, 0, -0.026176948, 0.9996573, 22.5, -5.691725, -91.812)
+mesh = SubResource("BoxMesh_v7cxh")
+
+[node name="sidewalk 1" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=1115146627]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, -5, -40.5)
+mesh = SubResource("BoxMesh_gdvmt")
+
+[node name="sidewalk 5" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=1645311461]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, -5, -16.5)
+mesh = SubResource("BoxMesh_o18nq")
+
+[node name="portch" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=265689711]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, -2, 16.5)
+mesh = SubResource("BoxMesh_4tbkf")
+
+[node name="fence1" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=27641708]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64, 5.5, 26)
+mesh = SubResource("BoxMesh_2cos7")
+
+[node name="fence2" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=609169817]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -109.5, 5.5, 26)
+mesh = SubResource("BoxMesh_df8xb")
+
+[node name="fence3" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=467625255]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -125.5, 5.5, 123.5)
+mesh = SubResource("BoxMesh_nvvpg")
+
+[node name="portch2" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=1418730107]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, -13, -5.3676224, 2.3490748)
+mesh = SubResource("BoxMesh_wncav")
+
+[node name="sidewalk 2" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=1970239754]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.5, -5, -120.5)
+mesh = SubResource("BoxMesh_35odr")
+
+[node name="sidewalk 6" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=745370564]
+transform = Transform3D(0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 0, 0, 0, 1, -2.6752772, -6.1658506, -120.5)
+mesh = SubResource("BoxMesh_qx8d5")
+
+[node name="sidewalk 7" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=783658662]
+transform = Transform3D(0.96592575, -0.258819, 0, 0.258819, 0.96592575, 0, 0, 0, 1, 46.608067, -6.1658506, -120.5)
+mesh = SubResource("BoxMesh_qx8d5")
+
+[node name="sidewalk 3" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=1170467621]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 91, -5, -120.5)
+mesh = SubResource("BoxMesh_kch3n")
+
+[node name="sidewalk 4" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=1266468276]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5, -6.3703184, -120.5)
+mesh = SubResource("BoxMesh_4qks1")
+
+[node name="back yard" type="Node3D" parent="NavigationRegion3D/outside" unique_id=1857165380]
 
 [node name="furniture" type="Node3D" parent="." unique_id=1089523831]
 
