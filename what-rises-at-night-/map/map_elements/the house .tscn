@@ -939,11 +939,15 @@ size = Vector3(20, 6, 13)
 
 [sub_resource type="BoxMesh" id="BoxMesh_35odr"]
 resource_local_to_scene = true
-size = Vector3(119, 1, 18)
+size = Vector3(118.95422, 1, 18)
 
 [sub_resource type="BoxMesh" id="BoxMesh_qx8d5"]
 resource_local_to_scene = true
 size = Vector3(9.327637, 1, 18)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jnjxd"]
+resource_local_to_scene = true
+size = Vector3(9.345337, 1, 18)
 
 [sub_resource type="BoxMesh" id="BoxMesh_kch3n"]
 resource_local_to_scene = true
@@ -2980,16 +2984,16 @@ transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, -13, -5.
 mesh = SubResource("BoxMesh_wncav")
 
 [node name="sidewalk 2" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=1970239754]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.5, -5, -120.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.52289, -5, -120.5)
 mesh = SubResource("BoxMesh_35odr")
 
 [node name="sidewalk 6" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=745370564]
-transform = Transform3D(0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 0, 0, 0, 1, -2.6752772, -6.1658506, -120.5)
+transform = Transform3D(0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 0, 0, 0, 1, -2.675, -6.188, -120.5)
 mesh = SubResource("BoxMesh_qx8d5")
 
 [node name="sidewalk 7" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=783658662]
-transform = Transform3D(0.96592575, -0.258819, 0, 0.258819, 0.96592575, 0, 0, 0, 1, 46.608067, -6.1658506, -120.5)
-mesh = SubResource("BoxMesh_qx8d5")
+transform = Transform3D(0.96592575, -0.258819, 0, 0.258819, 0.96592575, 0, 0, 0, 1, 46.617, -6.192, -120.5)
+mesh = SubResource("BoxMesh_jnjxd")
 
 [node name="sidewalk 3" type="MeshInstance3D" parent="NavigationRegion3D/outside/front yard" unique_id=1170467621]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 91, -5, -120.5)
@@ -3012,6 +3016,41 @@ polygon = PackedVector2Array(-11.658905, -4.27269, 20.604393, -4.354498, 20.6154
 [node name="CollisionPolygon3D3" type="CollisionPolygon3D" parent="NavigationRegion3D/outside/front yard/front yard colliders" unique_id=776103920]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 118.558426, 0, 41.044277)
 polygon = PackedVector2Array(-2.5249329, -4.3122344, 12.397644, -4.298791, 12.437195, 15.528574, -2.6369324, 15.486074)
+
+[node name="CollisionPolygon3D4" type="CollisionPolygon3D" parent="NavigationRegion3D/outside/front yard/front yard colliders" unique_id=94246860]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.86867857, -4.998751, -51.41667)
+polygon = PackedVector2Array(-125.26076, -77.92352, -1.431078, -77.79309, -3.0212936, -18.998508, 47.986504, -18.88559, 48.944855, -91.91269, 131.86327, -91.87619, 131.88173, 78.104385, 51.86627, 78.06773, 51.87013, 60.06459, 48.851257, 60.092224, 48.862793, 14.08065, -2.127988, 14.077522, -2.1690288, 60.080948, -6.200717, 59.99772, -6.1718593, 78.07675, -125.09066, 78.16838)
+debug_color = Color(0.551, 0.426, 1.032, 1)
+
+[node name="CollisionPolygon3D5" type="CollisionPolygon3D" parent="NavigationRegion3D/outside/front yard/front yard colliders" unique_id=1832715216]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 10.418087, -6.3448496, -122.14221)
+polygon = PackedVector2Array(-12.330225, -5.637619, 35.498775, -6.010414, 35.49803, 7.367737, -12.283458, 7.3810577)
+debug_color = Color(0.551, 0.426, 1.032, 1)
+
+[node name="CollisionPolygon3D6" type="CollisionPolygon3D" parent="NavigationRegion3D/outside/front yard/front yard colliders" unique_id=62349235]
+transform = Transform3D(1, 0, 0, 0, -0.026176993, 0.99965733, 0, -0.99965733, -0.026176993, 22.5, -5.691, -91.812)
+polygon = PackedVector2Array(-25.499754, -26.342598, 25.506817, -26.337929, 25.492008, 25.971138, -25.446331, 26.162834)
+debug_color = Color(0.551, 0.426, 1.032, 1)
+
+[node name="CollisionPolygon3D7" type="CollisionPolygon3D" parent="NavigationRegion3D/outside/front yard/front yard colliders" unique_id=1529942282]
+transform = Transform3D(-4.371139e-08, 0.9659258, -0.25881907, 0, 0.25881907, 0.9659258, 1, 4.222196e-08, -1.1313341e-08, 46.617, -6.192, -120.5)
+polygon = PackedVector2Array(-9.002106, -0.6530304, 9.105461, -0.78419876, 9.107307, 4.730156, -9.000687, 4.6720924)
+debug_color = Color(0.551, 0.426, 1.032, 1)
+
+[node name="CollisionPolygon3D8" type="CollisionPolygon3D" parent="NavigationRegion3D/outside/front yard/front yard colliders" unique_id=943756529]
+transform = Transform3D(-1.1313341e-08, -0.9659258, 0.25881907, -4.222196e-08, 0.25881907, 0.9659258, -1, 0, -4.371139e-08, -2.675, -6.188, -120.5)
+polygon = PackedVector2Array(-9.002258, -0.8113029, 9.009415, -1.1417183, 9.001953, 4.662704, -8.995842, 4.681649)
+debug_color = Color(0.551, 0.426, 1.032, 1)
+
+[node name="CollisionPolygon3D9" type="CollisionPolygon3D" parent="NavigationRegion3D/outside/front yard/front yard colliders" unique_id=695682177]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -13, 0.020524979, 16.5)
+polygon = PackedVector2Array(-10.009693, -10.018637, 10.005857, -10.026669, 10.00541, 10.014759, -10.017019, 10.034286)
+debug_color = Color(0.551, 0.426, 1.032, 1)
+
+[node name="CollisionPolygon3D10" type="CollisionPolygon3D" parent="NavigationRegion3D/outside/front yard/front yard colliders" unique_id=700873009]
+transform = Transform3D(1, 0, 0, 0, -0.50000006, 0.8660254, 0, -0.8660254, -0.50000006, -13, -2.516341, 2.3490748)
+polygon = PackedVector2Array(-10.005318, -5.077085, 9.995287, -5.1054683, 10.021121, 5.3529596, -9.951992, 5.326001)
+debug_color = Color(0.551, 0.426, 1.032, 1)
 
 [node name="back yard" type="Node3D" parent="NavigationRegion3D/outside" unique_id=1857165380]
 

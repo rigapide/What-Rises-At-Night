@@ -18,7 +18,7 @@ var phase : int = 0
 # 2 - searching phase
 
 
-var phase_time: int = 0.01
+var phase_time = 0.01
 
 
 
