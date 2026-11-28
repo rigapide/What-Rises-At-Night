@@ -38,12 +38,12 @@ var update_time = 0.0
 
 @onready var surface_detect = $"VertTracker/rotation marker/wall climbing rays/surface_detect" 
 
-
-
-
 @onready var nearestareashape = $"VertTracker/rotation marker/nearest area/CollisionShape3D"
 
 
+
+
+@onready var ingridient_detector = $"VertTracker/Ingridient detector"
 
 
 
@@ -51,8 +51,28 @@ var update_time = 0.0
 var on_surface: bool
 var climbing_mode: bool 
 
+var wandering: bool
+var holding_item: bool
+var targeting_item: bool
 
-#region navigation
+
+
+
+func _ready() -> void:
+	
+	
+	on_surface = false
+	
+	
+	climbing_mode = true
+	
+	
+	wandering = false
+	holding_item = false
+	targeting_item = false
+
+
+#region navigation and targeting
 
 
 
@@ -90,29 +110,118 @@ func move_to_nxt_spot(Delta: float, _Speed: float = speed):
 	
 	move_and_slide()
 
-func _ready() -> void:
-	
-	
-	on_surface = false
-	
-	
-	climbing_mode = true
-	
-
-
-
 
 func _physics_process(delta: float) -> void:
 	
 	
+	
+	
+	
+	var decision = randi_range(1, 10) # decision generator
+	
+	var wander_decision = randi_range(1, 20)
+	
+	
+	
+	
+	
+	
+	
+	
 	if BakerVars.round_started == true:
-		target = BakerVars.player
+		if wandering == true:
+			
+			match wander_decision:
+				
+				1:
+					pass
+				2:
+					pass
+				3:
+					pass
+				4:
+					pass
+				5:
+					pass
+				6:
+					pass
+				7:
+					pass
+				8:
+					pass
+				9:
+					pass
+				10:
+					pass
+				11:
+					pass
+				12:
+					pass
+				13:
+					pass
+				14:
+					pass
+				15:
+					pass
+				16:
+					pass
+				17:
+					pass
+				18:
+					pass
+				19:
+					pass
+				20:
+					pass
+			
+		if wandering == false and targeting_item == false:
+			
+			
+			
+			target = BakerVars.player
+			
+			
+			
 	
 	
 	
 	
 	
-	var decision = randi_range(1, 10)
+	if ingridient_detector.has_overlapping_areas() and holding_item == false:
+		
+		var areas = ingridient_detector.get_overlapping_areas()
+		
+		target = areas[0]
+		
+		targeting_item = true
+		
+		
+		
+		
+	
+	
+	if holding_item == true:
+		targeting_item = false
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	#region vertical navigation stuff
@@ -207,7 +316,7 @@ func _physics_process(delta: float) -> void:
 
 #region targeting logic
 
-func decide_on_target():
+func where_to_wander():
 	
 	
 	

@@ -104,6 +104,8 @@ layers = 3
 mesh = SubResource("CylinderMesh_6rob7")
 
 [node name="sourdough collier" type="Area3D" parent="." unique_id=552702762 groups=["baking ingridents", "items"]]
+collision_layer = 520
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="sourdough collier" unique_id=120961356]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14976501, 0)

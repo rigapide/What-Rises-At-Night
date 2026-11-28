@@ -24,7 +24,7 @@ adjustment_enabled = true
 environment = SubResource("Environment_rkbax")
 
 [node name="player" parent="." unique_id=1332932682 instance=ExtResource("2_eu055")]
-transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -24.31555, 14.607073, 40.18495)
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 13.568125, 14.607073, -93.02411)
 
 [node name="MeshInstance3D" parent="." unique_id=1752869269 instance=ExtResource("3_628wc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.728145, 6.512904)
@@ -44,6 +44,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.435721, 5.2302027, 4.594141
 [node name="the baker" type="Node3D" parent="." unique_id=598716262]
 
 [node name="The Baker_navigator" parent="the baker" unique_id=449964478 instance=ExtResource("8_dovsn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.37802, -32.14987, 29.855938)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.37802, -31.524752, 89.56209)
 
 [node name="game timer" parent="." unique_id=1249705547 instance=ExtResource("9_xq7uw")]

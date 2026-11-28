@@ -12,25 +12,40 @@ grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_qxk6v")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=265221953]
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1163521658]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -40.0
 offset_right = 40.0
-offset_bottom = 67.0
+offset_bottom = 106.0
 grow_horizontal = 2
 
-[node name="timer_text" type="Label" parent="VBoxContainer" unique_id=268771698]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=265221953]
+layout_mode = 2
+
+[node name="timer_text" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=268771698]
 custom_minimum_size = Vector2(80, 40)
 layout_mode = 2
 horizontal_alignment = 1
 
-[node name="phase_timer" type="Timer" parent="VBoxContainer/timer_text" unique_id=490206007]
-wait_time = 120.0
+[node name="phase_timer" type="Timer" parent="HBoxContainer/VBoxContainer/timer_text" unique_id=490206007]
 
-[node name="current objective" type="Label" parent="VBoxContainer" unique_id=1476660507]
+[node name="current objective" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1476660507]
 layout_mode = 2
 
-[connection signal="timeout" from="VBoxContainer/timer_text/phase_timer" to="." method="_on_phase_timer_timeout"]
+[node name="ingridients found" type="Control" parent="HBoxContainer" unique_id=1296468043]
+custom_minimum_size = Vector2(100, 35)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/ingridients found" unique_id=1536103294]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ingidients found label" type="Label" parent="HBoxContainer/ingridients found/VBoxContainer" unique_id=1418997859]
+layout_mode = 2
+text = "ingridients found: 0/4"
+
+[connection signal="timeout" from="HBoxContainer/VBoxContainer/timer_text/phase_timer" to="." method="_on_phase_timer_timeout"]

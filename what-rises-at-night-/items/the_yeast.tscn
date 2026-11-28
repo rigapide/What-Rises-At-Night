@@ -117,6 +117,8 @@ layers = 3
 mesh = SubResource("CylinderMesh_xpk1n")
 
 [node name="water collider" type="Area3D" parent="JarV1" unique_id=530002022 groups=["baking ingridents", "items"]]
+collision_layer = 520
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="JarV1/water collider" unique_id=1219927943]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14976501, 0)

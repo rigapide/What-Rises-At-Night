@@ -34,6 +34,9 @@ height = 14.0
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_33cd3"]
 height = 3.5
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_npmfu"]
+radius = 30.0
+
 [node name="The Baker_navigator" type="CharacterBody3D" unique_id=449964478]
 collision_layer = 4
 script = ExtResource("1_ufahk")
@@ -45,7 +48,6 @@ shape = SubResource("SphereShape3D_ufahk")
 path_max_distance = 10.01
 simplify_path = true
 debug_enabled = true
-debug_use_custom = true
 debug_path_custom_color = Color(0.5369744, 0.5675734, 5.7756904e-07, 1)
 debug_path_custom_point_size = 13.81
 
@@ -169,3 +171,11 @@ shape = SubResource("CylinderShape3D_33cd3")
 [node name="ceiling detector" type="RayCast3D" parent="VertTracker" unique_id=644216965]
 transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, -2.5)
 target_position = Vector3(0, 50, 0)
+
+[node name="Ingridient detector" type="Area3D" parent="VertTracker" unique_id=1802545750]
+collision_layer = 0
+collision_mask = 512
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VertTracker/Ingridient detector" unique_id=1809781295]
+shape = SubResource("SphereShape3D_npmfu")
+debug_color = Color(1, 0, 0, 0.41960785)

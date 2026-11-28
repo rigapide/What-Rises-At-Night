@@ -19,6 +19,8 @@ size = Vector3(1.6, 2, 0.8)
 mesh = SubResource("BoxMesh_3lynd")
 
 [node name="flour collider" type="Area3D" parent="The body" unique_id=1580256694 groups=["baking ingridents", "items"]]
+collision_layer = 520
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="The body/flour collider" unique_id=1167811661]
 shape = SubResource("BoxShape3D_6rob7")
